@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+<html>
 <head>
     <meta charset="UTF-8"/>
     <link type="text/css" rel="Stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -48,7 +49,7 @@
 
     <!-- START VIEW -->
     <form action="#" method="GET">
-        <div>
+        <div class="col-md-8" id="Profdiv1">
             <label>Apellido y Nombre</label>
                 <br> <select name="Titulo" id="Titulo">
                     <option value="Lic." default>Lic.</option>
@@ -73,6 +74,7 @@
                     <li><input type="text" name="Firma"/></li>
                 </ul>
         </div>
+        <div class="col-md-4" id="Profdiv2">    
             <input type="file" name="FotoPerfil"/>
             <label>Celular</label> <br>
                 <input type="text" name="Cel"/> <br>
@@ -82,8 +84,6 @@
                 <input type="email" name="Email"/> <br>
             <label>Skype</label> <br>
                 <input type="text" name="Skype"/> <br>
-        <div>
-
         </div>
     </form>    
    
@@ -97,4 +97,4 @@
 </body>
 <footer>
 </footer>
-
+</html>
