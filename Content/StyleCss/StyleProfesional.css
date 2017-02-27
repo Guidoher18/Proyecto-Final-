@@ -5,7 +5,7 @@
 
 /*DEFINIR FUENTES RESPONSIVE!!!!*/
 
-/*Quitar esto porque tiene que estar en el Layout*/
+/*Body va en el Layout.css*/
 body
 {
     background-image: url("../Images/Layout/FondoPsi.png");
@@ -16,7 +16,7 @@ body
     width:100vw;
     height:100vh;
 }
-
+/*Estilo de elementos de Formulario*/
 input
 {
     border-radius: 10px;
@@ -35,18 +35,19 @@ select
     border-radius: 10px;
 }
 
-#MP
+.form-control
 {
-    padding-left:10px;
-    padding-right:10px;
+    /*display:inline;*/
+    border-radius:10px;
 }
 
-#MN
+.Matricula
 {
-    padding-left:10px;
-    padding-right:10px;
+    display:inline;
 }
 
+
+/* Fondo Transparente detras de cada Profdiv*/
 #Profdiv1
 {
     background-color: rgba(255, 255, 255, 0.5);
@@ -59,29 +60,63 @@ select
     height: 85vh;   
 }
 
-.col-md-1
+/*Medidas de Columnas en % para sobreescribir width:100% de .form-control*/
+*[class~="col-md-1"]
 {
-    width: 8.33%!important;
+    width: 8.33% !important;
 }
 
-.col-md-6
+*[class~="col-md-2"]
 {
-    width: 50%!important;
+    width: 16.66% !important;
 }
 
-.col-md-8
+*[class~="col-md-3"]
 {
-    width: 66.66%!important;
+    width: 25% !important;
 }
 
-.form-control
+*[class~="col-md-4"]
 {
-    display:inline;
-    border-radius:10px;
+    width: 33.33% !important;
 }
 
-#Titulo
+*[class~="col-md-5"]
 {
-    padding-left: 5px;
-    padding-right: 5px;
+    width: 41.66% !important;
+}
+
+*[class~="col-md-6"]
+{
+    width: 50% !important;
+}
+
+*[class~="col-md-7"]
+{
+    width: 58.33% !important;
+}
+
+*[class~="col-md-8"]
+{
+    width: 66.66% !important;
+}
+
+*[class~="col-md-9"]
+{
+    width: 75% !important;
+}
+
+*[class~="col-md-10"]
+{
+    width: 83.33% !important;
+}
+
+*[class~="col-md-11"]
+{
+    width: 91.66% !important;
+}
+
+*[class~="col-md-12"]
+{
+    width: 100% !important;
 }

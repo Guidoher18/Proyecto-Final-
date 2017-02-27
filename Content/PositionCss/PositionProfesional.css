@@ -17,3 +17,27 @@
 }
 
 
+#MP
+{
+    padding-left:5px;
+    padding-right:5px;
+}
+
+#MN
+{
+    padding-left:5px;
+    padding-right:5px;
+}
+
+/* Para corregir el margin left y right de -15px en .row*/
+.row
+{
+    margin-left:0;
+    margin-right:0;
+}
+
+#Titulo
+{
+    padding-left: 5px;
+    padding-right: 5px;
+}
