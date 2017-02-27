@@ -51,22 +51,28 @@
     <form action="#" method="GET">
         <div class="col-md-8" id="Profdiv1">
             <label>Apellido y Nombre</label>
-                <br> <select name="Titulo" id="Titulo">
+                <br> <select name="Titulo" id="Titulo" class="form-control col-md-1">
                     <option value="Lic." default>Lic.</option>
                     <option value="Mg.">Mg.</option>
                     <option value="Dr.">Dr.</option>
                 </select>
-                <input type="text"/><br>
+                <input type="text" class="form-control col-md-6"/><br>
                 <!-- El input de Especialidad aparece sólo si se elige Mg. o Dr. -->
                 <div id="especialista"> 
                     <label>Esp. en: </label>
-                    <input type="text" name="Esp."/>
-                </div>
+                    <input type="text" name="Esp."/> 
+                </div><br>
             <label>Matrícula</label>
-                <h5>Nacional</h5>
-                    <input type="text" name="MN"/>
-                <h5>Provincial</h5>
-                    <input type="text" name="MP"/>
+                <div class="row">
+                    <div>
+                        <h5>Nacional</h5>
+                            <input type="text" name="MN" id="MN" class="form-control col-md-1"/>
+                    </div>
+                    <div> 
+                        <h5>Provincial</h5>
+                            <input type="text" name="MP" id="MP" class="form-control col-md-1"/>
+                    </div>
+                </div>
             <label>Firma Digital</label>
                 <input type="file" name="Firma"/>
             <label>Dirección Profesional / Institucional</label>
@@ -85,6 +91,7 @@
             <label>Skype</label> <br>
                 <input type="text" name="Skype"/> <br>
         </div>
+        <input type="submit" value="Cargar" class="btn btn-success" id="Submit">
     </form>    
    
     
