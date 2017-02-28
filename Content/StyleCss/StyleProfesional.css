@@ -54,6 +54,12 @@ select
     width: 20vw;
 }
 
+#FotoPerfil
+{
+    height: 30vh;
+    width: 18vw;
+}
+
 /* Fondo Transparente detras de cada Profdiv*/
 #Profdiv1
 {
@@ -67,63 +73,63 @@ select
     height: 85vh;   
 }
 
-/*Medidas de Columnas en % para sobreescribir width:100% de .form-control*/
+/*Medidas de Columnas en vw para sobreescribir width:100vw de .form-control*/
 *[class~="col-md-1"]
 {
-    width: 8.33% !important;
+    width: 8.33vw !important;
 }
 
 *[class~="col-md-2"]
 {
-    width: 16.66% !important;
+    width: 16.66vw !important;
 }
 
 *[class~="col-md-3"]
 {
-    width: 25% !important;
+    width: 25vw !important;
 }
 
 *[class~="col-md-4"]
 {
-    width: 33.33% !important;
+    width: 33.33vw !important;
 }
 
 *[class~="col-md-5"]
 {
-    width: 41.66% !important;
+    width: 41.66vw !important;
 }
 
 *[class~="col-md-6"]
 {
-    width: 50% !important;
+    width: 50vw !important;
 }
 
 *[class~="col-md-7"]
 {
-    width: 58.33% !important;
+    width: 58.33vw !important;
 }
 
 *[class~="col-md-8"]
 {
-    width: 66.66% !important;
+    width: 66.66vw !important;
 }
 
 *[class~="col-md-9"]
 {
-    width: 75% !important;
+    width: 75vw !important;
 }
 
 *[class~="col-md-10"]
 {
-    width: 83.33% !important;
+    width: 83.33vw !important;
 }
 
 *[class~="col-md-11"]
 {
-    width: 91.66% !important;
+    width: 91.66vw !important;
 }
 
 *[class~="col-md-12"]
 {
-    width: 100% !important;
+    width: 100vw !important;
 }
