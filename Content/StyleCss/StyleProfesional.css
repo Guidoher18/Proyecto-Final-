@@ -20,6 +20,8 @@ body
 input
 {
     border-radius: 10px;
+    text-align:center;
+    text-transform: uppercase;
 }
 
 select
@@ -46,6 +48,11 @@ select
     display:inline;
 }
 
+#Firma
+{
+    height: 15vh;
+    width: 20vw;
+}
 
 /* Fondo Transparente detras de cada Profdiv*/
 #Profdiv1
