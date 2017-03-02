@@ -17,11 +17,22 @@ body
     height:100vh;
 }
 /*Estilo de elementos de Formulario*/
+
 input
 {
     border-radius: 10px;
     text-align:center;
     text-transform: uppercase;
+}
+
+#Email
+{
+    text-transform:none !important;
+}
+
+#Skype
+{
+    text-transform:none !important;
 }
 
 select
@@ -43,35 +54,45 @@ select
     border-radius:10px;
 }
 
-.Matricula
-{
-    display:inline;
-}
-
 #Firma
 {
-    height: 15vh;
-    width: 20vw;
+    font-family: 'Rochester', cursive;
+    text-align:left;
+    font-weight: 700;
+    font-size: 400%;
+}
+
+#Firmadiv
+{
+    width: 25vw;
+    position: relative;
+    z-index: 1;
 }
 
 #FotoPerfil
 {
-    height: 30vh;
-    width: 18vw;
+    height: 21.8vh;
+    width: 12vw;
 }
 
 /* Fondo Transparente detras de cada Profdiv*/
+form>div
+{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: auto;   
+}
+/*
 #Profdiv1
 {
     background-color: rgba(255, 255, 255, 0.5);
-    height: 85vh;   
+    height: auto;   
 }
 
 #Profdiv2
 {
     background-color: rgba(255, 255, 255, 0.5);
-    height: 85vh;   
-}
+    height: auto; 
+} */
 
 /*Medidas de Columnas en vw para sobreescribir width:100vw de .form-control*/
 *[class~="col-md-1"]

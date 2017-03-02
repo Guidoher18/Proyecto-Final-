@@ -1,14 +1,22 @@
 #Profdiv1
 {
     position:relative;
-    padding-left: 8.33%;
+    /*padding-left: 8.33%;*/
+    padding-left: 8.33vw;
+    padding-right: 8.33vw;
 }
 
 
 #Profdiv2
 {
     position:relative;
-    padding-left: 8.33%;
+    padding-right: 8.33vw;
+}
+
+.alineadovertical
+{
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
 }
 
 #Submit
