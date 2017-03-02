@@ -1,7 +1,6 @@
 #Profdiv1
 {
     position:relative;
-    /*padding-left: 8.33%;*/
     padding-left: 8.33vw;
     padding-right: 8.33vw;
 }
@@ -27,14 +26,46 @@
 
 #MP
 {
-    padding-left:5px;
-    padding-right:5px;
+    padding-left:0.3906vw;
+    padding-right:0.3906vw;
 }
 
 #MN
 {
-    padding-left:5px;
-    padding-right:5px;
+    padding-left:0.3906vw;
+    padding-right:0.3906vw;
+}
+
+#Direccion
+{
+    margin-top:6vh;
+}
+
+#Firmadiv
+{
+    position: relative;
+    z-index: 2;
+    bottom: 1.5129vh;
+    left:25vw;
+    padding-left:1vw;
+}
+
+#Firmadiv>label
+{
+    margin-left:16.66vw;
+}
+
+#Matricula
+{
+    position:absolute;
+    z-index: 1;
+    margin-top: 1.5129vh;    
+}
+
+#Matricula>div[class="form-group"]
+{
+    padding-top:0.3404vh;
+    padding-bottom:0.3404vh;
 }
 
 /* Para corregir el margin left y right de -15px en .row*/
@@ -46,7 +77,7 @@
 
 #Titulo
 {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 0.3906vw;
+    padding-right: 0.3906vw;
 }
 

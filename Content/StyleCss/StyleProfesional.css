@@ -50,23 +50,27 @@ select
 
 .form-control
 {
-    /*display:inline;*/
     border-radius:10px;
 }
 
 #Firma
 {
     font-family: 'Rochester', cursive;
-    text-align:left;
+    text-align:center;
     font-weight: 700;
     font-size: 400%;
+    background-color: rgba(255,255,255,0.8)
 }
 
 #Firmadiv
 {
     width: 25vw;
-    position: relative;
-    z-index: 1;
+    height: 10vh;
+}
+
+#Matricula
+{
+    height: 10vh;
 }
 
 #FotoPerfil
@@ -81,18 +85,6 @@ form>div
     background-color: rgba(255, 255, 255, 0.5);
     height: auto;   
 }
-/*
-#Profdiv1
-{
-    background-color: rgba(255, 255, 255, 0.5);
-    height: auto;   
-}
-
-#Profdiv2
-{
-    background-color: rgba(255, 255, 255, 0.5);
-    height: auto; 
-} */
 
 /*Medidas de Columnas en vw para sobreescribir width:100vw de .form-control*/
 *[class~="col-md-1"]
