@@ -5,12 +5,19 @@
     padding-right: 8.33vw;
 }
 
-
 #Profdiv2
 {
     position:relative;
     padding-right: 8.33vw;
+    padding-left:0px;
 }
+
+form>img
+{
+    margin-left:83.66vw;
+    /*margin-right:44vw*/
+}
+
 
 .alineadovertical
 {
@@ -21,6 +28,8 @@
 #Submit
 {
     position:relative;
+    margin-left: 8.33vw;
+    margin-right: 8.33vw;*/
 }
 
 
@@ -74,8 +83,8 @@
 
 form
 {
-    margin-top: 25.7186vh;
-    margin-bottom: 25.7186vh;
+    margin-top: 12vh;
+    margin-bottom: 12vh;
 }
 
 #Matricula>div[class="form-group"]
