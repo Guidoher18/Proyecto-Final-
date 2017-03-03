@@ -52,56 +52,58 @@
     <form action="#" method="POST">
         <div class="form-group">
             <div class="col-md-8" id="Profdiv1">
-                <label>Apellido y Nombre</label>
-                    <br> <select name="Titulo" id="Titulo" class="form-control col-md-1">
+                <div id="Apellido">
+                    <label>Apellido y Nombre</label><br>
+                    <select name="Titulo" id="Titulo" class="form-control col-md-1">
                         <option value="Lic." default>Lic.</option>
                         <option value="Mg.">Mg.</option>
                         <option value="Dr.">Dr.</option>
                     </select>
                     <input type="text" class="form-control col-md-5"/><br>
-                    <!-- El input de Especialidad aparece sólo si se elige Mg. o Dr. -->
-                    <div id="especialista"> 
-                        <label>Esp. en: </label>
-                        <input type="text" name="Esp."/> 
+                </div>
+                <!-- El input de Especialidad aparece sólo si se elige Mg. o Dr. -->
+                <div id="especialista"> 
+                    <label>Esp. en: </label>
+                    <input type="text" name="Esp."/> 
+                </div><br>
+                <div class="form-inline" id="Matricula">
+                    <label>Matrícula</label> <br>
+                    <div class="form-group">
+                        <label class="col-md-1 text-center alineadovertical">MN</label>
+                        <input type="text" name="MN" id="MN" class="form-control col-md-2"/>
                     </div><br>
-                    <div class="form-inline" id="Matricula">
-                        <label>Matrícula</label> <br>
-                        <div class="form-group">
-                            <label class="col-md-1 text-center alineadovertical">MN</label>
-                            <input type="text" name="MN" id="MN" class="form-control col-md-2"/>
-                        </div><br>
-                        <div class="form-group"> 
-                            <label class="col-md-1 text-center alineadovertical">MP</label>
-                            <input type="text" name="MP" id="MP" class="form-control col-md-2 "/>
-                        </div>
-                    </div> <br>
+                    <div class="form-group"> 
+                        <label class="col-md-1 text-center alineadovertical">MP</label>
+                        <input type="text" name="MP" id="MP" class="form-control col-md-2 "/>
+                    </div>
+                </div><br>
                 <div id="Firmadiv">
                     <label>Firma Digital</label> <br>
-                        <p id="Firma">Juan Perez</p> <br>
+                    <p id="Firma">Juan Perez</p> <br>
                 </div>
                 <div id="Direccion">
-                <label>Dirección Profesional / Institucional</label> <br>
+                    <label>Dirección Profesional / Institucional</label> <br>
                     <input type="text" name="DireccionProf" class="form-control col-md-6"/>
                 </div>
             </div>
             <div class="col-md-4" id="Profdiv2">    
-                <img src="C:\Users\Guido\Desktop\Comunidad IT\Proyecto-Final-\Content\Images\Other\FotoPerfil.png" name="FotoPerfil" id="FotoPerfil"/><br>
+            <!--    <img src="../Content/Images/Other/FotoPerfil.png" name="FotoPerfil" id="FotoPerfil"/><br> -->
                 <div class="row">
-                <label><span class="glyphicon glyphicon-phone"></span> Celular</label> <br>
+                    <label><span class="glyphicon glyphicon-phone"></span> Celular</label> <br>
                     <input type="text" name="Cel" class="form-control col-md-3"/> <br>
                 </div>
-                <div class="row">
-                <label><span class="glyphicon glyphicon-earphone"></span> Teléfono</label> <br>
+                <div class="row" id="Telefono">
+                    <label><span class="glyphicon glyphicon-earphone"></span> Teléfono</label> <br>
                     <input type="text" name="Tel" class="form-control col-md-3"/> <br>
                 </div>
                 <div class="row">
-                <label><span class="glyphicon glyphicon-envelope"></span> Email</label> <br>
+                    <label><span class="glyphicon glyphicon-envelope"></span> Email</label> <br>
                     <input type="email" name="Email" id="Email"class="form-control col-md-3"/> <br>
                 </div>
-                <div class="row">
-                <label><span class="glyphicon glyphicon-facetime-video"></span> Skype</label> <br>
+                <div class="row" id="Skype">
+                    <label><span class="glyphicon glyphicon-facetime-video"></span> Skype</label> <br>
                     <input type="text" name="Skype" id="Skype" class="form-control col-md-3"/> <br>
-                </div>
+                </div><br>
             </div>
             <input type="submit" value="Cargar" class="btn btn-success" id="Submit">
         </div>

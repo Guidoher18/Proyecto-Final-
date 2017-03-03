@@ -50,6 +50,16 @@
     padding-left:1vw;
 }
 
+#Telefono
+{
+    margin-top: 0.643vh;
+}
+
+#Skype
+{
+    margin-top: 0.643vh;
+}
+
 #Firmadiv>label
 {
     margin-left:16.66vw;
@@ -60,6 +70,12 @@
     position:absolute;
     z-index: 1;
     margin-top: 1.5129vh;    
+}
+
+form
+{
+    margin-top: 25.7186vh;
+    margin-bottom: 25.7186vh;
 }
 
 #Matricula>div[class="form-group"]

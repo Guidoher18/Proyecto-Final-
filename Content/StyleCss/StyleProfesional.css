@@ -59,7 +59,6 @@ select
     text-align:center;
     font-weight: 700;
     font-size: 400%;
-    background-color: rgba(255,255,255,0.8)
 }
 
 #Firmadiv
@@ -80,9 +79,9 @@ select
 }
 
 /* Fondo Transparente detras de cada Profdiv*/
-form>div
+form
 {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     height: auto;   
 }
 
