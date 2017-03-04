@@ -3,6 +3,8 @@
     position:relative;
     padding-left: 8.33vw;
     padding-right: 8.33vw;
+    top: 12.3298vh;
+    bottom: 12.3298vh;
 }
 
 #Profdiv2
@@ -12,10 +14,9 @@
     padding-left:0px;
 }
 
-form>img
+#Profdiv2>img
 {
-    margin-left:83.66vw;
-    /*margin-right:44vw*/
+    margin-left:6.4998vw;
 }
 
 
@@ -29,7 +30,7 @@ form>img
 {
     position:relative;
     margin-left: 8.33vw;
-    margin-right: 8.33vw;*/
+    margin-right: 8.33vw;
 }
 
 
@@ -73,6 +74,32 @@ form>img
 {
     margin-left:16.66vw;
 }
+
+#CelularLabel
+{
+    margin-left: 9.6875vw;
+    margin-right: 9.6875vw;
+}
+
+#TelefonoLabel
+{
+    margin-left: 9.2980vw;
+    margin-right: 9.2980vw;
+}
+
+#EmailLabel
+{
+   margin-left: 10.1953vw; 
+   margin-right: 10.1953vw; 
+}
+
+#SkypeLabel
+{
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+
 
 #Matricula
 {

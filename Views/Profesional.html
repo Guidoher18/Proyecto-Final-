@@ -50,7 +50,6 @@
 
     <!-- START VIEW -->    
     <form action="#" method="POST">
-    <img src="../Content/Images/Other/FotoPerfil.png" class="img-rounded text-center" name="FotoPerfil" id="FotoPerfil"/><br>
         <div class="form-group">
             <div class="col-md-8" id="Profdiv1">
                 <div id="Apellido">
@@ -88,20 +87,21 @@
                 </div>
             </div>
             <div class="col-md-4" id="Profdiv2">    
+                <img src="../Content/Images/Other/FotoPerfil.png" class="img-rounded text-center" name="FotoPerfil" id="FotoPerfil"/><br>
                 <div class="row">
-                    <label><span class="glyphicon glyphicon-phone"></span> Celular</label> <br>
-                    <input type="text" name="Cel" class="form-control col-md-3"/> <br>
+                    <label id="CelularLabel"><span class="glyphicon glyphicon-phone"></span>&nbsp; Celular</label> <br>
+                    <input type="text" name="Celular" class="form-control col-md-3"/> <br>
                 </div>
                 <div class="row" id="Telefono">
-                    <label><span class="glyphicon glyphicon-earphone"></span> Teléfono</label> <br>
-                    <input type="text" name="Tel" class="form-control col-md-3"/> <br>
+                    <label id="TelefonoLabel"><span class="glyphicon glyphicon-earphone"></span>&nbsp; Teléfono</label> <br>
+                    <input type="text" name="Telefono" class="form-control col-md-3"/> <br>
                 </div>
                 <div class="row">
-                    <label><span class="glyphicon glyphicon-envelope"></span> Email</label> <br>
+                    <label id="EmailLabel"><span class="glyphicon glyphicon-envelope"></span>&nbsp; Email</label> <br>
                     <input type="email" name="Email" id="Email"class="form-control col-md-3"/> <br>
                 </div>
                 <div class="row" id="Skype">
-                    <label><span class="glyphicon glyphicon-facetime-video"></span> Skype</label> <br>
+                    <label id="SkypeLabel"><span class="glyphicon glyphicon-facetime-video"></span>&nbsp; Skype</label> <br>
                     <input type="text" name="Skype" id="Skype" class="form-control col-md-3"/> <br>
                 </div><br>
             </div>
