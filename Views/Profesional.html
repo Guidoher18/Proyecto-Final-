@@ -56,16 +56,18 @@
                     <label>Apellido y Nombre</label><br>
                     <select name="Titulo" id="Titulo" class="form-control col-md-1">
                         <option value="Lic." default>Lic.</option>
-                        <option value="Mg.">Mg.</option>
-                        <option value="Dr.">Dr.</option>
+                        <option value="Mg." id="Mg">Mg.</option>
+                        <option value="Dr." id="Dr">Dr.</option>
                     </select>
-                    <input type="text" class="form-control col-md-5"/><br>
+                    <input type="text" class="form-control col-md-5"/>
                 </div>
                 <!-- El input de Especialidad aparece sólo si se elige Mg. o Dr. -->
-                <div id="especialista"> 
-                    <label>Esp. en: </label>
-                    <input type="text" name="Esp."/> 
-                </div><br>
+                <br id="InsertarEspecialista">
+                    <div id="Especialista"> 
+                            <label>Especialista en: </label>
+                            <input type="text" name="Esp." class="form-control col-md-6"/> 
+                    </div>
+                <br>
                 <div class="form-inline" id="Matricula">
                     <label>Matrícula</label> <br>
                     <div class="form-group">
@@ -111,7 +113,8 @@
     <!-- END VIEW -->
 
     <!-- SCRIPTS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="../Scripts/Profesional.js"></script>
 </body>
