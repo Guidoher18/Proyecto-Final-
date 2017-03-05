@@ -3,11 +3,22 @@
     z-index:-1;
 }
 
+#InputFoto
+{
+    z-index:-1;
+}
 
-#DragFirma
+
+#DragFirma div
 {    
-    padding-top:2.5703vh;
-    padding-bottom:2.5703vh;
+    padding-top:1.0575vh;
+    padding-bottom:1.0575vh;
+}
+
+#DragFirma img
+{
+    margin-top: 1.0567vh;
+    margin-bottom: 1.0567vh;
 }
 
 #DragFirma p
@@ -15,7 +26,21 @@
     display:inline;
 }
 
+#DragFotoPerfil
+{
+    margin-left: 6.5vw;
+}
 
+#DragFotoPerfil p
+{
+    margin:0 !important;
+}
+
+#DragFotoPerfil div
+{
+    margin-top: 3.94vh;
+    margin-bottom: 3.94vh;
+}
 
 #Profdiv1
 {

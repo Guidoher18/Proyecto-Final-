@@ -28,10 +28,30 @@ $(document).ready(function(){
         $('#Firma').toggle();
     }); 
     
-//Cuando se hace clic sobre #DragFirma se hace clic sobre el 'Seleccionar Archivo' del Input type="file" oculto    
+//Cuando se hace clic sobre #DragFirma se hace clic sobre el 'Seleccionar Archivo' del Input type="file"(#InputFirma) oculto    
     $('#DragFirma').on('click',function(){
         $('#InputFirma').click();
     });
+
+//Cuando se posiciona el cursor sobre #FotoPerfil cambia a #DragFotoPerfil, reversible cuando se aleja    
+    $('#FotoPerfil').mouseenter(function(){
+        $('#DragFotoPerfil').toggle();
+        $('#FotoPerfil').toggle();
+    });
+    $('#DragFotoPerfil').mouseleave(function(){
+        $('#DragFotoPerfil').toggle();
+        $('#FotoPerfil').toggle();
+    });
+    
+//Cuando se hace clic sobre #DragFotoPerfil se hace clic sobre el 'Seleccionar Archivo' del Input type="file" (#InputFoto) oculto    
+    $('#DragFotoPerfil').on('click',function(){
+        $('#InputFoto').click();
+    });
+
+
+
+
+
 
 
 

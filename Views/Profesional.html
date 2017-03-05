@@ -81,22 +81,29 @@
                 </div><br>
                 <div id="Firmadiv">
                     <label>Firma Digital</label> <br>
-                    <p id="Firma">Juan Perez</p> <br>
-                    <input type="file" id="InputFirma" onchange="handleFiles(this.files)"/>
-                    <div id="DragFirma">
+                    <div id="DragFirma" class="Drag">
                         <div>
-                        <p>SELECCIONA &nbsp;</p><img src="../Content/Images/Other/Clip.png"/><p>&nbsp; ARRASTRA</p>
+                            <p>SELECCIONA &nbsp;</p><img src="../Content/Images/Other/Clip.png" class="clip"/><p>&nbsp; ARRASTRA</p>
                         </div>
                     </div>
+                    <p id="Firma">Juan Perez</p> <br>
+                    <input type="file" id="InputFirma" class="Invisible" onchange="handleFiles(this.files)"/>
                 </div>
-
                 <div id="Direccion">
                     <label>Dirección Profesional / Institucional</label> <br>
                     <input type="text" name="DireccionProf" class="form-control col-md-6"/>
                 </div>
             </div>
             <div class="col-md-4" id="Profdiv2">    
-                <img src="../Content/Images/Other/FotoPerfil.png" class="img-rounded text-center" name="FotoPerfil" id="FotoPerfil"/><br>
+                <img src="../Content/Images/Other/FotoPerfil.png" class="img-rounded text-center" name="FotoPerfil" id="FotoPerfil"/>
+                <div id="DragFotoPerfil" class="Drag">
+                    <div>
+                        <p>SELECCIONA</p>
+                        <img src="../Content/Images/Other/Clip.png" class="clip"/>
+                        <p>ARRASTRA</p>
+                    </div>
+                </div>
+                <input type="file" id="InputFoto" class="Invisible" onchange="handleFiles(this.files)"/>
                 <div class="row">
                     <label id="CelularLabel"><span class="glyphicon glyphicon-phone"></span>&nbsp; Celular</label> <br>
                     <input type="text" name="Celular" class="form-control col-md-3"/> <br>
