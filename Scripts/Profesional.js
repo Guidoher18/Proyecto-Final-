@@ -1,3 +1,31 @@
+
+//Cuando se hace clic sobre la firma <p> se hace clic sobre el 'Seleccionar Archivo' del Input type="file" oculto
+$(document).ready(function(){
+    $('#Firma').on('click',function(){
+        $('#InputFirma').click();
+    });
+});
+
+
+
+
+$(document).ready(function(){
+    $('#Firma').hover(function(){
+        $('#DragFirma').css('display','none');
+        $('#Firma').css('display','block');
+    });
+}); 
+
+
+
+
+
+
+
+
+
+
+
 //VALIDAR CAMPOS DEL FORMULARIO
 //FIRMA DIGITAL, por favor suba una imagen que ... etc
 // FOTO 4x4

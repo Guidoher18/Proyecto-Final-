@@ -1,3 +1,22 @@
+#InputFirma
+{
+    z-index:-1;
+}
+
+
+#DragFirma
+{    
+    padding-top:3.5499vh;
+    padding-bottom:3.5499vh;
+}
+
+#DragFirma p
+{
+    display:inline;
+}
+
+
+
 #Profdiv1
 {
     position:relative;

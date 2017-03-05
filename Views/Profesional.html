@@ -82,7 +82,14 @@
                 <div id="Firmadiv">
                     <label>Firma Digital</label> <br>
                     <p id="Firma">Juan Perez</p> <br>
+                    <input type="file" id="InputFirma" onchange="handleFiles(this.files)"/>
+                    <div id="DragFirma">
+                        <div>
+                        <p>SELECCIONA &nbsp;</p><img src="../Content/Images/Other/Clip.png"/><p>&nbsp; ARRASTRA</p><br>
+                        </div>
+                    </div>
                 </div>
+
                 <div id="Direccion">
                     <label>Dirección Profesional / Institucional</label> <br>
                     <input type="text" name="DireccionProf" class="form-control col-md-6"/>

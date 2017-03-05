@@ -1,3 +1,29 @@
+#InputFirma
+{
+    display:none;
+}
+
+#DragFirma
+{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight:bold;
+    text-align:center;
+    color: rgb(51,51,51);
+    border:3px solid #33312A;
+    width: 24vw;
+    height: 12.1020vh;
+    display:none;
+}
+
+#DragFirma img
+{
+    height:5vh;
+    width:3vw;
+}
+
+
+
 #InsertarEspecialidad
 {
     display:none;
@@ -60,6 +86,11 @@ select
     text-align:center;
     font-weight: 700;
     font-size: 400%;
+    /*cursor: pointer;*/
+    user-select:none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 #Firmadiv
