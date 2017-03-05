@@ -1,38 +1,7 @@
 
-//Cuando se hace clic sobre la firma <p> se hace clic sobre el 'Seleccionar Archivo' del Input type="file" oculto
 $(document).ready(function(){
-    $('#Firma').on('click',function(){
-        $('#InputFirma').click();
-    });
-});
 
-
-
-
-$(document).ready(function(){
-    $('#Firma').hover(function(){
-        $('#DragFirma').css('display','none');
-        $('#Firma').css('display','block');
-    });
-}); 
-
-
-
-
-
-
-
-
-
-
-
-//VALIDAR CAMPOS DEL FORMULARIO
-//FIRMA DIGITAL, por favor suba una imagen que ... etc
-// FOTO 4x4
-//Campos required
-
-//El div Especialidad se inserta cuando se elige como #Titulo, Mg. o Dr.
-$(document).ready(function(){
+//El div Especialidad se inserta cuando se elige como #Titulo, Mg. o Dr.    
     $('#Titulo').change(function(){
         var $elegido = $("#Titulo").val();
         if ($elegido == "Mg."){
@@ -47,5 +16,39 @@ $(document).ready(function(){
             $('#InsertarEspecialidad').css('display','none');
             $('#Profdiv1').css({'top':'12.3298vh', 'bottom':'12.3298vh'});                        
         };        
+    });    
+    
+//Cuando se posiciona el cursor sobre #Firma cambia a #DragFirma, reversible cuando se aleja    
+    $('#Firma').mouseenter(function(){
+        $('#DragFirma').toggle();
+        $('#Firma').toggle();
     });
+    $('#DragFirma').mouseleave(function(){
+        $('#DragFirma').toggle();
+        $('#Firma').toggle();
+    }); 
+    
+//Cuando se hace clic sobre #DragFirma se hace clic sobre el 'Seleccionar Archivo' del Input type="file" oculto    
+    $('#DragFirma').on('click',function(){
+        $('#InputFirma').click();
+    });
+
+
+
+
 });
+
+
+
+
+
+
+
+
+
+
+
+//VALIDAR CAMPOS DEL FORMULARIO
+// FOTO 4x4
+//Campos required
+

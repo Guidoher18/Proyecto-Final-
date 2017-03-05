@@ -10,16 +10,19 @@
     font-weight:bold;
     text-align:center;
     color: rgb(51,51,51);
-    border:3px solid #33312A;
+    border:3px solid rgba(51,51,51,.3);
     width: 24vw;
     height: 12.1020vh;
     display:none;
+    cursor: pointer;
+    background-color:rgba(255,255,255,.6);
+    border-radius: 10px;
 }
 
 #DragFirma img
 {
-    height:5vh;
-    width:3vw;
+    height:7vh;
+    width:3.7vw;
 }
 
 
@@ -86,7 +89,6 @@ select
     text-align:center;
     font-weight: 700;
     font-size: 400%;
-    /*cursor: pointer;*/
     user-select:none;
     -webkit-user-select: none;
     -moz-user-select: none;

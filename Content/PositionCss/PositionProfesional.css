@@ -6,8 +6,8 @@
 
 #DragFirma
 {    
-    padding-top:3.5499vh;
-    padding-bottom:3.5499vh;
+    padding-top:2.5703vh;
+    padding-bottom:2.5703vh;
 }
 
 #DragFirma p
@@ -76,6 +76,10 @@
     bottom: 1.5129vh;
     left:25vw;
     padding-left:1vw;
+}
+#Firma
+{
+    margin-bottom:0 !important;
 }
 
 #Telefono
