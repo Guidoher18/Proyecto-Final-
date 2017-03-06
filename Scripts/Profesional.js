@@ -48,6 +48,17 @@ $(document).ready(function(){
         $('#InputFoto').click();
     });
 
+// Corrobora que el navegador Soporte las APIs File 
+if (window.File && window.FileReader && window.FileList && window.Blob) {
+  // Todas las APIs File son soportadas
+} else {
+  alert('Su navegador no soporta completamente la API FILE, para un optimo funcionamiento se recomienda utilizar otro navegador como Chrome, Firefox u Opera');
+}
+
+
+
+
+
 
 
 
@@ -57,7 +68,6 @@ $(document).ready(function(){
 
 
 });
-
 
 
 
