@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 
 //El div Especialidad se inserta cuando se elige como #Titulo, Mg. o Dr.    
@@ -18,43 +17,44 @@ $(document).ready(function(){
         };        
     });    
     
-//Cuando se posiciona el cursor sobre #Firma cambia a #DragFirma, reversible cuando se aleja    
+//Cuando se posiciona el cursor sobre #Firma cambia a #DragFirma 
     $('#Firma').mouseenter(function(){
-        $('#DragFirma').toggle();
+        $('#DragFirma').fadeToggle(900);
         $('#Firma').toggle();
     });
-    $('#DragFirma').mouseleave(function(){
-        $('#DragFirma').toggle();
-        $('#Firma').toggle();
-    }); 
+
     
 //Cuando se hace clic sobre #DragFirma se hace clic sobre el 'Seleccionar Archivo' del Input type="file"(#InputFirma) oculto    
     $('#DragFirma').on('click',function(){
         $('#InputFirma').click();
     });
 
-//Cuando se posiciona el cursor sobre #FotoPerfil cambia a #DragFotoPerfil, reversible cuando se aleja    
+//Cuando se posiciona el cursor sobre #FotoPerfil cambia a #DragFotoPerfil 
     $('#FotoPerfil').mouseenter(function(){
-        $('#DragFotoPerfil').toggle();
+        $('#DragFotoPerfil').fadeToggle(900);
         $('#FotoPerfil').toggle();
     });
-    $('#DragFotoPerfil').mouseleave(function(){
-        $('#DragFotoPerfil').toggle();
-        $('#FotoPerfil').toggle();
-    });
+
     
 //Cuando se hace clic sobre #DragFotoPerfil se hace clic sobre el 'Seleccionar Archivo' del Input type="file" (#InputFoto) oculto    
     $('#DragFotoPerfil').on('click',function(){
         $('#InputFoto').click();
     });
 
-// Corrobora que el navegador Soporte las APIs File 
-if (window.File && window.FileReader && window.FileList && window.Blob) {
-  // Todas las APIs File son soportadas
-} else {
-  alert('Su navegador no soporta completamente la API FILE, para un optimo funcionamiento se recomienda utilizar otro navegador como Chrome, Firefox u Opera');
-}
 
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
 
@@ -70,7 +70,7 @@ if (window.File && window.FileReader && window.FileList && window.Blob) {
 });
 
 
-
+    
 
 
 
@@ -79,6 +79,29 @@ if (window.File && window.FileReader && window.FileList && window.Blob) {
 
 
 //VALIDAR CAMPOS DEL FORMULARIO
-// FOTO 4x4
-//Campos required
+        //Contenido
+        // Cruz o Tilde
+        //Mensaje de Sugerencia
+//DRAGZONE
+        //Arrastrar y cargar el archivo
+        //Limite de MB
+
+//Si no pasa el cursor por #Firma o #FotoPerfil se posiciona el cursor automáticamente 
+/*
+if ($('#Direccion>input').on(':focus'))
+    alert('Esta Oculto');  */
+
+
+
+
+// Corrobora que el navegador Soporte las APIs File 
+if (window.File && window.FileReader && window.FileList && window.Blob) {
+  // Todas las APIs File son soportadas
+} else {
+  alert('Su navegador no soporta completamente la API FILE, para un optimo funcionamiento se recomienda utilizar otro navegador como Chrome, Firefox u Opera');
+}
+
+
+
+
 
