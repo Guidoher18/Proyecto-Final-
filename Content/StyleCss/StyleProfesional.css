@@ -137,12 +137,7 @@ select /* Corresponde al Título Obtenido Lic., Mg. o Dr. */
     display:block;
 }
 
-#Email
-{
-    text-transform:none !important;
-}
-
-#Skype
+.Minuscula /* Se aplica al Email y Skype Input */
 {
     text-transform:none !important;
 }

@@ -92,6 +92,7 @@ form /* Centra el Formulario Verticalmente */
     margin-top:6vh;
 }
 
+/* CENTRAR LABELS */
 #CelularLabel
 {
     margin-left: 9.6875vw;
@@ -102,11 +103,6 @@ form /* Centra el Formulario Verticalmente */
 {
     margin-left: 9.2980vw;
     margin-right: 9.2980vw;
-}
-
-#Telefono
-{
-    margin-top: 0.643vh;
 }
 
 #EmailLabel
@@ -121,7 +117,7 @@ form /* Centra el Formulario Verticalmente */
     margin-right: 10vw;
 }
 
-#Skype
+#Profdiv2 label /* Alínea los labels Verticalmente */
 {
     margin-top: 0.643vh;
 }

@@ -52,7 +52,7 @@
     <form action="#" method="POST">
         <div class="form-group">
             <div class="col-md-8" id="Profdiv1"> <!-- Datos Profesionales -->
-                <div id="Apellido"> <!-- Apellido, Nombre y Título -->
+                <div> <!-- Apellido, Nombre y Título -->
                     <label>Apellido y Nombre</label><br>
                     <select name="Titulo" id="Titulo" class="form-control col-md-1">
                         <option value="Lic." default>Lic.</option>
@@ -104,21 +104,21 @@
                     </div>
                 </div>
                 <input type="file" id="InputFoto" class="Invisible" onchange="handleFiles(this.files)"/>
-                <div class="row"> <!-- Celular -->
+                <div class="row" id="Celular"> <!-- Celular -->
                     <label id="CelularLabel"><span class="glyphicon glyphicon-phone"></span>&nbsp; Celular</label> <br>
                     <input type="text" name="Celular" class="form-control col-md-3"/> <br>
                 </div>
-                <div class="row"> <!-- Teléfono -->
+                <div class="row" id="Telefono"> <!-- Teléfono -->
                     <label id="TelefonoLabel"><span class="glyphicon glyphicon-earphone"></span>&nbsp; Teléfono</label> <br>
                     <input type="text" name="Telefono" class="form-control col-md-3"/> <br>
                 </div>
-                <div class="row"> <!-- Email -->
+                <div class="row" id="Email"> <!-- Email -->
                     <label id="EmailLabel"><span class="glyphicon glyphicon-envelope"></span>&nbsp; Email</label> <br>
-                    <input type="email" name="Email" id="Email"class="form-control col-md-3"/> <br>
+                    <input type="email" name="Email" class="form-control col-md-3 Minuscula"/> <br>
                 </div>
-                <div class="row"> <!-- Skype -->
+                <div class="row" id="Skype"> <!-- Skype -->
                     <label id="SkypeLabel"><span class="glyphicon glyphicon-facetime-video"></span>&nbsp; Skype</label> <br>
-                    <input type="text" name="Skype" id="Skype" class="form-control col-md-3"/> <br>
+                    <input type="text" name="Skype" class="form-control col-md-3 Minuscula"/> <br>
                 </div><br>
             </div>
             <input type="submit" value="Cargar" class="btn btn-success" id="Submit">
