@@ -80,7 +80,7 @@ $(document).ready(function(){
 
 //VALIDAR CAMPOS DEL FORMULARIO
         //Contenido
-        // Cruz o Tilde
+        //Cruz o Tilde
         //Mensaje de Sugerencia
 //DRAGZONE
         //Arrastrar y cargar el archivo
@@ -91,6 +91,8 @@ $(document).ready(function(){
 if ($('#Direccion>input').on(':focus'))
     alert('Esta Oculto');  */
 
+//HACER RESPONSIVE LA PÁGINA!!!
+//Chequear Fuentes Responsive
 
 
 

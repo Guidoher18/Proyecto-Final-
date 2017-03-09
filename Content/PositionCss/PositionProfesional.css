@@ -1,14 +1,141 @@
-#InputFirma
+form /* Centra el Formulario Verticalmente */
 {
-    z-index:-1;
+    margin-top: 12vh;
+    margin-bottom: 12vh;
 }
 
-#InputFoto
+/* Corrige el margin left y right de -15px de la clase .row */
+.row
 {
-    z-index:-1;
+    margin-left:0;
+    margin-right:0;
 }
 
+#Profdiv1 /* CONTIENE DATOS PROFESIONALES */
+{
+    position:relative;
+    padding-left: 8.33vw;
+    padding-right: 8.33vw;
+    top: 12.3298vh;
+    bottom: 12.3298vh;
+}
 
+#Profdiv2 /* CONTIENE DATOS DE CONTACTO */
+{
+    position:relative;
+    padding-right: 8.33vw;
+    padding-left:0px;
+}
+
+#Profdiv2>img
+{
+    margin-left:6.4998vw;
+}
+
+#Titulo
+{
+    padding: 0 2.40vw;
+}
+
+#Matricula /* Contiene a los dos div de MN y MP */
+{
+    position:absolute;
+    z-index: 1;
+    margin-top: 1.5129vh;    
+}
+
+#Matricula>div[class="form-group"] /* Cada div contiene el Label y el Input de MN y MP */
+{
+    padding-top:0.3404vh;
+    padding-bottom:0.3404vh;
+}
+
+.alineadovertical /* Centra los div de MN y MP */
+{
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+}
+
+#MN
+{
+    padding-left:0.3906vw;
+    padding-right:0.3906vw;
+}
+
+#MP
+{
+    padding-left:0.3906vw;
+    padding-right:0.3906vw;
+}
+
+#Firmadiv
+{
+    position: relative;
+    z-index: 2;
+    bottom: 1.5129vh;
+    left:25vw;
+    padding-left:1vw;
+}
+
+#Firmadiv>label
+{
+    margin-left:16.66vw;
+}
+
+#Firma
+{
+    margin-bottom:0 !important;
+}
+
+#Direccion
+{
+    margin-top:6vh;
+}
+
+#CelularLabel
+{
+    margin-left: 9.6875vw;
+    margin-right: 9.6875vw;
+}
+
+#TelefonoLabel
+{
+    margin-left: 9.2980vw;
+    margin-right: 9.2980vw;
+}
+
+#Telefono
+{
+    margin-top: 0.643vh;
+}
+
+#EmailLabel
+{
+   margin-left: 10.1953vw; 
+   margin-right: 10.1953vw; 
+}
+
+#SkypeLabel
+{
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+#Skype
+{
+    margin-top: 0.643vh;
+}
+
+#Submit
+{
+    position:relative;
+    margin-left: 8.33vw;
+    margin-right: 8.33vw;
+}
+
+/* DRAGZONES */
+
+/* DRAGFIRMA */
 #DragFirma div
 {    
     padding-top:1.0575vh;
@@ -26,6 +153,18 @@
     display:inline;
 }
 
+#InputFirma
+{
+    z-index:-1;
+}
+
+/* DRAGFOTOPERFIL */
+#DragFotoPerfil div
+{
+    margin-top: 3.94vh;
+    margin-bottom: 3.94vh;
+}
+
 #DragFotoPerfil
 {
     margin-left: 6.5vw;
@@ -36,146 +175,22 @@
     margin:0 !important;
 }
 
-#DragFotoPerfil div
+#InputFoto
 {
-    margin-top: 3.94vh;
-    margin-bottom: 3.94vh;
-}
-
-#Profdiv1
-{
-    position:relative;
-    padding-left: 8.33vw;
-    padding-right: 8.33vw;
-    top: 12.3298vh;
-    bottom: 12.3298vh;
-}
-
-#Profdiv2
-{
-    position:relative;
-    padding-right: 8.33vw;
-    padding-left:0px;
-}
-
-#Profdiv2>img
-{
-    margin-left:6.4998vw;
-}
-
-
-.alineadovertical
-{
-    padding-top: 0.5vw;
-    padding-bottom: 0.5vw;
-}
-
-#Submit
-{
-    position:relative;
-    margin-left: 8.33vw;
-    margin-right: 8.33vw;
-}
-
-#MP
-{
-    padding-left:0.3906vw;
-    padding-right:0.3906vw;
-}
-
-#MN
-{
-    padding-left:0.3906vw;
-    padding-right:0.3906vw;
-}
-
-#Direccion
-{
-    margin-top:6vh;
-}
-
-#Firmadiv
-{
-    position: relative;
-    z-index: 2;
-    bottom: 1.5129vh;
-    left:25vw;
-    padding-left:1vw;
-}
-#Firma
-{
-    margin-bottom:0 !important;
-}
-
-#Telefono
-{
-    margin-top: 0.643vh;
-}
-
-#Skype
-{
-    margin-top: 0.643vh;
-}
-
-#Firmadiv>label
-{
-    margin-left:16.66vw;
-}
-
-#CelularLabel
-{
-    margin-left: 9.6875vw;
-    margin-right: 9.6875vw;
-}
-
-#TelefonoLabel
-{
-    margin-left: 9.2980vw;
-    margin-right: 9.2980vw;
-}
-
-#EmailLabel
-{
-   margin-left: 10.1953vw; 
-   margin-right: 10.1953vw; 
-}
-
-#SkypeLabel
-{
-    margin-left: 10vw;
-    margin-right: 10vw;
+    z-index:-1;
 }
 
 
 
-#Matricula
-{
-    position:absolute;
-    z-index: 1;
-    margin-top: 1.5129vh;    
-}
 
-form
-{
-    margin-top: 12vh;
-    margin-bottom: 12vh;
-}
 
-#Matricula>div[class="form-group"]
-{
-    padding-top:0.3404vh;
-    padding-bottom:0.3404vh;
-}
 
-/* Para corregir el margin left y right de -15px en .row*/
-.row
-{
-    margin-left:0;
-    margin-right:0;
-}
 
-#Titulo
-{
-    padding: 0 2.40vw;
-}
+
+
+
+
+
+
+
 
