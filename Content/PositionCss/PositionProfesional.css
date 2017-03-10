@@ -1,4 +1,17 @@
-#Profdiv1
+form /* Centra el Formulario Verticalmente */
+{
+    margin-top: 12vh;
+    margin-bottom: 12vh;
+}
+
+/* Corrige el margin left y right de -15px de la clase .row */
+.row
+{
+    margin-left:0;
+    margin-right:0;
+}
+
+#Profdiv1 /* CONTIENE DATOS PROFESIONALES */
 {
     position:relative;
     padding-left: 8.33vw;
@@ -7,7 +20,7 @@
     bottom: 12.3298vh;
 }
 
-#Profdiv2
+#Profdiv2 /* CONTIENE DATOS DE CONTACTO */
 {
     position:relative;
     padding-right: 8.33vw;
@@ -19,24 +32,28 @@
     margin-left:6.4998vw;
 }
 
+#Titulo
+{
+    padding: 0 2.40vw;
+}
 
-.alineadovertical
+#Matricula /* Contiene a los dos div de MN y MP */
+{
+    position:absolute;
+    z-index: 1;
+    margin-top: 1.5129vh;    
+}
+
+#Matricula>div[class="form-group"] /* Cada div contiene el Label y el Input de MN y MP */
+{
+    padding-top:0.3404vh;
+    padding-bottom:0.3404vh;
+}
+
+.alineadovertical /* Centra los div de MN y MP */
 {
     padding-top: 0.5vw;
     padding-bottom: 0.5vw;
-}
-
-#Submit
-{
-    position:relative;
-    margin-left: 8.33vw;
-    margin-right: 8.33vw;
-}
-
-#MP
-{
-    padding-left:0.3906vw;
-    padding-right:0.3906vw;
 }
 
 #MN
@@ -45,9 +62,10 @@
     padding-right:0.3906vw;
 }
 
-#Direccion
+#MP
 {
-    margin-top:6vh;
+    padding-left:0.3906vw;
+    padding-right:0.3906vw;
 }
 
 #Firmadiv
@@ -59,21 +77,22 @@
     padding-left:1vw;
 }
 
-#Telefono
-{
-    margin-top: 0.643vh;
-}
-
-#Skype
-{
-    margin-top: 0.643vh;
-}
-
 #Firmadiv>label
 {
     margin-left:16.66vw;
 }
 
+#Firma
+{
+    margin-bottom:0 !important;
+}
+
+#Direccion
+{
+    margin-top:6vh;
+}
+
+/* CENTRAR LABELS */
 #CelularLabel
 {
     margin-left: 9.6875vw;
@@ -98,36 +117,76 @@
     margin-right: 10vw;
 }
 
-
-
-#Matricula
+#Profdiv2 label /* Alínea los labels Verticalmente */
 {
-    position:absolute;
-    z-index: 1;
-    margin-top: 1.5129vh;    
+    margin-top: 0.643vh;
 }
 
-form
+#Submit
 {
-    margin-top: 12vh;
-    margin-bottom: 12vh;
+    position:relative;
+    margin-left: 8.33vw;
+    margin-right: 8.33vw;
 }
 
-#Matricula>div[class="form-group"]
-{
-    padding-top:0.3404vh;
-    padding-bottom:0.3404vh;
+/* DRAGZONES */
+
+/* DRAGFIRMA */
+#DragFirma div
+{    
+    padding-top:1.0575vh;
+    padding-bottom:1.0575vh;
 }
 
-/* Para corregir el margin left y right de -15px en .row*/
-.row
+#DragFirma img
 {
-    margin-left:0;
-    margin-right:0;
+    margin-top: 1.0567vh;
+    margin-bottom: 1.0567vh;
 }
 
-#Titulo
+#DragFirma p
 {
-    padding: 0 2.40vw;
+    display:inline;
 }
+
+#InputFirma
+{
+    z-index:-1;
+}
+
+/* DRAGFOTOPERFIL */
+#DragFotoPerfil div
+{
+    margin-top: 3.94vh;
+    margin-bottom: 3.94vh;
+}
+
+#DragFotoPerfil
+{
+    margin-left: 6.5vw;
+}
+
+#DragFotoPerfil p
+{
+    margin:0 !important;
+}
+
+#InputFoto
+{
+    z-index:-1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

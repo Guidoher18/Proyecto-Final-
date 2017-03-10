@@ -9,8 +9,8 @@
 </head>
 <body>
     <!--NAVBAR-->
-    <nav class="navbar navbar-default navbar-static-top">
-      <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -18,7 +18,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">PsicoLog</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -51,8 +51,8 @@
     <!-- START VIEW -->    
     <form action="#" method="POST">
         <div class="form-group">
-            <div class="col-md-8" id="Profdiv1">
-                <div id="Apellido">
+            <div class="col-md-8" id="Profdiv1"> <!-- Datos Profesionales -->
+                <div> <!-- Apellido, Nombre y Título -->
                     <label>Apellido y Nombre</label><br>
                     <select name="Titulo" id="Titulo" class="form-control col-md-1">
                         <option value="Lic." default>Lic.</option>
@@ -61,14 +61,13 @@
                     </select>
                     <input type="text" class="form-control col-md-5"/>
                 </div><br>
-                <!-- El input de Especialidad aparece sólo si se elige Mg. o Dr. -->
-                <div id="InsertarEspecialidad">
+                <div id="InsertarEspecialidad"> <!-- Aparece sólo si se elige Mg. o Dr. -->
                     <br><div> 
                             <label>Especialista en: </label>
                             <input type="text" name="Esp." class="form-control col-md-6"/> 
                     </div><br>
                 </div><br>
-                <div class="form-inline" id="Matricula">
+                <div class="form-inline" id="Matricula"> <!-- Nacional y Provincial -->
                     <label>Matrícula</label> <br>
                     <div class="form-group">
                         <label class="col-md-1 text-center alineadovertical">MN</label>
@@ -79,32 +78,47 @@
                         <input type="text" name="MP" id="MP" class="form-control col-md-2 "/>
                     </div>
                 </div><br>
-                <div id="Firmadiv">
+                <div id="Firmadiv"> <!-- Firma de Ejemplo y div de Seleccionar o Arrastrar -->
                     <label>Firma Digital</label> <br>
+                    <div id="DragFirma" class="Drag">
+                        <div>
+                            <p>SELECCIONA &nbsp;</p><img src="../Content/Images/Other/Clip.png" class="Clip"/><p>&nbsp; ARRASTRA</p>
+                        </div>
+                    </div>
                     <p id="Firma">Juan Perez</p> <br>
+                    <input type="file" id="InputFirma" class="Invisible" onchange="handleFiles(this.files)"/>
                 </div>
-                <div id="Direccion">
+                <div id="Direccion"> 
                     <label>Dirección Profesional / Institucional</label> <br>
                     <input type="text" name="DireccionProf" class="form-control col-md-6"/>
                 </div>
             </div>
-            <div class="col-md-4" id="Profdiv2">    
-                <img src="../Content/Images/Other/FotoPerfil.png" class="img-rounded text-center" name="FotoPerfil" id="FotoPerfil"/><br>
-                <div class="row">
+            <div class="col-md-4" id="Profdiv2"> <!-- Datos de Contacto -->   
+                <!-- Foto Perfil de ejemplo y div de Seleccionar o Arrastrar -->
+                <img src="../Content/Images/Other/FotoPerfil.png" class="img-rounded text-center" name="FotoPerfil" id="FotoPerfil"/>
+                <div id="DragFotoPerfil" class="Drag">
+                    <div>
+                        <p>SELECCIONA</p>
+                        <img src="../Content/Images/Other/Clip.png" class="Clip"/>
+                        <p>ARRASTRA</p>
+                    </div>
+                </div>
+                <input type="file" id="InputFoto" class="Invisible" onchange="handleFiles(this.files)"/>
+                <div class="row" id="Celular"> <!-- Celular -->
                     <label id="CelularLabel"><span class="glyphicon glyphicon-phone"></span>&nbsp; Celular</label> <br>
                     <input type="text" name="Celular" class="form-control col-md-3"/> <br>
                 </div>
-                <div class="row" id="Telefono">
+                <div class="row" id="Telefono"> <!-- Teléfono -->
                     <label id="TelefonoLabel"><span class="glyphicon glyphicon-earphone"></span>&nbsp; Teléfono</label> <br>
                     <input type="text" name="Telefono" class="form-control col-md-3"/> <br>
                 </div>
-                <div class="row">
+                <div class="row" id="Email"> <!-- Email -->
                     <label id="EmailLabel"><span class="glyphicon glyphicon-envelope"></span>&nbsp; Email</label> <br>
-                    <input type="email" name="Email" id="Email"class="form-control col-md-3"/> <br>
+                    <input type="email" name="Email" class="form-control col-md-3 Minuscula"/> <br>
                 </div>
-                <div class="row" id="Skype">
+                <div class="row" id="Skype"> <!-- Skype -->
                     <label id="SkypeLabel"><span class="glyphicon glyphicon-facetime-video"></span>&nbsp; Skype</label> <br>
-                    <input type="text" name="Skype" id="Skype" class="form-control col-md-3"/> <br>
+                    <input type="text" name="Skype" class="form-control col-md-3 Minuscula"/> <br>
                 </div><br>
             </div>
             <input type="submit" value="Cargar" class="btn btn-success" id="Submit">

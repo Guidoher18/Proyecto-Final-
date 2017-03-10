@@ -1,92 +1,35 @@
-#InsertarEspecialidad
-{
-    display:none;
-}
-
-/*DEFINIR FUENTES RESPONSIVE!!!!*/
-
-/*Body va en el Layout.css*/
 body
 {
     background-image: url("../Images/Layout/FondoPsi.png");
     background-size: 35% 70%;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #FFDE61;
+    background-color: #D3D3D3;
     width:100vw;
     height:100vh;
 }
-/*Estilo de elementos de Formulario*/
 
-input
+/* ESTILO GENERAL DEL FORMULARIO */
+
+form /* Fondo Transparente */
+{
+    background-color: rgba(255, 255, 255, 0.7);
+    height: auto;   
+}
+
+input /*Estilo de los input */
 {
     border-radius: 10px;
     text-align:center;
     text-transform: uppercase;
 }
 
-#Email
-{
-    text-transform:none !important;
-}
-
-#Skype
-{
-    text-transform:none !important;
-}
-
-select
-{
-    border-radius: 10px;
-}
-
-#Submit
-{
-    font-family: inherit;
-    font-weight: 900;
-    color:black;
-    border-radius: 10px;
-    width: 83.33vw;
-}
-
-.form-control
+.form-control /*Borde redondeado de los input */
 {
     border-radius:10px;
 }
 
-#Firma
-{
-    font-family: 'Rochester', cursive;
-    text-align:center;
-    font-weight: 700;
-    font-size: 400%;
-}
-
-#Firmadiv
-{
-    width: 25vw;
-    height: 10vh;
-}
-
-#Matricula
-{
-    height: 10vh;
-}
-
-#FotoPerfil
-{
-    height: 21.8vh;
-    width: 12vw;
-}
-
-/* Fondo Transparente detras de cada Profdiv*/
-form
-{
-    background-color: rgba(255, 255, 255, 0.7);
-    height: auto;   
-}
-
-/*Medidas de Columnas en vw para sobreescribir width:100vw de .form-control*/
+/*Medidas de col para sobreescribir width:100vw de .form-control. body = 1280vw*/
 *[class~="col-md-1"]
 {
     width: 8.33vw !important;
@@ -146,3 +89,99 @@ form
 {
     width: 100vw !important;
 }
+
+/* ESTILOS ESPECÍFICOS EN ORDEN DE APARICIÓN */
+
+select /* Corresponde al Título Obtenido Lic., Mg. o Dr. */
+{
+    border-radius: 10px;
+}
+
+#InsertarEspecialidad
+{
+    display:none;
+}
+
+#Matricula
+{
+    height: 10vh;
+}
+
+#Firmadiv /* Tamaño del div que contiene la Firma */
+{
+    width: 25vw;
+    height: 10vh;
+}
+
+#Firma /* Estilo de la Firma de Ejemplo */
+{
+    font-family: 'Rochester', cursive;
+    text-align:center;
+    font-weight: 700;
+    font-size: 400%;
+    user-select:none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.Invisible /* Se aplica a los input type=file detras de cada Dragzone */
+{
+    display:none !important;
+}
+
+#FotoPerfil 
+{
+    height: 21.8vh;
+    width: 12vw;
+    display:block;
+}
+
+.Minuscula /* Se aplica al Email y Skype Input */
+{
+    text-transform:none !important;
+}
+
+#Submit
+{
+    font-family: inherit;
+    font-weight: 900;
+    color:black;
+    border-radius: 10px;
+    width: 83.33vw;
+}
+
+/* DRAGZONES */
+.Drag /* Estilo general de los Dragzone */
+{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight:bold;
+    text-align:center;
+    color: rgb(51,51,51);
+    border:3px dashed rgba(51,51,51,.3);
+    display:none;
+    cursor: pointer;
+    background-color:rgba(255,255,255,.6);
+    border-radius: 10px;
+}
+
+.Clip /* Medidas de la img del clip dentro de los Dragzone */
+{
+    height:7vh;
+    width:3.7vw;
+}
+
+#DragFirma /* Tamaño específico de cada Dragzone */
+{
+    width: 24vw;
+    height: 12.1020vh;
+}
+
+#DragFotoPerfil
+{
+    height: 21.8vh;
+    width: 12vw;
+}
+
+
