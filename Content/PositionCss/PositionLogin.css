@@ -78,4 +78,21 @@ body>form>div>div
 {
     padding-left:0 !important;
     padding-right:0 !important;
+    
+}
+
+#Contraseña div label
+{
+    margin-bottom:0 !important;
+}
+
+input[type=checkbox]
+{
+    margin:0 !important;
+}
+
+#Contraseña div
+{
+    padding-left:0 !important;
+    margin-top:0.4539vh;
 }

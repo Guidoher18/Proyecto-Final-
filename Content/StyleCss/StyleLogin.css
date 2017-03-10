@@ -37,19 +37,23 @@ input
 *[class~="form-check-label"]
 {
     font-size:10px;
-    text-align: right;
+    text-align: left;
     display:inline-block;
+    vertical-align: middle;
+    width:62px;
 }
 
-#Usuario label
+#Usuario>label
 {
     text-align:left;
 }
 
-#Contraseña label
+#Contraseña>label
 {
     text-align:left;
 }
+
+
 
 /*Medidas de col para sobreescribir width:100vw de .form-control. body = 1280vw*/
 *[class~="col-md-1"]
