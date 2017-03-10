@@ -5,23 +5,29 @@
     <link type="text/css" rel="Stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link type="text/css" rel="Stylesheet" href="../Content/StyleCss/StyleLogin.css">
     <link type="text/css" rel="Stylesheet" href="../Content/PositionCss/PositionLogin.css">
-    <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
 </head>
 <body>
-    <h2>Inicio de Sesión</h2>
-    <p>¿Aun no tiene su Cuenta?</p>
-    <a href="#">Cree su Cuenta Profesional</a>
-    <p>¡Ya tengo Mi Cuenta!</p>
-    <div id="Usuario">
-        <label>Usuario</label><br>
-        <input type="text" name="Usuario"><br>
-    </div>
-    <div id="Contraseña">
-        <label>Contraseña</label><br>
-        <input type="password" name="Contraseña"><br>
-    </div><br>
-    <a href="#"><button>Siguiente</button></a>
-
+    <!-- <img src="../Content/Images/Icons/FondoPsiPequeño.jpg" class="im-circle"> -->
+    <form action="#" method="POST">
+        <div class="col-md-10 form-group">
+            <div class=col-md-6>
+                <h2 class="col-md-6">Inicio de Sesión</h2>
+                <div id="Usuario">
+                    <label class="col-md-6">Usuario</label>
+                    <input type="text" name="Usuario" class="col-md-6 form-control">
+                </div>
+                <button id="Siguiente" class="col-md-6 btn btn-success">Siguiente</button>
+                <div id="Contraseña" class="invisible">
+                    <label class="col-md-2">Contraseña</label>
+                    <input type="password" name="Contraseña" class="form-control">
+                </div>
+                <input type="submit" class="col-md-6 btn btn-success invisible" id="Submit" value="Iniciar Sesión"/>
+                <p class="col-md-6">¿Aun no tiene su Cuenta?</p>
+                <a href="#" class="col-md-6">Cree su Cuenta Profesional</a>
+            </div>
+        </div>
+    </form>
+    
     
     
     
