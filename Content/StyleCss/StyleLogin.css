@@ -1,10 +1,16 @@
 body
 {
+    background-image: url("../Images/Layout/Trama.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #D3D3D3;
     width:1280px;
     height:661px;
 }
 
-body>form>div
+/* Marco doble linea negra */
+body>form>div 
 {
     border: 1.5vh double black;
     height:50vh;
@@ -12,18 +18,7 @@ body>form>div
     background-color: rgba(255, 255, 255, 0.7);
 }
 
-body
-{
-    background-image: url("../Images/Layout/Trama.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #D3D3D3;
-    width:100vw;
-    height:100vh;
-}
-
-
+/* Estilo General */
 input
 {
     text-align:center;
@@ -34,15 +29,7 @@ input
     display:none;
 }
 
-*[class~="form-check-label"]
-{
-    font-size:10px;
-    text-align: left;
-    display:inline-block;
-    vertical-align: middle;
-    width:62px;
-}
-
+/* Estilo Labels */
 #Usuario>label
 {
     text-align:left;
@@ -53,7 +40,15 @@ input
     text-align:left;
 }
 
-
+/* Estilo Checkbox */
+*[class~="form-check-label"]
+{
+    font-size:10px;
+    text-align: left;
+    display:inline-block;
+    vertical-align: middle;
+    width:62px;
+}
 
 /*Medidas de col para sobreescribir width:100vw de .form-control. body = 1280vw*/
 *[class~="col-md-1"]
