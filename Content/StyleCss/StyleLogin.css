@@ -9,7 +9,7 @@ body
     height:661px;
 }
 
-/* Marco doble linea negra */
+/* Marco Doble Linea Negra */
 body>form>div 
 {
     border: 1.5vh double black;
