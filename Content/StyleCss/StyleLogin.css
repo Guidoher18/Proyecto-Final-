@@ -7,19 +7,48 @@ body
 body>form>div
 {
     border: 1.5vh double black;
-    /*border-left: 1.5vh double black;*/    
+    height:50vh;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
 }
+
+body
+{
+    background-image: url("../Images/Layout/Trama.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #D3D3D3;
+    width:100vw;
+    height:100vh;
+}
+
 
 input
 {
     text-align:center;
 }
 
-
-.invisible
+.oculto
 {
     display:none;
+}
+
+*[class~="form-check-label"]
+{
+    font-size:10px;
+    text-align: right;
+    display:inline-block;
+}
+
+#Usuario label
+{
+    text-align:left;
+}
+
+#Contraseña label
+{
+    text-align:left;
 }
 
 /*Medidas de col para sobreescribir width:100vw de .form-control. body = 1280vw*/

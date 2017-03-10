@@ -7,26 +7,36 @@
     <link type="text/css" rel="Stylesheet" href="../Content/PositionCss/PositionLogin.css">
 </head>
 <body>
-    <!-- <img src="../Content/Images/Icons/FondoPsiPequeño.jpg" class="im-circle"> -->
-    <form action="#" method="POST">
+
+    <!-- VIEW -->
+    <h1>PsicoLOG</h1>
+    <form action="#" method="POST" class="col-md-10">
         <div class="col-md-10 form-group">
             <div class=col-md-6>
-                <h2 class="col-md-6">Inicio de Sesión</h2>
-                <div id="Usuario">
-                    <label class="col-md-6">Usuario</label>
-                    <input type="text" name="Usuario" class="col-md-6 form-control">
-                </div>
+                <h2>Iniciar Sesión</h2>
+                <div id="Usuario" class="col-md-6"> 
+                    <label class="col-md-6">Usuario</label> 
+                    <input type="text" name="Usuario" class="form-control">
+                </div> 
                 <button id="Siguiente" class="col-md-6 btn btn-success">Siguiente</button>
-                <div id="Contraseña" class="invisible">
-                    <label class="col-md-2">Contraseña</label>
-                    <input type="password" name="Contraseña" class="form-control">
+                <div id="Contraseña" class="col-md-6 oculto"> 
+                    <label class="col-md-5">Ingrese la contraseña para</label> 
+                    <input type="password" name="Contraseña" class="col-md-5 form-control">
+                    <div class="col-md-1">
+                        <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="MantenerseConectado">
+                        Permanecer Conectado
+                        </label>
+                    </div>
                 </div>
-                <input type="submit" class="col-md-6 btn btn-success invisible" id="Submit" value="Iniciar Sesión"/>
-                <p class="col-md-6">¿Aun no tiene su Cuenta?</p>
-                <a href="#" class="col-md-6">Cree su Cuenta Profesional</a>
+                <input type="submit" class="col-md-6 btn btn-success oculto" id="Submit" value="Iniciar Sesión"/>
+                <p>¿Aun no tiene su Cuenta?</p>
+                <a href="#">Cree su Cuenta Profesional</a>
             </div>
         </div>
     </form>
+
+    <!-- END VIEW -->
     
     
     

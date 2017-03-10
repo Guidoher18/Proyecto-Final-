@@ -1,7 +1,13 @@
+//Cuando se hace clic en #Siguiente aparece para cargar la #Contraseña
 $(document).ready(function(){
+    $('button').on('click',function(){
+        event.preventDefault();
+    });
     $('#Siguiente').click(function(){
-        $('#Usuario').css('display','none');
-        $('#Contraseña').css('display','block');
-        $('#Submit').css('display','block');
+        $(this).toggle();
+        $('#Usuario').toggle();
+        $('h2').html("Ingresar Contraseña");
+        $('#Contraseña').fadeIn('slow');
+        $('#Submit').toggle();
     });
 });
