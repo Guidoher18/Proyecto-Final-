@@ -1,0 +1,101 @@
+body
+{
+    padding: 21.2945vh 8.33vw;
+}
+
+h1
+{
+    margin-top: 0;
+}
+
+h2
+{
+    margin: 0;
+}
+
+form
+{
+    padding: 0 !important;
+    height: 50vh;
+}
+
+/* Marco doble linea negra */
+body>form>div 
+{
+    padding: 9.4176vh 15.9614vw !important;
+    margin-bottom:0 !important;
+}
+
+
+/* Div interno que contiene los elementos */
+body>form>div>div
+{
+    padding: 0 !important;
+}
+
+/* ¿Aun no tiene su cuenta? */
+p 
+{
+    margin-top:0!important;
+    margin-bottom:0!important;
+}
+
+
+/* Botón Siguiente */
+#Siguiente
+{
+    margin:10px 0;
+}
+
+#Usuario
+{
+    margin-top:10px;
+    padding-left:0 !important;
+    padding-right:0 !important;
+}
+
+#Usuario label
+{
+    padding-left:0 !important;
+    padding-right:0 !important;
+}
+
+#Contraseña
+{
+    margin-top: 10px;
+    padding-left:0 !important;
+    padding-right:0 !important;
+}
+
+/* Ingrese la Contraseña para */
+#Contraseña label 
+{
+    padding-left:0 !important;
+    padding-right:0 !important;
+}
+
+/* Checkbox */
+#Contraseña div
+{
+    padding-left:0 !important;
+    margin-top:0.4539vh;
+}
+
+/* Permanecer Conectado */
+#Contraseña div label
+{
+    margin-bottom:0 !important;
+}
+
+input[type=checkbox]
+{
+    margin:0 !important;
+}
+
+#Submit
+{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+
