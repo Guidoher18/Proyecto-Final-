@@ -5,15 +5,15 @@ $(document).ready(function(){
         var $elegido = $("#Titulo").val();
         if ($elegido == "Mg."){
             $('#InsertarEspecialidad').css('display','inherit');
-            $('#Profdiv1').css({'top':'7.41302vh', 'bottom':'7.41302vh'});
+            $('#Profdiv1').css({'top':'3.1271vh', 'bottom':'3.1271vh'});
         }
         else if ($elegido == "Dr."){
             $('#InsertarEspecialidad').css('display','inherit');
-            $('#Profdiv1').css({'top':'7.41302vh', 'bottom':'7.41302vh'});            
+            $('#Profdiv1').css({'top':'3.1271vh', 'bottom':'3.1271vh'});            
         }
         else{
             $('#InsertarEspecialidad').css('display','none');
-            $('#Profdiv1').css({'top':'12.3298vh', 'bottom':'12.3298vh'});                        
+            $('#Profdiv1').css({'top':'8.0439vh', 'bottom':'8.0439vh'});                        
         };        
     });    
     

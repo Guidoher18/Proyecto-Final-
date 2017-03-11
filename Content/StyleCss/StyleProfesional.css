@@ -97,6 +97,12 @@ select /* Corresponde al Título Obtenido Lic., Mg. o Dr. */
     border-radius: 10px;
 }
 
+#DNI label
+{
+    margin: 5px 0;
+}
+
+
 #InsertarEspecialidad
 {
     display:none;
@@ -128,6 +134,11 @@ select /* Corresponde al Título Obtenido Lic., Mg. o Dr. */
 .Invisible /* Se aplica a los input type=file detras de cada Dragzone */
 {
     display:none !important;
+}
+
+#Contraseña label
+{
+    margin: 5px 0;
 }
 
 #FotoPerfil 

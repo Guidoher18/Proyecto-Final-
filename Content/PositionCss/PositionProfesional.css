@@ -16,8 +16,8 @@ form /* Centra el Formulario Verticalmente */
     position:relative;
     padding-left: 8.33vw;
     padding-right: 8.33vw;
-    top: 12.3298vh;
-    bottom: 12.3298vh;
+    top: 8.0439vh;
+    bottom: 8.0439vh;
 }
 
 #Profdiv2 /* CONTIENE DATOS DE CONTACTO */
@@ -35,6 +35,33 @@ form /* Centra el Formulario Verticalmente */
 #Titulo
 {
     padding: 0 2.40vw;
+}
+
+#DNI
+{
+    padding-left: 0 !important;
+}
+
+#DNI label
+{
+    padding: 0 !important;
+}
+
+#Contraseña
+{
+    
+    padding-right: 0 !important;
+    bottom:20px;
+}
+
+#Contraseña label
+{
+    padding: 0 !important;
+}
+
+#DNIContraseña
+{
+    margin-bottom: 20px;
 }
 
 #Matricula /* Contiene a los dos div de MN y MP */

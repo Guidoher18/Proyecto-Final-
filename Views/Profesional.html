@@ -59,7 +59,7 @@
                         <option value="Mg." id="Mg">Mg.</option>
                         <option value="Dr." id="Dr">Dr.</option>
                     </select>
-                    <input type="text" class="form-control col-md-5"/>
+                    <input type="text" class="form-control col-md-5" name="ApellidoyNombre"/>
                 </div><br>
                 <div id="InsertarEspecialidad"> <!-- Aparece sólo si se elige Mg. o Dr. -->
                     <br><div> 
@@ -67,6 +67,16 @@
                             <input type="text" name="Esp." class="form-control col-md-6"/> 
                     </div><br>
                 </div><br>
+                <div id="DNIContraseña">
+                    <div id="DNI" class="col-md-3"> 
+                        <label class="col-md-2">DNI</label> <br>
+                        <input type="text" name="DNI" class="form-control"/>
+                    </div><br>
+                    <div id="Contraseña" class="col-md-3"> 
+                        <label class="col-md-2">Contraseña</label> <br>
+                        <input type="password" name="Contraseña" class="form-control"/>
+                    </div><br>
+                </div>
                 <div class="form-inline" id="Matricula"> <!-- Nacional y Provincial -->
                     <label>Matrícula</label> <br>
                     <div class="form-group">
@@ -86,16 +96,16 @@
                         </div>
                     </div>
                     <p id="Firma">Juan Perez</p> <br>
-                    <input type="file" id="InputFirma" class="Invisible" onchange="handleFiles(this.files)"/>
+                    <input type="file" id="InputFirma" name="Firma"class="Invisible" onchange="handleFiles(this.files)"/>
                 </div>
                 <div id="Direccion"> 
                     <label>Dirección Profesional / Institucional</label> <br>
-                    <input type="text" name="DireccionProf" class="form-control col-md-6"/>
+                    <input type="text" name="DireccionProf" class="form-control col-md-6"/><br>
                 </div>
             </div>
             <div class="col-md-4" id="Profdiv2"> <!-- Datos de Contacto -->   
                 <!-- Foto Perfil de ejemplo y div de Seleccionar o Arrastrar -->
-                <img src="../Content/Images/Other/FotoPerfil.png" class="img-rounded text-center" name="FotoPerfil" id="FotoPerfil"/>
+                <img src="../Content/Images/Other/FotoPerfil.png" class="img-rounded text-center" id="FotoPerfil"/>
                 <div id="DragFotoPerfil" class="Drag">
                     <div>
                         <p>SELECCIONA</p>
@@ -103,7 +113,7 @@
                         <p>ARRASTRA</p>
                     </div>
                 </div>
-                <input type="file" id="InputFoto" class="Invisible" onchange="handleFiles(this.files)"/>
+                <input type="file" id="InputFoto" name="FotoPerfil" class="Invisible" onchange="handleFiles(this.files)"/>
                 <div class="row" id="Celular"> <!-- Celular -->
                     <label id="CelularLabel"><span class="glyphicon glyphicon-phone"></span>&nbsp; Celular</label> <br>
                     <input type="text" name="Celular" class="form-control col-md-3"/> <br>
