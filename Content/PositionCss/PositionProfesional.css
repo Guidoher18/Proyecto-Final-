@@ -39,7 +39,7 @@ form /* Centra el Formulario Verticalmente */
 
 #DNI
 {
-    padding-left: 0 !important;
+    padding: 0 !important;
 }
 
 #DNI label
