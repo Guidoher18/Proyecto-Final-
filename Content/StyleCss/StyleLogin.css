@@ -4,9 +4,15 @@ body
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #D3D3D3;
+    /*background-color: #D3D3D3;*/
+    background-color: #364010;
     width:1280px;
     height:661px;
+}
+
+h1
+{
+    color: #fff;
 }
 
 /* Marco Doble Linea Negra */
