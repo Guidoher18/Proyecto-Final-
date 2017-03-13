@@ -1,0 +1,39 @@
+#ContenedorPrincipal
+{
+    margin-left:8.33vw;
+    margin-right:8.33vw;
+    margin-top:12.2541vh;
+    margin-bottom:12.2541vh;
+    padding: 0 !important;
+}
+
+#MarcoLateral
+{
+    padding: 0 !important;
+}
+
+#Secciones
+{
+    padding: 0 !important;
+}
+
+nav
+{
+    margin: 0 !important;
+}
+
+#MarcoLateral p
+{
+    padding:0!important;
+}
+
+#MarcoLateral>p:nth-child(2)
+{
+    display:inline-block;
+}
+
+#MarcoLateral>p:nth-child(3)
+{
+    padding-left:8.33vw !important;
+    display:inline-block;
+}
