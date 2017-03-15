@@ -1,17 +1,25 @@
-h3
+#Encabezado
 {
-    margin-left:20px;
+    padding-top:20px;
+    padding-left:40px;
 }
 
-h1
+h3
 {
-    margin-left:20px;
-    margin-top: 4.0812vh;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
+
 
 form /* Centra el Formulario Verticalmente */
 {
-    margin-bottom: 4.0812vh;
+    margin-top: 5.8933vh;
+    margin-bottom: 5.8933vh;
+}
+
+form>div
+{
+    margin-bottom:0 !important;
 }
 
 /* Corrige el margin left y right de -15px de la clase .row */
