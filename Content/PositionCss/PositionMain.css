@@ -3,14 +3,16 @@
     margin-left:8.33vw !important;
     margin-right:8.33vw !important;
     margin-top: 10.8926vh;
-    margin-bottom: 10.8926vh;
+    margin-bottom: 0;
     padding: 0 !important;
 }
 
 #MarcoLateral
 {
-    padding-left: 16.66vw !important;
-    padding-right: 0 !important;
+    padding-left: 8.33vw !important;
+    padding-right: 8.33vw !important;
+    padding-top: 13.4583vh;
+    padding-bottom: 13.4583vh;
 }
 
 #Secciones
@@ -48,3 +50,14 @@ nav
     margin-right: 2.0831vw !important;
     display:block;
 }
+
+ul[class~="navbar-right"]
+{
+    margin-left: 59.375vw;
+}
+
+footer p
+{
+    display:inline;
+}
+
