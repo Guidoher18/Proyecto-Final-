@@ -1,10 +1,10 @@
 body
 {
-    background-image: url("../Images/Layout/FondoPsi.png");
-    background-size: 35% 70%;
+    background-image: url("../Images/Layout/Trama.png");
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #D3D3D3;
+    background-color: #364010;
     width:1280px;
     height:661px;
 }
@@ -14,7 +14,10 @@ body
 form /* Fondo Transparente */
 {
     background-color: rgba(255, 255, 255, 0.7);
-    height: auto;   
+    height: auto;
+    border-top: 1.5vh double black;
+    border-bottom: 1.5vh double black;   
+    border-radius:20px;
 }
 
 input /*Estilo de los input */
@@ -91,13 +94,19 @@ input /*Estilo de los input */
 }
 
 /* ESTILOS ESPECÍFICOS EN ORDEN DE APARICIÓN */
+h3
+{
+    font-weight:500;
+    font-size: 24px !important;
+    color: #fff;            
+}
 
 h1
 {
-    font-weight:600;
-    font-size: 34px !important;            
+    font-weight:500;
+    font-size: 36px !important;            
+    color: #fff;
 }
-
 
 select /* Corresponde al Título Obtenido Lic., Mg. o Dr. */
 {

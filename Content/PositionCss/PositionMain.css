@@ -1,20 +1,22 @@
 #ContenedorPrincipal
 {
-    margin-left:8.33vw;
-    margin-right:8.33vw;
-    margin-top:12.2541vh;
-    margin-bottom:12.2541vh;
+    margin-left:8.33vw !important;
+    margin-right:8.33vw !important;
+    margin-top: 10.8926vh;
+    margin-bottom: 10.8926vh;
     padding: 0 !important;
 }
 
 #MarcoLateral
 {
-    padding: 0 !important;
+    padding-left: 16.66vw !important;
+    padding-right: 0 !important;
 }
 
 #Secciones
 {
-    padding: 0 !important;
+    /*padding-left: 8.33vw !important;*/
+    padding-right: 7.5481vw !important;
 }
 
 nav
@@ -22,18 +24,27 @@ nav
     margin: 0 !important;
 }
 
+#Foto
+{
+    margin-left: 6.8714vw;
+    margin-right: 6.8714vw;
+}
+
 #MarcoLateral p
 {
     padding:0!important;
 }
 
-#MarcoLateral>p:nth-child(2)
+#MN
 {
-    display:inline-block;
+    display:block;
+    margin-left: 2.0831vw !important;
+    margin-right: 2.0831vw !important;
 }
 
-#MarcoLateral>p:nth-child(3)
+#MP
 {
-    padding-left:8.33vw !important;
-    display:inline-block;
+    margin-left: 2.0831vw !important;
+    margin-right: 2.0831vw !important;
+    display:block;
 }

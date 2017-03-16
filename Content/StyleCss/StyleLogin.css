@@ -4,7 +4,6 @@ body
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    /*background-color: #D3D3D3;*/
     background-color: #364010;
     width:1280px;
     height:661px;
@@ -18,10 +17,12 @@ h1
 /* Marco Doble Linea Negra */
 body>form>div 
 {
-    border: 1.5vh double black;
+    border-top: 1.5vh double black;
+    border-bottom: 1.5vh double black;   
     height:50vh;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.7);
+    border-radius:20px;
 }
 
 /* Estilo General */
