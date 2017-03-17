@@ -4,7 +4,7 @@ body
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #693312;
+    background-color: #0F1F63;
     width:1280px;
     height:661px;
 }
@@ -17,73 +17,16 @@ body
     border-radius: 20px;
 }
 
-#Foto
-{
-    height: 21.8vh;
-    width: 12vw;
-    display:block;
-}
-
-#Secciones
-{
-    font-size:36px;
-}
-
-#EnConstruccion
-{
-    color: #E3E3E3;;
-}
-
-#MarcoLateral
-{
-    text-align:center;
-    color:rgb(51,51,51);
-}
-
-#MarcoLateral p
-{
-    text-align:center;
-}
-
-img
-{
-    text-align:center;
-}
-
-a:link   
-{   
-    text-decoration:none;
-}  
-
 a
 {
-    color:rgb(51,51,51);
-    background-color:transparent !important;
-}
-
-a:focus
-{
-    color:rgb(51,51,51);
-}
-
-a:hover
-{
-    color:#fff;
-}
-
-#MarcoLateral span
-{
-    font-weight:bold;
-}
-
-a[class~="dropdown-toggle"]
-{
     color: rgb(51,51,51) !important;
+    text-decoration: none !important;
+    background-color:transparent !important;
 }
 
-a[class~="dropdown-toggle"]:hover
+#DropdownRight
 {
-    background-color:transparent !important;
+    text-align:center;
 }
 
 .container-fluid 
@@ -95,6 +38,7 @@ footer
 {
     color:#fff;
     text-align: center;
+    width:100%;
 }
 
 footer a
@@ -102,10 +46,80 @@ footer a
     color:#fff;
 }
 
-#DropdownRight
+h1
 {
-    text-align:center!important;
+    font-weight:500;
+    font-size: 36px !important;            
+    color: #fff;
+    text-align: left;
 }
+
+
+#Buscador input
+{
+    text-transform: uppercase;
+}
+
+ul>a
+{
+    font-size:20px !important;
+}
+
+#ContenedorPrincipal a 
+{
+    color: rgb(51,51,51) !important;
+}
+
+#ContenedorPrincipal a:hover
+{
+    color: #fff !important;
+}
+
+#Paginacion 
+{
+    font-size: 20px !important;
+    text-align: center;
+}
+
+#OpcionesBusqueda>a
+{
+    color: #fff !important;
+}
+
+#OpcionesBusqueda>a:hover
+{
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+footer>a
+{
+    color: #fff !important;
+}
+
+footer>a:hover
+{
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Medidas de col para sobreescribir width:100vw de .form-control. body = 1280vw*/
@@ -168,6 +182,3 @@ footer a
 {
     width: 100vw !important;
 }
-
-
-
