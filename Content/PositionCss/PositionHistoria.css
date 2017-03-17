@@ -11,7 +11,7 @@ footer
 {
     display:block;
     position:absolute; 
-    top:77.1558vh;
+    top:77.9123vh;
 }
 
 footer p
@@ -32,6 +32,18 @@ h1
 {
     margin-left: 8.33vw;
     margin-top: 9.6066vh;   
+}
+
+
+#Buscador button:first-child
+{
+    margin-left:80px;
+    margin-bottom:12px;
+}
+
+#Buscador div:nth-child(3)
+{
+    bottom:2px;
 }
 
 #Paginacion>a
