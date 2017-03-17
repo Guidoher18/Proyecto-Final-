@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <link type="text/css" rel="Stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link type="text/css" rel="Stylesheet" href="../Content/StyleCss/StyleCrearHistoria.css">
+    <link type="text/css" rel="Stylesheet" href="../Content/PositionCss/PositionCrearHistoria.css">
+    <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+</head>
+<body>
+    <!-- START VIEW -->    
+    <div id="Encabezado">
+        <h3>PsicoLOG</h3>
+        <h1>Crea tu cuenta profesional</h1>
+    </div>
+    <form action="#" method="POST">
+        <div class="form-group">
+            <div class="col-md-8" id="Profdiv1"> <!-- Datos Profesionales -->
+                <div> <!-- Apellido, Nombre y Título -->
+                    <label>Apellido y Nombre</label><br>
+                    <select name="Titulo" id="Titulo" class="form-control col-md-1">
+                        <option value="Lic." default>Lic.</option>
+                        <option value="Mg." id="Mg">Mg.</option>
+                        <option value="Dr." id="Dr">Dr.</option>
+                    </select>
+                    <input type="text" class="form-control col-md-5" name="ApellidoyNombre"/>
+                </div><br>
+                <div id="InsertarEspecialidad"> <!-- Aparece sólo si se elige Mg. o Dr. -->
+                    <br><div> 
+                            <label>Especialista en: </label>
+                            <input type="text" name="Esp." class="form-control col-md-6"/> 
+                    </div><br>
+                </div><br>
+                <div id="DNIContraseña">
+                    <div id="DNI" class="col-md-3"> 
+                        <label class="col-md-2">DNI</label> <br>
+                        <input type="text" name="DNI" class="form-control"/>
+                    </div><br>
+                    <div id="Contraseña" class="col-md-3"> 
+                        <label class="col-md-2">Contraseña</label> <br>
+                        <input type="password" name="Contraseña" class="form-control"/>
+                    </div><br>
+                </div>
+                <div class="form-inline" id="Matricula"> <!-- Nacional y Provincial -->
+                    <label>Matrícula</label> <br>
+                    <div class="form-group">
+                        <label class="col-md-1 text-center alineadovertical">MN</label>
+                        <input type="text" name="MN" id="MN" class="form-control col-md-2"/>
+                    </div><br>
+                    <div class="form-group"> 
+                        <label class="col-md-1 text-center alineadovertical">MP</label>
+                        <input type="text" name="MP" id="MP" class="form-control col-md-2 "/>
+                    </div>
+                </div><br>
+                <div id="Firmadiv"> <!-- Firma de Ejemplo y div de Seleccionar o Arrastrar -->
+                    <label>Firma Digital</label> <br>
+                    <div id="DragFirma" class="Drag">
+                        <div>
+                            <p>SELECCIONA &nbsp;</p><img src="../Content/Images/Other/Clip.png" class="Clip"/><p>&nbsp; ARRASTRA</p>
+                        </div>
+                    </div>
+                    <p id="Firma">Juan Perez</p> <br>
+                    <input type="file" id="InputFirma" name="Firma"class="Invisible" onchange="handleFiles(this.files)"/>
+                </div>
+                <div id="Direccion"> 
+                    <label>Dirección Profesional / Institucional</label> <br>
+                    <input type="text" name="DireccionProf" class="form-control col-md-6"/><br>
+                </div>
+            </div>
+            <div class="col-md-4" id="Profdiv2"> <!-- Datos de Contacto -->   
+                <!-- Foto Perfil de ejemplo y div de Seleccionar o Arrastrar -->
+                <img src="../Content/Images/Other/FotoPerfil.png" class="img-rounded text-center" id="FotoPerfil"/>
+                <div id="DragFotoPerfil" class="Drag">
+                    <div>
+                        <p>SELECCIONA</p>
+                        <img src="../Content/Images/Other/Clip.png" class="Clip"/>
+                        <p>ARRASTRA</p>
+                    </div>
+                </div>
+                <input type="file" id="InputFoto" name="FotoPerfil" class="Invisible" onchange="handleFiles(this.files)"/>
+                <div class="row" id="Celular"> <!-- Celular -->
+                    <label id="CelularLabel"><span class="glyphicon glyphicon-phone"></span>&nbsp; Celular</label> <br>
+                    <input type="text" name="Celular" class="form-control col-md-3"/> <br>
+                </div>
+                <div class="row" id="Telefono"> <!-- Teléfono -->
+                    <label id="TelefonoLabel"><span class="glyphicon glyphicon-earphone"></span>&nbsp; Teléfono</label> <br>
+                    <input type="text" name="Telefono" class="form-control col-md-3"/> <br>
+                </div>
+                <div class="row" id="Email"> <!-- Email -->
+                    <label id="EmailLabel"><span class="glyphicon glyphicon-envelope"></span>&nbsp; Email</label> <br>
+                    <input type="email" name="Email" class="form-control col-md-3 Minuscula"/> <br>
+                </div>
+                <div class="row" id="Skype"> <!-- Skype -->
+                    <label id="SkypeLabel"><span class="glyphicon glyphicon-facetime-video"></span>&nbsp; Skype</label> <br>
+                    <input type="text" name="Skype" class="form-control col-md-3 Minuscula"/> <br>
+                </div><br>
+            </div>
+            <input type="submit" value="Cargar" class="btn btn-success" id="Submit">
+        </div>
+    </form>    
+    <!-- END VIEW -->
+
+    <!-- SCRIPTS -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="../Scripts/CrearHistoria.js"></script>
+</body>
+<footer>
+</footer>
+</html>
