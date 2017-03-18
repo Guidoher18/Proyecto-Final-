@@ -134,7 +134,11 @@ h1
     margin-right:0;
 }
 
-
+#AgregarVinculo
+{
+    padding:2px 12px !important;
+    margin-left: 5.1563vw;
+}
 
 
 

@@ -1,3 +1,8 @@
+document.getElementById("AgregarVinculo").addEventListener("click", function(event){
+    event.preventDefault()
+});
+
+
 $(document).ready(function(){
     
 //Cuando se posiciona el cursor sobre #FotoPerfil cambia a #DragFotoPerfil 
@@ -26,27 +31,37 @@ $(document).ready(function(){
         var $Edad = $fecha2.diff($fecha1, 'years'); //Calculo la Edad en Años
         var $DifMeses = $fecha2.diff($fecha1, 'month'); //Calculo la Difencia en Meses
             $DifMeses %=12;
+        var $PalabraMes = '';
+        
+        if ($DifMeses == 1) // Hace que en el Label aparezca Mes si tiene Por ej.: 8 Años, 1 Mes.
+        {
+            $PalabraMes = 'Mes'
+        }
+        else
+        {
+            $PalabraMes = 'Meses'
+        }
 
         if (selector == '#FechaNacimiento input[type="date"]')
         {
             if ($Edad < 18 && $DifMeses != 0) //Si es un menor de 18 años, devuelve la edad en Años y Meses
             {
-                $('#FechaNacimiento label').html('<label class="col-md-2 Años">('+ $Edad + ' Años,'+' '+ $DifMeses + ' Mes[es] )</label>');
+                $('#FechaNacimiento>label').html('('+ $Edad + ' Años,'+' '+ $DifMeses + ' ' + $PalabraMes + ')');
             }
             else //Si es mayor de 18 años, devuelve la edad en Años
             {
-                $('#FechaNacimiento label').html('<label class="col-md-2 Años">('+ $Edad +' Años)</label>');
+                $('#FechaNacimiento>label').html('('+ $Edad +' Años)');
             };
         }
         else
         {
             if ($Edad < 18 && $DifMeses != 0) //Si es un menor de 18 años, devuelve la edad en Años y Meses
             {
-                $('#VSFechaNacimientoLabel').html('<label id="VSFechaNacimientoLabel" class="col-md-3 Años">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;('+ $Edad + ' Años,'+' '+ $DifMeses + ' Mes[es] )</label>');
+                $('#VSFechaNacimientoLabel').html('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;('+ $Edad + ' Años,'+' '+ $DifMeses + ' ' + $PalabraMes + ')');
             }
             else //Si es mayor de 18 años, devuelve la edad en Años
             {
-                $('#VSFechaNacimientoLabel').html('<label id="VSFechaNacimientoLabel" class="col-md-3 Años">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;('+ $Edad +' Años)</label>');
+                $('#VSFechaNacimientoLabel').html('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;('+ $Edad +' Años)');
             };
         };
      };
@@ -56,8 +71,27 @@ $(document).ready(function(){
     });
 
     $('#VinculosSignificativos input[type="date"]').on('focusout',function(){
-            CalcularEdad('#VinculosSignificativos input[type="date"]');
+            CalcularEdad('#VSFechaNacimiento');
     }); 
+
+
+    
+    
+    //Inserta una nueva fila de campos para cargar otro Vinculo Significativo
+    var $Contador = 0;
+    $('#AgregarVinculo').on('click', function(){
+        $Contador +=1;
+        
+        var $NuevoVinculo = '<div id="VinculosSignificativos' + $Contador + '" class="col-md-6"><label class="col-md-3"> </label><label id="VSFechaNacimientoLabel' + $Contador + '" class="col-md-3 Años">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(?? Años)</label><br><input type="text" name="VSVinculo' + $Contador + '" class="form-control col-md-1" placeholder="VÍNCULO"/><input type="text" name="VSApellidoNombre' + $Contador + '" class="form-control col-md-2" placeholder="APELLIDO Y NOMBRE"/><input type="date" name="VSFechaNacimiento' + $Contador + '" class="form-control col-md-1" id="VSFechaNacimiento" style="font-size:9px"/><input type="text" name="VSOcupacion' + $Contador + '" class="form-control col-md-1" placeholder="OCUPACIÓN"/><select name="VSConvive' + $Contador + '" class="form-control col-md-1" style="font-size:9px"><option value="Convive" default>CONVIVE</option><option value="No Convive"> NO CONVIVE</option></select></div>';
+        
+        $($NuevoVinculo).insertAfter($('#VinculosSignificativos'));
+    });
+        
+        
+    
+
+
+
 
 });
 
