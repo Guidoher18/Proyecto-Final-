@@ -1,109 +1,68 @@
 $(document).ready(function(){
-
-//El div Especialidad se inserta cuando se elige como #Titulo, Mg. o Dr.    
-    $('#Titulo').change(function(){
-        var $elegido = $("#Titulo").val();
-        if ($elegido == "Mg."){
-            $('#InsertarEspecialidad').css('display','inherit');
-            $('#Profdiv1').css({'top':'3.1271vh', 'bottom':'3.1271vh'});
-        }
-        else if ($elegido == "Dr."){
-            $('#InsertarEspecialidad').css('display','inherit');
-            $('#Profdiv1').css({'top':'3.1271vh', 'bottom':'3.1271vh'});            
-        }
-        else{
-            $('#InsertarEspecialidad').css('display','none');
-            $('#Profdiv1').css({'top':'8.0439vh', 'bottom':'8.0439vh'});                        
-        };        
-    });    
     
-//Cuando se posiciona el cursor sobre #Firma cambia a #DragFirma 
-    $('#Firma').mouseenter(function(){
-        $('#DragFirma').fadeToggle(900);
-        $('#Firma').toggle();
-    });
-
-    
-//Cuando se hace clic sobre #DragFirma se hace clic sobre el 'Seleccionar Archivo' del Input type="file"(#InputFirma) oculto    
-    $('#DragFirma').on('click',function(){
-        $('#InputFirma').click();
-    });
-
 //Cuando se posiciona el cursor sobre #FotoPerfil cambia a #DragFotoPerfil 
     $('#FotoPerfil').mouseenter(function(){
         $('#DragFotoPerfil').fadeToggle(900);
         $('#FotoPerfil').toggle();
     });
-
     
 //Cuando se hace clic sobre #DragFotoPerfil se hace clic sobre el 'Seleccionar Archivo' del Input type="file" (#InputFoto) oculto    
     $('#DragFotoPerfil').on('click',function(){
         $('#InputFoto').click();
     });
 
+//CalcularEdad() obtiene la diferencia entre la fecha actual y la ingresada. Toma como parámetro el selector entrecomillado y sin $() que refiere al input type=date, por ej.: '#fecha'
+    var CalcularEdad = function (selector){
+        var $FechaElegida = $(selector).val(); //devuelve la fecha elegida como yyyy-mm-dd
+        
+        var $yyyy= moment().get('year');
+        var $mm = moment().get('month');
+        var $dd = moment().get('date');
+        var $FechaHoy = new Date($yyyy, $mm, $dd); //Obtengo la fecha de hoy
+        
+        var $fecha1 = moment($FechaElegida);
+        var $fecha2 = moment($FechaHoy);
+        
+        var $Edad = $fecha2.diff($fecha1, 'years'); //Calculo la Edad en Años
+        var $DifMeses = $fecha2.diff($fecha1, 'month'); //Calculo la Difencia en Meses
+            $DifMeses %=12;
 
+        if (selector == '#FechaNacimiento input[type="date"]')
+        {
+            if ($Edad < 18 && $DifMeses != 0) //Si es un menor de 18 años, devuelve la edad en Años y Meses
+            {
+                $('#FechaNacimiento label').html('<label class="col-md-2 Años">('+ $Edad + ' Años,'+' '+ $DifMeses + ' Mes[es] )</label>');
+            }
+            else //Si es mayor de 18 años, devuelve la edad en Años
+            {
+                $('#FechaNacimiento label').html('<label class="col-md-2 Años">('+ $Edad +' Años)</label>');
+            };
+        }
+        else
+        {
+            if ($Edad < 18 && $DifMeses != 0) //Si es un menor de 18 años, devuelve la edad en Años y Meses
+            {
+                $('#VSFechaNacimientoLabel').html('<label id="VSFechaNacimientoLabel" class="col-md-3 Años">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;('+ $Edad + ' Años,'+' '+ $DifMeses + ' Mes[es] )</label>');
+            }
+            else //Si es mayor de 18 años, devuelve la edad en Años
+            {
+                $('#VSFechaNacimientoLabel').html('<label id="VSFechaNacimientoLabel" class="col-md-3 Años">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;('+ $Edad +' Años)</label>');
+            };
+        };
+     };
 
+    $('#FechaNacimiento input[type="date"]').on('focusout',function(){
+            CalcularEdad('#FechaNacimiento input[type="date"]');
+    });
 
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
+    $('#VinculosSignificativos input[type="date"]').on('focusout',function(){
+            CalcularEdad('#VinculosSignificativos input[type="date"]');
+    }); 
 
 });
 
 
     
-
-
-
-
-
-
-
-//VALIDAR CAMPOS DEL FORMULARIO
-        //Contenido
-        //Cruz o Tilde
-        //Mensaje de Sugerencia
-//DRAGZONE
-        //Arrastrar y cargar el archivo
-        //Limite de MB
-
-//Si no pasa el cursor por #Firma o #FotoPerfil se posiciona el cursor automáticamente 
-/*
-if ($('#Direccion>input').on(':focus'))
-    alert('Esta Oculto');  */
-
-//HACER RESPONSIVE LA PÁGINA!!!
-//Chequear Fuentes Responsive
-
-
-
-// Corrobora que el navegador Soporte las APIs File 
-if (window.File && window.FileReader && window.FileList && window.Blob) {
-  // Todas las APIs File son soportadas
-} else {
-  alert('Su navegador no soporta completamente la API FILE, para un optimo funcionamiento se recomienda utilizar otro navegador como Chrome, Firefox u Opera');
-}
-
-
 
 
 

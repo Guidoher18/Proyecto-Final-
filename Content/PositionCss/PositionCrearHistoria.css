@@ -1,147 +1,59 @@
-#Encabezado
+input
 {
-    padding-top:20px;
-    padding-left:40px;
+    padding: 0 !important;
 }
 
-h3
+form>div>div>div
 {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
+    padding:0 !important;
+}
+
+
+label
+{
+    padding: 0 !important;
+}
+
+#Genero 
+{
+    padding-left: 4.8925vw;
+}
+
+#EstudiosAlcanzados
+{
+    padding-left: 25px;
+}
+
+#Div1
+{
+    margin-left:8.33vw;
+    margin-right:8.33vw;
+    padding-left: 0 !important;
+    padding-right: 0 !important;    
+}
+
+#ObraSocial>div
+{
+    padding:0 !important;
 }
 
 h1
 {
-    margin-top: 3.7029vh;
-    margin-bottom:1.5129vh !important;
+    padding-left:15px;
 }
 
-form /* Centra el Formulario Verticalmente */
-{
-    
-    margin-bottom: 5.2158vh;
-    padding-top: 1.5129vh;
-    padding-bottom: 1.5129vh;
-}
 
-form>div
-{
-    margin-bottom:0 !important;
-}
 
-/* Corrige el margin left y right de -15px de la clase .row */
-.row
-{
-    margin-left:0;
-    margin-right:0;
-}
-
-#Profdiv1 /* CONTIENE DATOS PROFESIONALES */
-{
-    position:relative;
-    padding-left: 8.33vw;
-    padding-right: 8.33vw;
-    top: 8.0439vh;
-    bottom: 8.0439vh;
-}
-
-#Profdiv2 /* CONTIENE DATOS DE CONTACTO */
+#Div2 /* CONTIENE DATOS DE CONTACTO */
 {
     position:relative;
     padding-right: 8.33vw;
     padding-left:0px;
 }
 
-#Profdiv2>img
+#Div2>img
 {
     margin-left:6.4998vw;
-}
-
-#Titulo
-{
-    padding: 0 2.40vw;
-}
-
-#DNI
-{
-    padding: 0 !important;
-}
-
-#DNI label
-{
-    padding: 0 !important;
-}
-
-#Contraseña
-{
-    
-    padding-right: 0 !important;
-    bottom:20px;
-}
-
-#Contraseña label
-{
-    padding: 0 !important;
-}
-
-#DNIContraseña
-{
-    margin-bottom: 20px;
-}
-
-#Matricula /* Contiene a los dos div de MN y MP */
-{
-    position:absolute;
-    z-index: 1;
-    margin-top: 1.5129vh;    
-}
-
-#Matricula>div[class="form-group"] /* Cada div contiene el Label y el Input de MN y MP */
-{
-    padding-top:0.3404vh;
-    padding-bottom:0.3404vh;
-}
-
-.alineadovertical /* Centra los div de MN y MP */
-{
-    padding-top: 0.5vw;
-    padding-bottom: 0.5vw;
-}
-
-#MN
-{
-    padding-left:0.3906vw;
-    padding-right:0.3906vw;
-}
-
-#MP
-{
-    padding-left:0.3906vw;
-    padding-right:0.3906vw;
-}
-
-#Firmadiv
-{
-    position: relative;
-    z-index: 2;
-    bottom: 1.5129vh;
-    left:25vw;
-    padding-left:1vw;
-}
-
-#Firmadiv>label
-{
-    margin-left:16.66vw;
-}
-
-#Firma
-{
-    margin-bottom:0 !important;
-}
-
-#Direccion
-{
-    margin-top:6vh;
 }
 
 /* CENTRAR LABELS */
@@ -169,7 +81,19 @@ form>div
     margin-right: 10vw;
 }
 
-#Profdiv2 label /* Alínea los labels Verticalmente */
+#DireccionLabel
+{
+    margin-left: 9.0235vw;
+    margin-right: 9.0235vw;
+}
+
+#ReferenciaLabel
+{
+    margin-left: 5.4688vw;
+    margin-right: 5.4688vw;
+}
+
+#Div2 label /* Alínea los labels Verticalmente */
 {
     margin-top: 0.643vh;
 }
@@ -179,31 +103,6 @@ form>div
     position:relative;
     margin-left: 8.33vw;
     margin-right: 8.33vw;
-}
-
-/* DRAGZONES */
-
-/* DRAGFIRMA */
-#DragFirma div
-{    
-    padding-top:1.0575vh;
-    padding-bottom:1.0575vh;
-}
-
-#DragFirma img
-{
-    margin-top: 1.0567vh;
-    margin-bottom: 1.0567vh;
-}
-
-#DragFirma p
-{
-    display:inline;
-}
-
-#InputFirma
-{
-    z-index:-1;
 }
 
 /* DRAGFOTOPERFIL */
@@ -228,15 +127,12 @@ form>div
     z-index:-1;
 }
 
-
-
-
-
-
-
-
-
-
+/* Corrige el margin left y right de -15px de la clase .row */
+.row
+{
+    margin-left:0;
+    margin-right:0;
+}
 
 
 

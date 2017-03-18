@@ -8,66 +8,138 @@
     <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
 </head>
 <body>
+     <!--NAVBAR-->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">PsicoLog</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="glyphicon glyphicon-folder-open"></span>&nbsp; Historia Clinica<span class="caret"></span></a>
+              <ul class="dropdown-menu FondoTransparente">
+                  <li><a href="#"><span class="glyphicon glyphicon-folder-open">&nbsp;</span>Historia Clínica</a></li>                           
+                  <li><a href="#"><span class="glyphicon glyphicon-plus">&nbsp;</span>Nueva Historia Clínica</a></li>
+              </ul>                              
+            </li>
+            <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="glyphicon glyphicon-list-alt"></span>&nbsp; Evolución<span class="caret"></span></a>
+              <ul class="dropdown-menu FondoTransparente">
+                  <li><a href="#"><span class="glyphicon glyphicon-list-alt">&nbsp;</span>Evolución</a></li>                           
+                  <li><a href="#"><span class="glyphicon glyphicon-plus">&nbsp;</span>Nueva evolución</a></li>
+              </ul>                              
+            </li>
+          </ul> 
+          <ul class="nav navbar-nav navbar-right">
+            <div>
+              <img src="../Content/Images/Other/FotoPerfil.png" id="FotoNav"/> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">35123123<span class="caret"></span></a>
+              <ul class="dropdown-menu" id="DropdownRight">
+                  <li><a href="#">Editar</a></li>                           
+                  <li><a href="#">Salir</a></li>
+              </ul>                             
+            </div>
+          </ul>
+        </div> 
+      </div>
+    </nav>
+    <!--NAVBAR-->
+
     <!-- START VIEW -->    
     <div id="Encabezado">
-        <h3>PsicoLOG</h3>
-        <h1>Crea tu cuenta profesional</h1>
+        <h1>Nueva Historia Clínica</h1>
     </div>
     <form action="#" method="POST">
         <div class="form-group">
-            <div class="col-md-8" id="Profdiv1"> <!-- Datos Profesionales -->
-                <div> <!-- Apellido, Nombre y Título -->
+            <div class="col-md-6" id="Div1"> <!-- Datos Paciente -->
+                <div class="col-md-6"> <!-- Apellido y Nombre -->
                     <label>Apellido y Nombre</label><br>
-                    <select name="Titulo" id="Titulo" class="form-control col-md-1">
-                        <option value="Lic." default>Lic.</option>
-                        <option value="Mg." id="Mg">Mg.</option>
-                        <option value="Dr." id="Dr">Dr.</option>
-                    </select>
-                    <input type="text" class="form-control col-md-5" name="ApellidoyNombre"/>
+                    <input type="text" class="form-control col-md-6" name="ApellidoyNombre"/>
                 </div><br>
-                <div id="InsertarEspecialidad"> <!-- Aparece sólo si se elige Mg. o Dr. -->
-                    <br><div> 
-                            <label>Especialista en: </label>
-                            <input type="text" name="Esp." class="form-control col-md-6"/> 
-                    </div><br>
-                </div><br>
-                <div id="DNIContraseña">
-                    <div id="DNI" class="col-md-3"> 
+                <div id="DNI" class="col-md-3"> <!-- DNI -->
                         <label class="col-md-2">DNI</label> <br>
                         <input type="text" name="DNI" class="form-control"/>
-                    </div><br>
-                    <div id="Contraseña" class="col-md-3"> 
-                        <label class="col-md-2">Contraseña</label> <br>
-                        <input type="password" name="Contraseña" class="form-control"/>
-                    </div><br>
-                </div>
-                <div class="form-inline" id="Matricula"> <!-- Nacional y Provincial -->
-                    <label>Matrícula</label> <br>
-                    <div class="form-group">
-                        <label class="col-md-1 text-center alineadovertical">MN</label>
-                        <input type="text" name="MN" id="MN" class="form-control col-md-2"/>
-                    </div><br>
-                    <div class="form-group"> 
-                        <label class="col-md-1 text-center alineadovertical">MP</label>
-                        <input type="text" name="MP" id="MP" class="form-control col-md-2 "/>
-                    </div>
                 </div><br>
-                <div id="Firmadiv"> <!-- Firma de Ejemplo y div de Seleccionar o Arrastrar -->
-                    <label>Firma Digital</label> <br>
-                    <div id="DragFirma" class="Drag">
-                        <div>
-                            <p>SELECCIONA &nbsp;</p><img src="../Content/Images/Other/Clip.png" class="Clip"/><p>&nbsp; ARRASTRA</p>
-                        </div>
+                <div id="Nacionalidad" class="col-md-3"> <!-- Nacionalidad -->
+                        <label class="col-md-2">Nacionalidad</label> <br>
+                        <input type="text" name="Nacionalidad" class="form-control"/>
+                </div><br>
+                <div class="col-md-2"> <!-- Género -->
+                    <label class="col-md-2">Género</label> <br>
+                    <select name="Genero" class="form-control col-md-2" id="Genero">
+                            <option value="M" default>Masculino</option>
+                            <option value="F">Femenino</option>
+                            <option value="Otro">Otro</option>
+                    </select>
+                </div>                
+                <div id="EstadoCivil" class="col-md-2"> <!-- Estado Civil -->
+                        <label class="col-md-2">Estado Civil</label><br>
+                        <select name="EstadoCivil" class="form-control col-md-2">
+                            <option value="Soltero/a" default>Soltero</option>
+                            <option value="En Pareja"> En Pareja</option>
+                            <option value="Casado/a"> Casado/a </option>
+                            <option value="Divorciado/a"> Divorciado/a </option>
+                            <option value="Viudo/a"> Viudo/a </option>
+                        </select>
+                </div><br>
+                <div id="FechaNacimiento" class="col-md-2"> <!-- Fecha de Nacimiento -->
+                        <label class="col-md-2 Años">(?? Años)</label><br>
+                        <input type="date" name="FechaNacimiento" class="form-control"/>
+                </div><br>
+                <div class="col-md-2"> <!-- Estudios Alcanzados -->
+                        <label class="col-md-2">Estudios Alcanzados</label><br>
+                        <select name="EstudiosAlcanzados" class="form-control col-md-2" id="EstudiosAlcanzados">
+                            <option value="PrimarioIncompleto">Primario Incompleto</option>
+                            <option value="PrimarioCompleto"> Primario Completo</option>
+                            <option value="SecundarioIncompleto"> Secundario Incompleto</option>
+                            <option value="SecundarioCompleto" selected> Secundario Completo</option>
+                            <option value="UniversitarioIncompleto"> Universitario Incompleto</option>
+                            <option value="UniversitarioCompleto"> Universitario Completo</option>
+                            <option value="Posgrado"> Posgrado</option>
+                        </select>
+                </div><br>
+                <div id="Carrera" class="col-md-4"> <!-- Carrera -->
+                        <label class="col-md-2">Carrera</label><br>
+                        <input type="text" name="Carrera" class="form-control"/>
+                </div><br>                
+                <div id="Ocupacion" class="col-md-4"> <!-- Ocupación -->
+                        <label class="col-md-2">Ocupación</label><br>
+                        <input type="text" name="Ocupacion" class="form-control"/>
+                </div><br>
+                <div id="Residencia" class="col-md-2"> <!-- Residencia -->
+                        <label class="col-md-2">Lugar de Residencia</label> <br>
+                        <input type="text" name="Residencia" class="form-control" placeholder="CABA"/>
+                </div><br>
+                <div id="VinculosSignificativos" class="col-md-6">            
+                    <label class="col-md-3">Vínculos Significativos</label><label id="VSFechaNacimientoLabel" class="col-md-3 Años">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(?? Años)</label><br> 
+                        <input type="text" name="VSVinculo" class="form-control col-md-1" placeholder="VÍNCULO"/>
+                        <input type="text" name="VSApellidoNombre" class="form-control col-md-2" placeholder="APELLIDO Y NOMBRE"/>   
+                        <input type="date" name="VSFechaNacimiento" class="form-control col-md-1" id="VSFechaNacimiento"/>
+                        <input type="text" name="VSOcupacion" class="form-control col-md-1" placeholder="OCUPACIÓN"/>
+                        <select name="VSConvive" class="form-control col-md-1">
+                            <option value="Convive" default>CONVIVE</option>
+                            <option value="No Convive"> NO CONVIVE</option>
+                        </select>
+                </div>
+                <div id="ObraSocial"> <!-- OOSS -->
+                    <div class="col-md-3">
+                        <label class="col-md-2">Obra Social</label><br>
+                        <input type="text" name="ObraSocial" class="form-control col-md-3"/> 
                     </div>
-                    <p id="Firma">Juan Perez</p> <br>
-                    <input type="file" id="InputFirma" name="Firma"class="Invisible" onchange="handleFiles(this.files)"/>
-                </div>
-                <div id="Direccion"> 
-                    <label>Dirección Profesional / Institucional</label> <br>
-                    <input type="text" name="DireccionProf" class="form-control col-md-6"/><br>
-                </div>
+                    <div class="col-md-3">
+                        <label class="col-md-2">Plan</label><br>
+                        <input type="text" name="Plan" class="form-control col-md-3"/>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="col-md-2">Credencial N°</label><br>
+                        <input type="text" name="Credencial" class="form-control col-md-6"/>
+                    </div>
+                </div><br>  
+                <div id="Observaciones" class="col-md-6"> <!-- Observaciones -->
+                        <label class="col-md-2">Observaciones</label><br>
+                        <textarea name="Observaciones" class="form-control"></textarea>
+                </div><br>  
             </div>
-            <div class="col-md-4" id="Profdiv2"> <!-- Datos de Contacto -->   
+
+            <div class="col-md-4" id="Div2"> <!-- Datos de Contacto -->   
                 <!-- Foto Perfil de ejemplo y div de Seleccionar o Arrastrar -->
                 <img src="../Content/Images/Other/FotoPerfil.png" class="img-rounded text-center" id="FotoPerfil"/>
                 <div id="DragFotoPerfil" class="Drag">
@@ -93,17 +165,29 @@
                 <div class="row" id="Skype"> <!-- Skype -->
                     <label id="SkypeLabel"><span class="glyphicon glyphicon-facetime-video"></span>&nbsp; Skype</label> <br>
                     <input type="text" name="Skype" class="form-control col-md-3 Minuscula"/> <br>
+                </div>
+                <div class="row" id="Direccion"> <!-- Dirección -->
+                    <label id="DireccionLabel"><span class="glyphicon glyphicon-screenshot"></span>&nbsp; Dirección</label> <br>
+                    <input type="text" name="Direccion" class="form-control col-md-3"/> <br>
+                </div>
+                <div class="row" id="Referencia"> <!-- Número de Referencia -->
+                    <label id="ReferenciaLabel"><span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp; Número de Referencia</label> <br>
+                    <input type="text" name="ReferenciaNombre" class="form-control col-md-3" placeholder="Nombre y Vínculo"/> <br>
+                    <input type="text" name="ReferenciaNumero" class="form-control col-md-3" placeholder="Número"/> <br>
                 </div><br>
+ 
             </div>
             <input type="submit" value="Cargar" class="btn btn-success" id="Submit">
         </div>
     </form>    
+    
     <!-- END VIEW -->
 
     <!-- SCRIPTS -->
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="http://momentjs.com/downloads/moment.min.js"></script>
     <script src="../Scripts/CrearHistoria.js"></script>
 </body>
 <footer>

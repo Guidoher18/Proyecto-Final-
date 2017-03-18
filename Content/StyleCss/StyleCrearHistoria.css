@@ -2,9 +2,9 @@ body
 {
     background-image: url("../Images/Layout/TramaLaterales.png");
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-position: center;
-    background-color: #0F1F63;
+    background-color: #0F1F63; 
     width:1280px;
     height:auto;
 }
@@ -94,13 +94,6 @@ input /*Estilo de los input */
 }
 
 /* ESTILOS ESPECÍFICOS EN ORDEN DE APARICIÓN */
-h3
-{
-    font-weight:500;
-    font-size: 24px !important;
-    color: #fff;            
-}
-
 h1
 {
     font-weight:500;
@@ -108,54 +101,6 @@ h1
     color: #fff;
 }
 
-select /* Corresponde al Título Obtenido Lic., Mg. o Dr. */
-{
-    border-radius: 10px;
-}
-
-#DNI label
-{
-    margin: 5px 0;
-}
-
-
-#InsertarEspecialidad
-{
-    display:none;
-}
-
-#Matricula
-{
-    height: 10vh;
-}
-
-#Firmadiv /* Tamaño del div que contiene la Firma */
-{
-    width: 25vw;
-    height: 10vh;
-}
-
-#Firma /* Estilo de la Firma de Ejemplo */
-{
-    font-family: 'Rochester', cursive;
-    text-align:center;
-    font-weight: 700;
-    font-size: 400%;
-    user-select:none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-}
-
-.Invisible /* Se aplica a los input type=file detras de cada Dragzone */
-{
-    display:none !important;
-}
-
-#Contraseña label
-{
-    margin: 5px 0;
-}
 
 #FotoPerfil 
 {
@@ -176,6 +121,21 @@ select /* Corresponde al Título Obtenido Lic., Mg. o Dr. */
     color:black;
     border-radius: 10px;
     width: 83.33vw;
+}
+
+#VinculosSignificativos select, #VinculosSignificativos input[type="date"]
+{
+    font-size: 9px;
+}
+
+.Años[class~=col-md-2]
+{
+    text-align: center;
+}
+
+.Años[class~=col-md-3]
+{
+    text-align: justify;
 }
 
 /* DRAGZONES */
@@ -212,3 +172,14 @@ select /* Corresponde al Título Obtenido Lic., Mg. o Dr. */
 }
 
 
+#InputFoto
+{
+    display:none;
+}
+
+
+#FotoNav
+{
+    width:45px; 
+    height:45px;
+}
