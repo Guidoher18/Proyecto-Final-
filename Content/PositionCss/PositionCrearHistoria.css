@@ -1,3 +1,4 @@
+/* ESTILO DE POSICIÓN GENERAL*/
 input
 {
     padding: 0 !important;
@@ -8,10 +9,36 @@ form>div>div>div
     padding:0 !important;
 }
 
-
 label
 {
     padding: 0 !important;
+}
+
+/* Corrige el margin left y right de -15px de la clase .row */
+.row
+{
+    margin-left:0;
+    margin-right:0;
+}
+
+.QuitarVinculo
+{
+    padding: 2px 12px !important;
+    margin-left: 5.1563vw;
+}
+
+/* ESTILO DE POSICIÓN ESPECÍFICO*/
+#Div1 /* DATOS GENERALES */
+{
+    margin-left:8.33vw;
+    margin-right:8.33vw;
+    padding-left: 0 !important;
+    padding-right: 0 !important;    
+}
+
+h1
+{
+    padding-left:15px;
 }
 
 #Genero 
@@ -24,12 +51,10 @@ label
     padding-left: 25px;
 }
 
-#Div1
+#AgregarVinculo
 {
-    margin-left:8.33vw;
-    margin-right:8.33vw;
-    padding-left: 0 !important;
-    padding-right: 0 !important;    
+    padding:2px 12px !important;
+    margin-left: 5.1563vw;
 }
 
 #ObraSocial>div
@@ -37,26 +62,46 @@ label
     padding:0 !important;
 }
 
-h1
-{
-    padding-left:15px;
-}
-
-
-
-#Div2 /* CONTIENE DATOS DE CONTACTO */
+#Div2 /* DATOS DE CONTACTO */
 {
     position:relative;
     padding-right: 8.33vw;
     padding-left:0px;
 }
 
-#Div2>img
+#Div2>img /* Posiciona la FotoPerfil de Ejemplo */
 {
     margin-left:6.4998vw;
 }
 
+/* DRAGFOTOPERFIL */
+#DragFotoPerfil div
+{
+    margin-top: 3.94vh;
+    margin-bottom: 3.94vh;
+}
+
+#DragFotoPerfil
+{
+    margin-left: 6.5vw;
+}
+
+#DragFotoPerfil p
+{
+    margin:0 !important;
+}
+
+#InputFoto
+{
+    z-index:-1;
+}
+
 /* CENTRAR LABELS */
+#Div2 label /* Alínea los labels de Datos de Contacto Verticalmente */
+{
+    margin-top: 0.643vh;
+}
+
 #CelularLabel
 {
     margin-left: 9.6875vw;
@@ -93,11 +138,6 @@ h1
     margin-right: 5.4688vw;
 }
 
-#Div2 label /* Alínea los labels Verticalmente */
-{
-    margin-top: 0.643vh;
-}
-
 #Submit
 {
     position:relative;
@@ -105,40 +145,10 @@ h1
     margin-right: 8.33vw;
 }
 
-/* DRAGFOTOPERFIL */
-#DragFotoPerfil div
-{
-    margin-top: 3.94vh;
-    margin-bottom: 3.94vh;
-}
 
-#DragFotoPerfil
-{
-    margin-left: 6.5vw;
-}
 
-#DragFotoPerfil p
-{
-    margin:0 !important;
-}
 
-#InputFoto
-{
-    z-index:-1;
-}
 
-/* Corrige el margin left y right de -15px de la clase .row */
-.row
-{
-    margin-left:0;
-    margin-right:0;
-}
-
-#AgregarVinculo
-{
-    padding:2px 12px !important;
-    margin-left: 5.1563vw;
-}
 
 
 
