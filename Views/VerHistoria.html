@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8"/>
     <link type="text/css" rel="Stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link type="text/css" rel="Stylesheet" href="../Content/StyleCss/StyleCrearHistoria.css">
-    <link type="text/css" rel="Stylesheet" href="../Content/PositionCss/PositionCrearHistoria.css">
+    <link type="text/css" rel="Stylesheet" href="../Content/StyleCss/StyleVerHistoria.css">
+    <link type="text/css" rel="Stylesheet" href="../Content/PositionCss/PositionVerHistoria.css">
     <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
 </head>
 <body>
@@ -44,12 +44,46 @@
     <!--NAVBAR-->
 
     <!-- START VIEW -->    
-    <div id="Encabezado">
-        <h1>Nueva Historia Clínica</h1>
-    </div>
+    <h1 id="ApellidoyNombre">PEREZ, JUAN CARLOS</h1><h1 id="NumeroHistoria">|| 1</h1><br>
     <form action="#" method="POST">
         <div class="form-group">
             <div class="col-md-6" id="Div1"> <!-- Datos Generales del Paciente-->
+            
+            <div id="Diagnostico" class="col-md-6"> <!-- Diagnóstico -->           
+                <Label class="col-md-3">Diagnóstico</label><br><br>    
+                <div class="col-md-1" id="Fecha"> <!-- Fecha -->
+                    <Label class="col-md-1">Fecha</label>    
+                    <input type="text" name="Fecha" class="form-control col-md-1">
+                </div>                
+                <div class="col-md-1" id="DSM"> <!-- Código DSM -->
+                    <Label class="col-md-1">DSM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-search"></span></label>    
+                    <input type="text" name="DSM" class="form-control col-md-1">
+                </div>                
+                 <div class="col-md-4"id="NombreDiagnostico"> <!-- Nombre del Diagnóstico -->
+                    <Label class="col-md-4">Nombre del Diagnóstico  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-search"></span></label>    
+                    <input type="text" name="Nombre" class="form-control col-md-4">
+                </div>      
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
                 <div class="col-md-6"> <!-- Apellido y Nombre -->
                     <label>Apellido y Nombre</label><br>
                     <input type="text" class="form-control col-md-6" name="ApellidoyNombre"/>
@@ -62,27 +96,7 @@
                         <label class="col-md-2">Nacionalidad</label> <br>
                         <input type="text" name="Nacionalidad" class="form-control"/>
                 </div><br>
-                <div class="col-md-2"> <!-- Género -->
-                    <label class="col-md-2">Género</label> <br>
-                    <select name="Genero" class="form-control col-md-2" id="Genero">
-                            <option value="M" default>Masculino</option>
-                            <option value="F">Femenino</option>
-                            <option value="Otro">Otro</option>
-                    </select>
-                </div>                
-                <div id="EstadoCivil" class="col-md-2"> <!-- Estado Civil -->
-                    <label class="col-md-2">Estado Civil</label><br>
-                        <select name="EstadoCivil" class="form-control col-md-2">
-                            <option value="Soltero/a" default>Soltero</option>
-                            <option value="En Pareja"> En Pareja</option>
-                            <option value="Casado/a"> Casado/a </option>
-                            <option value="Divorciado/a"> Divorciado/a </option>
-                            <option value="Viudo/a"> Viudo/a </option>
-                        </select>
-                </div><br>
-                <div id="FechaNacimiento" class="col-md-2"> <!-- Fecha de Nacimiento -->
-                        <label class="col-md-2 Años">(?? Años)</label><br>
-                        <input type="date" name="FechaNacimiento" class="form-control"/>
+                
                 </div><br>
                 <div class="col-md-2"> <!-- Estudios Alcanzados -->
                         <label class="col-md-2">Estudios Alcanzados</label><br>
@@ -188,7 +202,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="http://momentjs.com/downloads/moment.min.js"></script>
-    <script src="../Scripts/CrearHistoria.js"></script>
+    <script src="../Scripts/VerHistoria.js"></script>
 </body>
 <footer>
 </footer>

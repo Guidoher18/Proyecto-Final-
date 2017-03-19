@@ -1,0 +1,183 @@
+/* ESTILO GENERAL DEL FORMULARIO */
+body
+{
+    background-image: url("../Images/Layout/TramaLaterales.png");
+    background-size: 100%;
+    background-repeat: repeat-y;
+    background-position: center;
+    background-color: #0F1F63; 
+    width:1280px;
+    height:auto;
+}
+
+form /* Fondo Transparente */
+{
+    background-color: rgba(255, 255, 255, 0.7);
+    height: auto;
+    border-top: 1.5vh double black;
+    border-bottom: 1.5vh double black;   
+    border-radius:20px;
+}
+
+input /*Estilo de los input */
+{
+    border-radius: 10px;
+    text-align:center;
+    text-transform: uppercase;
+}
+
+.form-control /*Borde redondeado de los input */
+{
+    border-radius:10px;
+}
+
+/*Medidas de col para sobreescribir width:100vw de .form-control. body = 1280vw*/
+*[class~="col-md-1"]
+{
+    width: 8.33vw !important;
+}
+
+*[class~="col-md-2"]
+{
+    width: 16.66vw !important;
+}
+
+*[class~="col-md-3"]
+{
+    width: 25vw !important;
+}
+
+*[class~="col-md-4"]
+{
+    width: 33.33vw !important;
+}
+
+*[class~="col-md-5"]
+{
+    width: 41.66vw !important;
+}
+
+*[class~="col-md-6"]
+{
+    width: 50vw !important;
+}
+
+*[class~="col-md-7"]
+{
+    width: 58.33vw !important;
+}
+
+*[class~="col-md-8"]
+{
+    width: 66.66vw !important;
+}
+
+*[class~="col-md-9"]
+{
+    width: 75vw !important;
+}
+
+*[class~="col-md-10"]
+{
+    width: 83.33vw !important;
+}
+
+*[class~="col-md-11"]
+{
+    width: 91.66vw !important;
+}
+
+*[class~="col-md-12"]
+{
+    width: 100vw !important;
+}
+
+/* ESTILOS ESPECÍFICOS EN ORDEN DE APARICIÓN */
+h1
+{
+    font-weight:500;
+    font-size: 36px !important;            
+    color: #fff;
+}
+
+#FotoNav
+{
+    width:45px; 
+    height:45px;
+}
+
+#VinculosSignificativos select, #VinculosSignificativos input[type="date"], #VinculosSignificativos label span:first-child
+{
+    font-size: 9px;
+}
+/* ubicación Labels (?? Años) en #FechaNacimiento y #VSFechaNacimiento */
+.Años[class~=col-md-2]
+{
+    text-align: center;
+}
+
+.Años[class~=col-md-3]
+{
+    text-align: justify;
+}
+
+/* DRAGZONES */
+.Drag /* Estilo general de los Dragzone */
+{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight:bold;
+    text-align:center;
+    color: rgb(51,51,51);
+    border:3px dashed rgba(51,51,51,.3);
+    display:none;
+    cursor: pointer;
+    background-color:rgba(255,255,255,.6);
+    border-radius: 10px;
+}
+
+.Clip /* Medidas de la img del clip dentro de los Dragzone */
+{
+    height:7vh;
+    width:3.7vw;
+}
+
+
+#DragFotoPerfil /* Tamaño específico de cada Dragzone */
+{
+    height: 21.8vh;
+    width: 12vw;
+}
+
+#InputFoto
+{
+    display:none;
+}
+
+#FotoPerfil 
+{
+    height: 21.8vh;
+    width: 12vw;
+    display:block;
+}
+
+.Minuscula /* Se aplica al Email y Skype Input */
+{
+    text-transform:none !important;
+}
+
+#Submit
+{
+    font-family: inherit;
+    font-weight: 900;
+    color:black;
+    border-radius: 10px;
+    width: 83.33vw;
+}
+
+/*----------------------------------------------------------------------------------*/
+
+#Diagnostico span:hover
+{
+    cursor:pointer;
+}
