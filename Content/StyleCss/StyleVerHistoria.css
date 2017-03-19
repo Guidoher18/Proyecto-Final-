@@ -181,3 +181,9 @@ h1
 {
     cursor:pointer;
 }
+
+*#Diagnostico 
+{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}

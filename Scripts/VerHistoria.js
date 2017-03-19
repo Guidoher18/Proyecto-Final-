@@ -1,7 +1,7 @@
 //Evita que cuando se hace clic en #AgregarVinculo se recargue por Default la página
-document.getElementById("AgregarVinculo").addEventListener("click", function(event){
+/*document.getElementById("AgregarVinculo").addEventListener("click", function(event){
     event.preventDefault()
-});
+});*/
 
 
 $(document).ready(function(){
@@ -28,7 +28,7 @@ $(document).ready(function(){
         var $fecha1 = moment($FechaElegida);
         var $fecha2 = moment($FechaHoy);
         
-        var $Edad = $fecha2.diff($fecha1, 'years'); //Calculo la Edad en Años
+        var $Edad = $fecha2.diff($fecha1, 'years'); //Calculo la Diferencia en Años
         var $DifMeses = $fecha2.diff($fecha1, 'month'); //Calculo la Difencia en Meses
             $DifMeses %=12;
         var $PalabraMes = '';
@@ -66,18 +66,7 @@ $(document).ready(function(){
         };
      };
 
-//Inserta una nueva fila de campos para cargar otro Vinculo Significativo
-    var $Contador = 0;
-    var a = '';
-    var b = '';
-    
-    $('#AgregarVinculo').on('click', function(){
-        $Contador +=1;
-        
-        var $NuevoVinculo = '<div id="VinculosSignificativos' + $Contador + '" class="col-md-6"><label class="col-md-3"> </label><label id="VSFechaNacimientoLabel' + $Contador + '" class="col-md-2 Años">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(?? Años)</label><button class="btn btn-danger QuitarVinculo"><span class="glyphicon glyphicon-remove"></span></button><br><input type="text" name="VSVinculo' + $Contador + '" class="form-control col-md-1" placeholder="VÍNCULO"/><input type="text" name="VSApellidoNombre' + $Contador + '" class="form-control col-md-2" placeholder="APELLIDO Y NOMBRE"/><input type="date" name="VSFechaNacimiento' + $Contador + '" class="form-control col-md-1" id="VSFechaNacimiento" style="font-size:9px"/><input type="text" name="VSOcupacion' + $Contador + '" class="form-control col-md-1" placeholder="OCUPACIÓN"/><select name="VSConvive' + $Contador + '" class="form-control col-md-1" style="font-size:9px"><option value="Convive" default>CONVIVE</option><option value="No Convive"> NO CONVIVE</option></select></div>';
-        
-        $($NuevoVinculo).insertAfter($('#VinculosSignificativos'));
-    });
+
 //Calcula la Edad para el (?? Años) de #FechaNacimiento
     $('#FechaNacimiento input[type="date"]').on('focusout',function(){
         CalcularEdad('#FechaNacimiento input[type="date"]','#FechaNacimiento>label');
@@ -96,13 +85,51 @@ $(document).ready(function(){
     CalcularEdad(a,b);});*/
 
 /*----------------------------------------------------------------------------------*/
+//Cheaquear Función
+    $('#DSM span').on('click',function(){
+        var $Direccion = $('#DSM input').val().toString();
+        var nuevapalabra = "";
+        (function ($Direccion){     //Esta función reemplaza los espacios en blanco por + para formar la URL
+            for (var i = 0; i<$Direccion.length(); i +=1)
+            {
+                if ($Direccion[i] == " ")
+                {
+                    nuevapalabra += "+";
+                }
+                else
+                {
+                    nuevapalabra += $Direccion[i];
+                };
+            };
+            return nuevapalabra;
+        });
 
-    $('#DSM>Label>span').on('click',function(){
-        var $Direccion = $('#DSM>input').val().toString();
-        $Direccion = $Direccion.replace(/\s/g, '+');
-        $Direccion = 'https://www.google.com/search?q=' + $Direccion;
-        $(this).html('<a id="DSMa" href="' + $Direccion + '></a>');
+        $Direccion = 'https://www.google.com/search?q=' + nuevapalabra; // Hasta aqui, se obtiene el valor del input, se le agrega un + en los espacios y se le suma la dirección URL formando el Link de búsqueda en google
+        $('#DSM span').html("<a id='DSMa' href='" + $Direccion + "'></a>");
         $('#DSMa').click();
+        alert($('#DSMa'));
+    });
+
+
+
+
+
+
+//Inserta una nueva fila de campos para cargar otro Diagnóstico
+    var $Contador = 0;
+    
+    $('#NombreDiagnostico span[class="glyphicon glyphicon-plus"]').on('click', function(){
+        $Contador +=1;
+        
+        var $NuevoDiagnostico = '<div id="Diagnostico'+ $Contador +'" class="col-md-6"> <!-- Diagnóstico'+ $Contador +' --><Label class="col-md-3"></label><br><div class="col-md-1" id="Fecha'+ $Contador +'"><!-- Fecha'+ $Contador +' --><Label class="col-md-1"> </label><input type="text" name="Fecha" class="form-control col-md-1" placeholder="Fecha"></div><div class="col-md-1" id="DSM'+ $Contador +'"><!-- Código DSM'+ $Contador +' --><Label class="col-md-1"> </label><input type="text" name="DSM" class="form-control col-md-1" placeholder="DSM"></div><div class="col-md-4"id="NombreDiagnostico'+ $Contador +'"> <!-- Nombre del Diagnóstico'+ $Contador +' --><Label class="col-md-4"> </label><input type="text" name="Nombre" class="form-control col-md-4" placeholder="Nombre del Diagnóstico"></div>';   
+
+        $($NuevoDiagnostico).insertAfter($('#NombreDiagnostico'));
+        $('#Diagnostico'+ $Contador + ' label:first-child').css("display","none");
+        $('#Diagnostico'+ $Contador).css("padding","0 !important");
+        $('#Diagnostico'+ $Contador + '>div').css("padding","0 !important");
+        /*$('#Fecha'+ $Contador).css("padding-left","0 !important");
+        $('#DSM'+ $Contador).css("padding","0 !important");
+        $('#NombreDiagnostico'+ $Contador).css("padding","0 !important");*/
     });
     
 });
