@@ -1,0 +1,29 @@
+/*POSICIONAMIENTO EN ORDEN DE APARICIÓN */
+#BusquedaNav
+{
+    top:6.5px;
+    margin-left: 8.33vw;
+}
+
+#FotoNav
+{
+    display:inline-block;
+}
+
+#DivContacto
+{
+    margin-left: 8.33vw;
+    margin-right: 8.33vw;
+}
+
+footer
+{
+    display:block;
+    position:absolute; 
+    top:77.9123vh;
+}
+
+footer p
+{
+    display:inline;
+}

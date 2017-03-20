@@ -1,0 +1,123 @@
+/* ESTILO GENERAL DEL FORMULARIO */
+body
+{
+    background-image: url("../Images/Layout/TramaLaterales.png");
+    background-size: 100%;
+    background-repeat: repeat-y;
+    background-position: center;
+    background-color: #0F1F63; 
+    width:1280px;
+    height:auto;
+}
+
+input /*Estilo de los input */
+{
+    border-radius: 10px;
+    text-align:center;
+    text-transform: uppercase;
+}
+
+.form-control /*Borde redondeado y texto centrado de los <p> */
+{
+    border-radius:10px;
+    text-align:center;
+}
+
+/*Medidas de col para sobreescribir width:100vw de .form-control. body = 1280vw*/
+*[class~="col-md-1"]
+{
+    width: 8.33vw !important;
+}
+
+*[class~="col-md-2"]
+{
+    width: 16.66vw !important;
+}
+
+*[class~="col-md-3"]
+{
+    width: 25vw !important;
+}
+
+*[class~="col-md-4"]
+{
+    width: 33.33vw !important;
+}
+
+*[class~="col-md-5"]
+{
+    width: 41.66vw !important;
+}
+
+*[class~="col-md-6"]
+{
+    width: 50vw !important;
+}
+
+*[class~="col-md-7"]
+{
+    width: 58.33vw !important;
+}
+
+*[class~="col-md-8"]
+{
+    width: 66.66vw !important;
+}
+
+*[class~="col-md-9"]
+{
+    width: 75vw !important;
+}
+
+*[class~="col-md-10"]
+{
+    width: 83.33vw !important;
+}
+
+*[class~="col-md-11"]
+{
+    width: 91.66vw !important;
+}
+
+*[class~="col-md-12"]
+{
+    width: 100vw !important;
+}
+
+/* ESTILOS ESPECÍFICOS EN ORDEN DE APARICIÓN */
+
+#FotoNav
+{
+    width:45px; 
+    height:45px;
+}
+
+body>h1
+{
+    font-weight:500;
+    font-size: 36px !important;            
+    color: #fff;
+}
+
+#NuevaEvolucion
+{
+    border-top: 1px double black;
+    border-bottom: 1px double black;
+    border-radius:20px;
+    background-color: #fff;
+}
+
+#FirmaEvolucion>img
+{
+    width:16.33vw;
+    height:auto;
+}
+
+#FirmaEvolucion>p
+{
+    text-align:center;
+}
+
+
+
+

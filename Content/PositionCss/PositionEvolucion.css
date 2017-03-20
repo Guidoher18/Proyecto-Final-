@@ -1,0 +1,52 @@
+/* ESTILO DE POSICIÓN GENERAL*/
+
+input
+{
+    padding: 0 !important;
+}
+
+label
+{
+    padding: 0 !important;
+}
+
+/* Corrige el margin left y right de -15px de la clase .row */
+.row
+{
+    margin-left:0;
+    margin-right:0;
+}
+
+/* Corrige el padding left y right de -15px de la clase .row */
+.row, .SinPadding
+{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* ESTILO DE POSICIÓN ESPECÍFICO*/
+h1
+{
+    padding-left:15px;
+    display: inline;
+}
+
+#Evolucion
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#FirmaEvolucion
+{
+    margin-left: 16.66vw;
+    margin-right: 16.66vw;
+}
+
+#InsertarEvolucion
+{
+    margin-left: 5.1563vw;
+}
+
+
+

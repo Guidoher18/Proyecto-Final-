@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <link type="text/css" rel="Stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link type="text/css" rel="Stylesheet" href="../Content/StyleCss/StyleEvolucion.css">
+    <link type="text/css" rel="Stylesheet" href="../Content/PositionCss/PositionEvolucion.css">
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">PsicoLog</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#"><span class="glyphicon glyphicon-folder-open">&nbsp;</span>Historia Clínica</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-list-alt">&nbsp;</span> Evolución</a></li>
+          </ul> 
+          <ul class="nav navbar-nav navbar-right">
+            <div>
+              <img src="../Content/Images/Other/FotoPerfil.png" style="width:45px; height:45px; display:inline-block"/> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">35123123<span class="caret"></span></a>
+              <ul class="dropdown-menu" id="DropdownRight">
+                  <li><a href="#">Editar</a></li>                           
+                  <li><a href="#">Salir</a></li>
+              </ul>                             
+            </div>
+          </ul>
+        </div> 
+      </div>
+    </nav>
+    <!--NAVBAR-->
+    <!-- START VIEW -->    
+<!--    <div id="Buscador" >
+        <h1 class="col-md-4"> Historia Clínica <span> <button class="btn btn-info"><strong><span class="glyphicon glyphicon-plus">&nbsp;Crear</span></strong></button> </span></h1> 
+        <div class="col-md-5">
+            <input type="text" name="TextBuscar" class="form-control col-md-4">&nbsp;<button class="btn btn-info"><span class="glyphicon glyphicon-search"></span></button>
+        </div>
+        <div class=col-md-1 id="OpcionesBusqueda">
+            <a href="#">Ver Todo</a><br>
+            <a href="#">Avanzado</a>
+        </div>
+    </div> -->
+    <h1 class="col-md-4"> Últimas Evoluciones </div>
+    <div id="ContenedorPrincipal" class="col-md-10">       
+        <ul>
+            <a href="#"><li>A001 - Perez, Juan Carlos (Entrevista de Admisión. El paciente presenta ataques de pánico....)</li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+        </ul>
+    </div>
+        <div id="Evolucion" class="col-md-6 SinPadding"> <!-- Evolución -->   
+                <div class="row SinPadding col-md-2">
+                    <div class="col-md-1 SinPadding" id="Fecha"> <!-- Fecha -->
+                        <Label class="col-md-1 SinPadding">Fecha</label>    
+                        <input type="text" name="Fecha" class="form-control col-md-1">
+                    </div>                
+                    <div class="col-md-1 SinPadding" id="Sesion"> <!-- Número de Sesión -->
+                        <Label class="col-md-1">Sesión n°</label>    
+                        <input type="number" name="Sesion" class="form-control col-md-1">
+                    </div>
+                </div>            
+                    <div class="col-md-6 SinPadding"id="TextoEvolucion"> <!-- Evolución propiamente dicha -->
+                        <textarea name="TextoEvolución" class="form-control col-md-6" placeholder="Escriba su evolución aqui..."></textarea>
+                        <input type="file" name="Adjunto" class="col-md-5"/>
+                        <button id="InsertarEvolucion" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span></button>
+                    </div>
+        </div> 
+    <!-- END VIEW -->
+
+    <!-- SCRIPTS -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="../Scripts/Evolucion.js"></script>
+</body>
+<footer>
+    <p>PsicoLog® 2017&nbsp; &nbsp;</p><a href="#"><p>Contacto</p></a>  
+</footer>
+</html>
