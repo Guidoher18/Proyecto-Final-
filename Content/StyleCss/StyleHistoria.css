@@ -1,3 +1,4 @@
+/* ESTILO GENERAL*/
 body
 {
     background-image: url("../Images/Layout/TramaLaterales.png");
@@ -24,28 +25,20 @@ a
     background-color:transparent !important;
 }
 
-#DropdownRight
-{
-    text-align:center;
-}
+/*ESTILOS ESPECÍFICOS EN ORDEN DE APARICIÓN*/
 
+/*NAVBAR*/
 .container-fluid 
 {
     border-radius:20px;
 }
 
-footer
+#DropdownRight
 {
-    color:#fff;
-    text-align: center;
-    width:100%;
+    text-align:center;
 }
 
-footer a
-{
-    color:#fff;
-}
-
+/*------*/
 h1
 {
     font-weight:500;
@@ -55,20 +48,26 @@ h1
     width: 20.8250vw;
 }
 
-
 #Buscador input
 {
     text-transform: uppercase;
 }
 
-ul>a
+#OpcionesBusqueda>a
 {
-    font-size:20px !important;
+    color: #fff !important;
+}
+
+#OpcionesBusqueda>a:hover
+{
+    color: #fff !important;
+    text-decoration: none !important;
 }
 
 #ContenedorPrincipal a 
 {
     color: rgb(51,51,51) !important;
+    font-size:20px !important;
 }
 
 #ContenedorPrincipal a:hover
@@ -82,15 +81,11 @@ ul>a
     text-align: center;
 }
 
-#OpcionesBusqueda>a
+footer
 {
-    color: #fff !important;
-}
-
-#OpcionesBusqueda>a:hover
-{
-    color: #fff !important;
-    text-decoration: none !important;
+    color:#fff;
+    text-align: center;
+    width:100%;
 }
 
 footer>a

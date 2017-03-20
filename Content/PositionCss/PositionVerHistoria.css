@@ -1,12 +1,12 @@
 /* ESTILO DE POSICIÓN GENERAL*/
+#Todo 
+{
+    padding-top: 2px;
+}
+
 input
 {
     padding: 0 !important;
-}
-
-form>div>div>div
-{
-    padding:0 !important;
 }
 
 label
@@ -21,10 +21,11 @@ label
     margin-right:0;
 }
 
-.QuitarVinculo
+/* Corrige el padding left y right de -15px de la clase .row */
+.row, .SinPadding
 {
-    padding: 2px 12px !important;
-    margin-left: 5.1563vw;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 /* ESTILO DE POSICIÓN ESPECÍFICO*/
@@ -52,15 +53,26 @@ h1
     padding-left: 25px;
 }
 
-#AgregarVinculo
+#VinculosSignificativos>ul>li
 {
-    padding:2px 12px !important;
-    margin-left: 5.1563vw;
+    left: -40px !important;
 }
 
-#ObraSocial>div
+#Evolucion
 {
-    padding:0 !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#FirmaEvolucion
+{
+    margin-left: 16.66vw;
+    margin-right: 16.66vw;
+}
+
+#InsertarEvolucion
+{
+    margin-left: 5.1563vw;
 }
 
 #Div2 /* DATOS DE CONTACTO */
@@ -73,28 +85,6 @@ h1
 #Div2>img /* Posiciona la FotoPerfil de Ejemplo */
 {
     margin-left:6.4998vw;
-}
-
-/* DRAGFOTOPERFIL */
-#DragFotoPerfil div
-{
-    margin-top: 3.94vh;
-    margin-bottom: 3.94vh;
-}
-
-#DragFotoPerfil
-{
-    margin-left: 6.5vw;
-}
-
-#DragFotoPerfil p
-{
-    margin:0 !important;
-}
-
-#InputFoto
-{
-    z-index:-1;
 }
 
 /* CENTRAR LABELS */
@@ -138,25 +128,5 @@ h1
     margin-left: 5.4688vw;
     margin-right: 5.4688vw;
 }
-
-#Submit
-{
-    position:relative;
-    margin-left: 8.33vw;
-    margin-right: 8.33vw;
-}
-
-
-
-
-
-
-/*----------------------------------------------------------------------------------*/
-
-#Diagnostico, #Diagnostico>div
-{
-    padding: 0 !important;
-}
-
 
 

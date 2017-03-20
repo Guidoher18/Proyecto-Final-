@@ -10,7 +10,7 @@ body
     height:auto;
 }
 
-form /* Fondo Transparente */
+#Todo /* Fondo Transparente */
 {
     background-color: rgba(255, 255, 255, 0.7);
     height: auto;
@@ -26,9 +26,10 @@ input /*Estilo de los input */
     text-transform: uppercase;
 }
 
-.form-control /*Borde redondeado de los input */
+.form-control /*Borde redondeado y texto centrado de los <p> */
 {
     border-radius:10px;
+    text-align:center;
 }
 
 /*Medidas de col para sobreescribir width:100vw de .form-control. body = 1280vw*/
@@ -93,12 +94,6 @@ input /*Estilo de los input */
 }
 
 /* ESTILOS ESPECÍFICOS EN ORDEN DE APARICIÓN */
-h1
-{
-    font-weight:500;
-    font-size: 36px !important;            
-    color: #fff;
-}
 
 #FotoNav
 {
@@ -106,52 +101,35 @@ h1
     height:45px;
 }
 
-#VinculosSignificativos select, #VinculosSignificativos input[type="date"], #VinculosSignificativos label span:first-child
+h1
 {
-    font-size: 9px;
-}
-/* ubicación Labels (?? Años) en #FechaNacimiento y #VSFechaNacimiento */
-.Años[class~=col-md-2]
-{
-    text-align: center;
+    font-weight:500;
+    font-size: 36px !important;            
+    color: #fff;
 }
 
-.Años[class~=col-md-3]
+#EstudiosAlcanzados>p, #MTContacto>p
 {
-    text-align: justify;
+    font-size: 12px;
 }
 
-/* DRAGZONES */
-.Drag /* Estilo general de los Dragzone */
+#NuevaEvolucion
 {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-weight:bold;
+    border-top: 1px double black;
+    border-bottom: 1px double black;
+    border-radius:20px;
+    background-color: #fff;
+}
+
+#FirmaEvolucion>img
+{
+    width:16.33vw;
+    height:auto;
+}
+
+#FirmaEvolucion>p
+{
     text-align:center;
-    color: rgb(51,51,51);
-    border:3px dashed rgba(51,51,51,.3);
-    display:none;
-    cursor: pointer;
-    background-color:rgba(255,255,255,.6);
-    border-radius: 10px;
-}
-
-.Clip /* Medidas de la img del clip dentro de los Dragzone */
-{
-    height:7vh;
-    width:3.7vw;
-}
-
-
-#DragFotoPerfil /* Tamaño específico de cada Dragzone */
-{
-    height: 21.8vh;
-    width: 12vw;
-}
-
-#InputFoto
-{
-    display:none;
 }
 
 #FotoPerfil 
@@ -164,26 +142,4 @@ h1
 .Minuscula /* Se aplica al Email y Skype Input */
 {
     text-transform:none !important;
-}
-
-#Submit
-{
-    font-family: inherit;
-    font-weight: 900;
-    color:black;
-    border-radius: 10px;
-    width: 83.33vw;
-}
-
-/*----------------------------------------------------------------------------------*/
-
-#Diagnostico span:hover
-{
-    cursor:pointer;
-}
-
-*#Diagnostico 
-{
-    padding-left: 0 !important;
-    padding-right: 0 !important;
 }

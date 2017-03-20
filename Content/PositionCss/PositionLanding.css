@@ -1,6 +1,23 @@
+body>div
+{
+    left: 8.33vw;
+    right: 8.33vw;
+    padding: 0 !important;
+}
+
 h3
 {
     margin-top: 10px !important;
+}
+
+#TopLeft
+{
+    padding:0;
+}
+
+#TopRight
+{
+    padding:0;
 }
 
 #TopRight a
@@ -24,21 +41,9 @@ h3
     padding-left:4.6vw;
 }
 
-#TopRight
+#ContenidoPrincipal
 {
-    padding:0;
-}
-
-#TopLeft
-{
-    padding:0;
-}
-
-body>div
-{
-    left: 8.33vw;
-    right: 8.33vw;
-    padding: 0 !important;
+    top:11.3862vh;
 }
 
 #Caracteristicas
@@ -48,20 +53,15 @@ body>div
     right: 8.33vw;
 }
 
-button
-{
-    top: 40px;
-    margin-left: 25vw;
-    margin-right: 25vw;
-}
-
 p
 {
     padding-left: 8.33vw;
     padding-right: 8.33vw;    
 }
 
-#ContenidoPrincipal
+button
 {
-    top:11.3862vh;
+    top: 40px;
+    margin-left: 25vw;
+    margin-right: 25vw;
 }

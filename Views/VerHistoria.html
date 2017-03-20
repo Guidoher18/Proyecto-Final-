@@ -44,156 +44,189 @@
     <!--NAVBAR-->
 
     <!-- START VIEW -->    
-    <h1 id="ApellidoyNombre">PEREZ, JUAN CARLOS</h1><h1 id="NumeroHistoria">|| 1</h1><br>
-    <form action="#" method="POST">
-        <div class="form-group">
-            <div class="col-md-6" id="Div1"> <!-- Datos Generales del Paciente-->
-            
-            <div id="Diagnostico" class="col-md-6"> <!-- Diagnóstico -->           
-                <Label class="col-md-3">Diagnóstico</label><br><br>    
-                <div class="col-md-1" id="Fecha"> <!-- Fecha -->
-                    <Label class="col-md-1">Fecha</label>    
-                    <input type="text" name="Fecha" class="form-control col-md-1">
-                </div>                
-                <div class="col-md-1" id="DSM"> <!-- Código DSM -->
-                    <Label class="col-md-1">DSM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-search"></span></label>    
-                    <input type="text" name="DSM" class="form-control col-md-1">
-                </div>                
-                 <div class="col-md-4"id="NombreDiagnostico"> <!-- Nombre del Diagnóstico -->
-                    <Label class="col-md-4">Nombre del Diagnóstico  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-search"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-plus"></span></label>    
-                    <input type="text" name="Nombre" class="form-control col-md-4">
-                </div>      
-            </div>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-                <div class="col-md-6"> <!-- Apellido y Nombre -->
-                    <label>Apellido y Nombre</label><br>
-                    <input type="text" class="form-control col-md-6" name="ApellidoyNombre"/>
-                </div><br>
-                <div id="DNI" class="col-md-3"> <!-- DNI -->
-                        <label class="col-md-2">DNI</label> <br>
-                        <input type="text" name="DNI" class="form-control"/>
-                </div><br>
-                <div id="Nacionalidad" class="col-md-3"> <!-- Nacionalidad -->
-                        <label class="col-md-2">Nacionalidad</label> <br>
-                        <input type="text" name="Nacionalidad" class="form-control"/>
-                </div><br>
-                
-                </div><br>
-                <div class="col-md-2"> <!-- Estudios Alcanzados -->
-                        <label class="col-md-2">Estudios Alcanzados</label><br>
-                        <select name="EstudiosAlcanzados" class="form-control col-md-2" id="EstudiosAlcanzados">
-                            <option value="PrimarioIncompleto">Primario Incompleto</option>
-                            <option value="PrimarioCompleto"> Primario Completo</option>
-                            <option value="SecundarioIncompleto"> Secundario Incompleto</option>
-                            <option value="SecundarioCompleto" selected> Secundario Completo</option>
-                            <option value="UniversitarioIncompleto"> Universitario Incompleto</option>
-                            <option value="UniversitarioCompleto"> Universitario Completo</option>
-                            <option value="Posgrado"> Posgrado</option>
-                        </select>
-                </div><br>
-                <div id="Carrera" class="col-md-4"> <!-- Carrera -->
-                        <label class="col-md-2">Carrera</label><br>
-                        <input type="text" name="Carrera" class="form-control"/>
-                </div><br>                
-                <div id="Ocupacion" class="col-md-4"> <!-- Ocupación -->
-                        <label class="col-md-2">Ocupación</label><br>
-                        <input type="text" name="Ocupacion" class="form-control"/>
-                </div><br>
-                <div id="Residencia" class="col-md-2"> <!-- Residencia -->
-                        <label class="col-md-2">Lugar de Residencia</label> <br>
-                        <input type="text" name="Residencia" class="form-control" placeholder="CABA"/>
-                </div><br>
-                <div id="VinculosSignificativos" class="col-md-6"> <!-- Vinculos Significativos -->           
-                    <label class="col-md-3">Vínculos Significativos <span>(Pareja, hijos, G. de Convivencia)</span></label><label id="VSFechaNacimientoLabel" class="col-md-2 Años">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(?? Años)</label><button id="AgregarVinculo" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span></button><br> 
-                        <input type="text" name="VSVinculo" class="form-control col-md-1" placeholder="VÍNCULO"/>
-                        <input type="text" name="VSApellidoNombre" class="form-control col-md-2" placeholder="APELLIDO Y NOMBRE"/>   
-                        <input type="date" name="VSFechaNacimiento" class="form-control col-md-1" id="VSFechaNacimiento"/>
-                        <input type="text" name="VSOcupacion" class="form-control col-md-1" placeholder="OCUPACIÓN"/>
-                        <select name="VSConvive" class="form-control col-md-1">
-                                <option value="Convive" default>CONVIVE</option>
-                                <option value="No Convive"> NO CONVIVE</option>
-                        </select>
-                </div>
-                <div id="ObraSocial"> <!-- Obra Social: Nombre, Plan, N° de Credencial -->
-                    <div class="col-md-3"> 
-                        <label class="col-md-2">Obra Social</label><br>
-                        <input type="text" name="ObraSocial" class="form-control col-md-3"/> 
-                    </div>
-                    <div class="col-md-3"> 
-                        <label class="col-md-2">Plan</label><br>
-                        <input type="text" name="Plan" class="form-control col-md-3"/>
-                    </div>
-                    <div class="col-md-6"> 
-                        <label class="col-md-2">Credencial N°</label><br>
-                        <input type="text" name="Credencial" class="form-control col-md-6"/>
-                    </div>
-                </div><br>  
-                <div id="Observaciones" class="col-md-6"> <!-- Observaciones -->
-                        <label class="col-md-2">Observaciones</label><br>
-                        <textarea name="Observaciones" class="form-control"></textarea>
-                </div><br>  
-            </div>
 
-            <div class="col-md-4" id="Div2"> <!-- Datos de Contacto del Paciente -->   
-                
-                <!-- Foto Perfil de ejemplo y div de Seleccionar o Arrastrar -->
-                <img src="../Content/Images/Other/FotoPerfil.png" class="img-rounded text-center" id="FotoPerfil"/> 
-                <div id="DragFotoPerfil" class="Drag">
-                    <div>
-                        <p>SELECCIONA</p>
-                        <img src="../Content/Images/Other/Clip.png" class="Clip"/>
-                        <p>ARRASTRA</p>
-                    </div>
-                </div>
-                <input type="file" id="InputFoto" name="FotoPerfil" class="Invisible" onchange="handleFiles(this.files)"/>
-                <div class="row" id="Celular"> <!-- Celular -->
-                    <label id="CelularLabel"><span class="glyphicon glyphicon-phone"></span>&nbsp; Celular</label> <br>
-                    <input type="text" name="Celular" class="form-control col-md-3"/> <br>
-                </div>
-                <div class="row" id="Telefono"> <!-- Teléfono -->
-                    <label id="TelefonoLabel"><span class="glyphicon glyphicon-earphone"></span>&nbsp; Teléfono</label> <br>
-                    <input type="text" name="Telefono" class="form-control col-md-3"/> <br>
-                </div>
-                <div class="row" id="Email"> <!-- Email -->
-                    <label id="EmailLabel"><span class="glyphicon glyphicon-envelope"></span>&nbsp; Email</label> <br>
-                    <input type="email" name="Email" class="form-control col-md-3 Minuscula"/> <br>
-                </div>
-                <div class="row" id="Skype"> <!-- Skype -->
-                    <label id="SkypeLabel"><span class="glyphicon glyphicon-facetime-video"></span>&nbsp; Skype</label> <br>
-                    <input type="text" name="Skype" class="form-control col-md-3 Minuscula"/> <br>
-                </div>
-                <div class="row" id="Direccion"> <!-- Dirección -->
-                    <label id="DireccionLabel"><span class="glyphicon glyphicon-screenshot"></span>&nbsp; Dirección</label> <br>
-                    <input type="text" name="Direccion" class="form-control col-md-3"/> <br>
-                </div>
-                <div class="row" id="Referencia"> <!-- Número de Referencia -->
-                    <label id="ReferenciaLabel"><span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp; Número de Referencia</label> <br>
-                    <input type="text" name="ReferenciaNombre" class="form-control col-md-3" placeholder="Nombre y Vínculo"/> <br>
-                    <input type="text" name="ReferenciaNumero" class="form-control col-md-3" placeholder="Número"/> <br>
+    <h1 id="ApellidoyNombre">PEREZ, JUAN CARLOS</h1><h1 id="NumeroHistoria">|| 1</h1><br>
+    <div id="Todo" class="container col-md-12 SinPadding">
+        <div class="col-md-6 SinPadding" id="Div1"> <!-- Datos Generales del Paciente-->
+            <div class="row">   
+                <div id="DNI" class="col-md-3 SinPadding"> <!-- DNI -->
+                        <label class="col-md-2">DNI</label><br>
+                        <p class="col-md-3 form-control"> 30.000.000 </p>
+                </div> 
+                <div id="Nacionalidad" class="col-md-3 SinPadding"> <!-- Nacionalidad -->
+                        <label class="col-md-2">Nacionalidad</label> <br>
+                        <p class="col-md-3 form-control"> ARGENTINO </p>
                 </div><br>
             </div>
-            <input type="submit" value="Cargar" class="btn btn-success" id="Submit">
-        </div>
-    </form>    
+            <div class="row">
+                <div class="col-md-2 SinPadding" id="Genero"> <!-- Género -->
+                    <label class="col-md-2">Género</label> <br>
+                    <p class="col-md-2 form-control"> MASCULINO </p>
+                </div>                
+                <div id="EstadoCivil" class="col-md-2 SinPadding"> <!-- Estado Civil -->
+                    <label class="col-md-2">Estado Civil</label> <br>
+                    <p class="col-md-2 form-control"> SOLTERO </p>
+                </div>
+                <div id="FechaNacimiento" class="col-md-2 SinPadding"> <!-- Fecha de Nacimiento -->
+                    <label class="col-md-2 Años">Fecha de Nacimiento</label><br>
+                    <p class="col-md-2 form-control"> 20/03/1980 - 37 Años</p>
+                </div>
+            </div>
+            <div class="row">    
+                <div class="col-md-2 SinPadding" id="EstudiosAlcanzados"> <!-- Estudios Alcanzados -->
+                    <label class="col-md-2">Estudios Alcanzados</label><br>
+                    <p class="col-md-2 form-control"> UNIVERSITARIO INCOMPLETO </p>
+                </div>
+                <div class="col-md-4 SinPadding" id="Carrera"> <!-- Carrera -->
+                    <label class="col-md-2">Carrera</label><br>
+                    <p class="col-md-4 form-control"> ABOGACIA </p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="Ocupacion" class="col-md-4 SinPadding"> <!-- Ocupación -->
+                        <label class="col-md-2">Ocupación</label><br>
+                        <p class="col-md-4 form-control"> VENDEDOR </p>
+                </div>
+                <div id="Residencia" class="col-md-2 SinPadding"> <!-- Residencia -->
+                        <label class="col-md-2">Lugar de Residencia</label> <br>
+                        <p class="col-md-2 form-control"> CABA </p>
+                </div>
+            </div>
+            <div id="VinculosSignificativos" class="col-md-6 SinPadding"> <!-- Vinculos Significativos -->           
+                <label class="col-md-3">Vínculos Significativos <span>(Pareja, hijos, G. de Convivencia)</span></label><br> 
+                <ul>    
+                    <li class="col-md-6 form-control"> ESPOSA - RODRIGUEZ, PAULA - 04/04/1978 (38) - DOCENTE - CONVIVE </li>
+                    <li class="col-md-6 form-control"> HIJA - PEREZ, HELENA - 07/08/2000 (16) - ESTUDIANTE - CONVIVE </li>
+                    <li class="col-md-6 form-control"> HIJO - PEREZ,SANTINO - 20/01/2004 (13) - ESTUDIANTE - CONVIVE </li>
+                </ul>
+            </div>
+            <div id="ObraSocial" class="row SinPadding"> <!-- Obra Social: Nombre, Plan, N° de Credencial -->
+                    <div class="col-md-3 SinPadding"> 
+                        <label class="col-md-2">Obra Social</label><br>
+                        <p class="col-md-3 form-control"> GALENO </p>
+                    </div>
+                    <div class="col-md-3 SinPadding"> 
+                        <label class="col-md-2">Plan</label><br>
+                        <p class="col-md-3 form-control"> PLATA </p>
+                    </div>
+                </div>
+            <div class="col-md-6 SinPadding"> 
+                <label class="col-md-2">Credencial N°</label><br>
+                <p class="col-md-6 form-control"> 00123456789000 </p>
+            </div>
+            <div id="Observaciones" class="col-md-6 SinPadding"> <!-- Observaciones -->
+                <label class="col-md-2">Observaciones</label><br>
+                <p class="col-md-6 form-control"> DERIVADO POR EL DR.GÓMEZ (PSIQUIATRA) </p>
+            </div> 
+            <div class="col-md-6 SinPadding"id="Sintomas"> <!-- Síntomas -->
+                <Label class="col-md-4">Síntomas</label>    
+                <p class="col-md-6 form-control"> ANGUSTIA, MIEDO A LOS ESPACIOS ABIERTOS Y PÚBLICOS </p>
+            </div>      
+            <div id="Diagnostico" class="col-md-6 row SinPadding"> <!-- Diagnóstico -->           
+                    <Label class="col-md-3">Diagnóstico</label><br><br>    
+                    <div class="col-md-1 SinPadding" id="Fecha"> <!-- Fecha -->
+                        <Label class="col-md-1">Fecha</label>    
+                        <p class="col-md-1 form-control"> 20/03/2017 </p>
+                    </div>                
+                    <div class="col-md-1 SinPadding" id="DSM"> <!-- Código DSM -->
+                        <Label class="col-md-1">DSM </label>    
+                        <p class="col-md-1 form-control"> 300.21 </p>
+                    </div>                
+                    <div class="col-md-4 SinPadding" id="NombreDiagnostico"> <!-- Nombre del Diagnóstico -->
+                        <Label class="col-md-4">Nombre del Diagnóstico</label>    
+                        <p class="col-md-4 form-control"> TRASTORNO DE ANGUSTIA CON AGORAFOBIA </p>
+                    </div>      
+            </div>
+            <div id="MedicoTratante" class="col-md-6 row SinPadding"> <!-- Médico Tratante -->           
+                    <Label class="col-md-6">Médico Tratante</label><br><br>
+                    <div class="col-md-2 SinPadding" id="MTApellidoyNombre"> <!-- Apellido y Nombre del Médico Trantante -->
+                        <Label class="col-md-2">Apellido y Nombre</label>    
+                        <p class="col-md-2 form-control"> DR. GÓMEZ </p>
+                    </div>                
+                    <div class="col-md-2 SinPadding" id="MTEspecialidad"> <!-- Especialidad -->
+                        <Label class="col-md-2">Especialidad</label>    
+                        <p class="col-md-2 form-control"> PSIQUIATRÍA </p>
+                    </div>    
+                    <div class="col-md-2 SinPadding" id="MTContacto"> <!-- Contacto -->
+                        <Label class="col-md-2">Contacto / Horario</label>    
+                        <p class="col-md-2 form-control"> 45678900 (LU-MI 14 A 18 HS) </p>
+                    </div>                
+            </div>
+            <div id="Medicacion" class="col-md-6 row SinPadding"> <!-- Medicación -->           
+                <Label class="col-md-6">Medicación</label><br><br>
+                <div class="col-md-3 SinPadding" id="Droga"> <!-- Nombre de la Droga -->
+                    <Label class="col-md-3">Nombre Genérico</label>    
+                    <p class="col-md-3 form-control"> ALPRAZOLAM 1MG </p>
+                </div>                
+                <div class="col-md-3 SinPadding" id="Dosis"> <!-- Dosis -->
+                    <Label class="col-md-3">Dosis</label>    
+                    <p class="col-md-3 form-control"> 1/2 (0,5MG) C/ 12HS </p>
+                </div>    
+            </div>
+            <div id="Evolucion" class="col-md-6 SinPadding"> <!-- Evolución -->   
+                    <div class="row SinPadding col-md-2">
+                        <div class="col-md-1 SinPadding" id="Fecha"> <!-- Fecha -->
+                            <Label class="col-md-1 SinPadding">Fecha</label>    
+                            <input type="text" name="Fecha" class="form-control col-md-1">
+                        </div>                
+                        <div class="col-md-1 SinPadding" id="Sesion"> <!-- Número de Sesión -->
+                            <Label class="col-md-1">Sesión n°</label>    
+                            <input type="number" name="Sesion" class="form-control col-md-1">
+                        </div>
+                    </div>            
+                    <div class="col-md-6 SinPadding"id="TextoEvolucion"> <!-- Evolución propiamente dicha -->
+                        <textarea name="TextoEvolución" class="form-control col-md-6" placeholder="Escriba su evolución aqui..."></textarea>
+                        <input type="file" name="Adjunto" class="col-md-5"/>
+                        <button id="InsertarEvolucion" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span></button>
+                    </div>
+            </div> 
+
+            <div class="col-md-6" id="NuevaEvolucion">
+                <strong><p class="col-md-1 SinPadding"> 20/03/2017 </p></strong> <strong><p class="col-md-1 SinPadding"> Sesión 01 </p></strong>
+                <p class="col-md-6 SinPadding"> Entrevista de Admisión. Paciente derivado por el Dr. Gómez, presenta frecuentes ataques de pánico... </p>  
+                <div class="col-md-2 SinPadding" id="FirmaEvolucion">
+                    <img src="http://www.contraloriadedosquebradas.gov.co/documentos/archivos2012/firmas/firma%20carlos%20arturo.png"/>
+                    <p class="col-md-2 SinPadding">Lic. Gonzáles, Ricardo</p>
+                    <p class="col-md-2 SinPadding">MN.: 44567   MP.:56770</p>
+                </div>
+            </div>
+        </div>    
+        <div class="col-md-4 SinPadding" id="Div2"> <!-- Datos de Contacto del Paciente -->   
+                <!-- Foto Perfil de ejemplo y div de Seleccionar o Arrastrar -->
+                <img src="http://fotos01.farodevigo.es/fotos/noticias/318x200/2011-01-13_IMG_2011-01-13_23:13:18_so3.jpg" class="img-rounded text-center" id="FotoPerfil"/> 
+                <div class="row SinPadding" id="Celular"> <!-- Celular -->
+                    <label id="CelularLabel"><span class="glyphicon glyphicon-phone"></span>&nbsp; Celular</label> <br>
+                    <p class="col-md-3 form-control"> 15-1230-1230 </p>
+                </div>
+                <div class="row SinPadding" id="Telefono"> <!-- Teléfono -->
+                    <label id="TelefonoLabel"><span class="glyphicon glyphicon-earphone"></span>&nbsp; Teléfono</label> <br>
+                    <p class="col-md-3 form-control"> 11-4356-1234 </p>
+                </div>
+                <div class="row SinPadding" id="Email"> <!-- Email -->
+                    <label id="EmailLabel"><span class="glyphicon glyphicon-envelope"></span>&nbsp; Email</label> <br>
+                    <p class="col-md-3 form-control"> perez.juan80@gmail.com </p>
+                </div>
+                <div class="row SinPadding" id="Skype"> <!-- Skype -->
+                    <label id="SkypeLabel"><span class="glyphicon glyphicon-facetime-video"></span>&nbsp; Skype</label> <br>
+                    <p class="col-md-3 form-control"> perez.juan80@gmail.com </p>
+                </div>
+                <div class="row SinPadding" id="Direccion"> <!-- Dirección -->
+                    <label id="DireccionLabel"><span class="glyphicon glyphicon-screenshot"></span>&nbsp; Dirección</label> <br>
+                    <p class="col-md-3 form-control"> TRIUNVIRATO 2355, CABA</p>
+                </div>
+                <div class="row SinPadding" id="Referencia"> <!-- Número de Referencia -->
+                    <label id="ReferenciaLabel"><span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp; Número de Referencia</label> <br>
+                    <p class="col-md-3 form-control"> PAULA (ESPOSA) - 1567809911</p>
+                </div><br>
+        </div><br>
+    </div>
+    
+                
+            
+            
+            
+            
+            
     
     <!-- END VIEW -->
 

@@ -78,23 +78,71 @@ $(document).ready(function(){
         
         $($NuevoVinculo).insertAfter($('#VinculosSignificativos'));
     });
-//Calcula la Edad para el (?? Años) de #FechaNacimiento
+//Llama la función CalcularEdad() - Calcula la Edad para el (?? Años) de #FechaNacimiento
     $('#FechaNacimiento input[type="date"]').on('focusout',function(){
         CalcularEdad('#FechaNacimiento input[type="date"]','#FechaNacimiento>label');
     });
 
-//Calcula la Edad para el (?? Años) de #VSFechaNacimiento 
+//Llama la función CalcularEdad() - Calcula la Edad para el (?? Años) de #VSFechaNacimiento 
     $('#VSFechaNacimiento').on('focusout',function(){
         CalcularEdad('#VSFechaNacimiento','#VSFechaNacimientoLabel');
     }); 
 
+
+
+
+
+
+//NO FUNCIONA !!!!!!!!!! ------------------------------------------
+
 //Intento de que Calcule la Edad de los otros Vínculos Agregado y que elimine la file cuando se cliquea en un '.QuitarVinculo'
+
     /*a = 'VSFechaNacimiento'+ $Contador; //string del Nombre del inputDate
     b = 'VSFechaNacimientoLabel'+ $Contador; //string del Nombre del inputDateLabel
 
     $(a).on('focusout',function(){
     CalcularEdad(a,b);});*/
 
+//Lupita para buscar Código o Nombre del Diagnóstico
+    $('#DSM span').on('click',function(){
+        var $Direccion = $('#DSM input').val().toString();
+        var nuevapalabra = "";
+        (function ($Direccion){     //Esta función reemplaza los espacios en blanco por + para formar la URL
+            for (var i = 0; i<$Direccion.length(); i +=1)
+            {
+                if ($Direccion[i] == " ")
+                {
+                    nuevapalabra += "+";
+                }
+                else
+                {
+                    nuevapalabra += $Direccion[i];
+                };
+            };
+            return nuevapalabra;
+        });
 
+        $Direccion = 'https://www.google.com/search?q=' + nuevapalabra; // Hasta aqui, se obtiene el valor del input, se le agrega un + en los espacios y se le suma la dirección URL formando el Link de búsqueda en google
+        $('#DSM span').html("<a id='DSMa' href='" + $Direccion + "'></a>");
+        $('#DSMa').click();
+        alert($('#DSMa'));
+    });
+
+
+
+/*----------------------------------------------------------------------------------*/
+
+//Inserta una nueva fila de campos para cargar otro Diagnóstico
+    var $Contador = 0;
+    
+    $('#NombreDiagnostico span[class="glyphicon glyphicon-plus"]').on('click', function(){
+        $Contador +=1;
+        
+        var $NuevoDiagnostico = '<div id="Diagnostico'+ $Contador +'" class="col-md-6"> <!-- Diagnóstico'+ $Contador +' --><Label class="col-md-3"></label><br><div class="col-md-1" id="Fecha'+ $Contador +'"><!-- Fecha'+ $Contador +' --><Label class="col-md-1">&nbsp;</label><input type="text" name="Fecha" class="form-control col-md-1" placeholder="Fecha"></div><div class="col-md-1" id="DSM'+ $Contador +'"><!-- Código DSM'+ $Contador +' --><Label class="col-md-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-search"></span></label><input type="text" name="DSM" class="form-control col-md-1" placeholder="DSM"></div><div class="col-md-4"id="NombreDiagnostico'+ $Contador +'"> <!-- Nombre del Diagnóstico'+ $Contador +' --><Label class="col-md-4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-search"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-remove"></span></label>  <input type="text" name="Nombre" class="form-control col-md-4" placeholder="Nombre del Diagnóstico"></div>';   
+
+        $($NuevoDiagnostico).insertAfter($('#NombreDiagnostico'));
+        $('#Diagnostico'+ $Contador + '>label:first-child').css("display","none");
+        $('#Diagnostico'+ $Contador + '>div').css("padding-left","0");
+        $('#Diagnostico'+ $Contador + '>div').css("padding-right","0");
+    });
 });
- 

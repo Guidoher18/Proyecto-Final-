@@ -1,3 +1,4 @@
+/* ESTILOS GENERALES */
 body
 {
     background-image: url("../Images/Layout/Trama.png");
@@ -10,31 +11,9 @@ body
     color: #fff;
 }
 
-button
-{
-    width: 400px;
-}
-
-#TopRight
-{
-    text-align:center;
-}
-
 a
 {
     color:#fff;
-}
-
-#TopRight a:hover
-{
-    color:#00F562;
-    text-decoration: none !important;
-}
-
-#TopRight a:focus
-{
-    color:#FFF;
-    text-decoration: none !important;
 }
 
 p
@@ -42,30 +21,6 @@ p
     font-size: 28px;
     text-align: left;
 }
-
-h1
-{
-    font-size: 46px !important;
-    text-align: center;
-}
-
-#Caracteristicas h3
-{
-    font-size:34px !important;
-    text-align:center;
-}
-
-/* Marco Doble Linea Negra */
-#Caracteristicas
-{
-    border-top: 1.5vh double black;
-    border-bottom: 1.5vh double black;  
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.7);
-    color:rgb(51,51,51);
-    border-radius:20px;
-}
-
 
 /*Medidas de col para sobreescribir width:100vw de .form-control. body = 1280vw*/
 *[class~="col-md-1"]
@@ -127,3 +82,57 @@ h1
 {
     width: 100vw !important;
 }
+
+/* ESTILOS ESPECÍFICOS EN ORDEN DE APARICIÓN */
+
+#TopRight
+{
+    text-align:center;
+}
+
+#TopRight a:hover
+{
+    color:#00F562;
+    text-decoration: none !important;
+}
+
+#TopRight a:focus
+{
+    color:#FFF;
+    text-decoration: none !important;
+}
+
+h1
+{
+    font-size: 46px !important;
+    text-align: center;
+}
+
+#Caracteristicas h3
+{
+    font-size:34px !important;
+    text-align:center;
+}
+
+/* Marco Doble Linea Negra */
+#Caracteristicas
+{
+    border-top: 1.5vh double black;
+    border-bottom: 1.5vh double black;  
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    color:rgb(51,51,51);
+    border-radius:20px;
+}
+
+button
+{
+    width: 400px;
+}
+
+
+
+
+
+
+

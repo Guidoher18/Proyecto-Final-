@@ -1,3 +1,4 @@
+/* Estilo General */
 body
 {
     background-image: url("../Images/Layout/Trama.png");
@@ -7,6 +8,16 @@ body
     background-color: #364010;
     width:1280px;
     height:661px;
+}
+
+input
+{
+    text-align:center;
+}
+
+.oculto
+{
+    display:none;
 }
 
 h1
@@ -23,17 +34,6 @@ body>form>div
     text-align: center;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius:20px;
-}
-
-/* Estilo General */
-input
-{
-    text-align:center;
-}
-
-.oculto
-{
-    display:none;
 }
 
 /* Estilo Labels */

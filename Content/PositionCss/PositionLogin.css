@@ -8,43 +8,28 @@ h1
     margin-top: 0;
 }
 
-h2
-{
-    margin: 0;
-}
-
 form
 {
     padding: 0 !important;
     height: 50vh;
 }
 
-/* Marco doble linea negra */
+h2
+{
+    margin: 0;
+}
+
+/* Posición del Marco doble linea negra */
 body>form>div 
 {
     padding: 9.4176vh 15.9614vw !important;
     margin-bottom:0 !important;
 }
 
-
 /* Div interno que contiene los elementos */
 body>form>div>div
 {
     padding: 0 !important;
-}
-
-/* ¿Aun no tiene su cuenta? */
-p 
-{
-    margin-top:0!important;
-    margin-bottom:0!important;
-}
-
-
-/* Botón Siguiente */
-#Siguiente
-{
-    margin:10px 0;
 }
 
 #Usuario
@@ -58,6 +43,12 @@ p
 {
     padding-left:0 !important;
     padding-right:0 !important;
+}
+
+/* Botón Siguiente */
+#Siguiente
+{
+    margin:10px 0;
 }
 
 #Contraseña
@@ -90,6 +81,13 @@ p
 input[type=checkbox]
 {
     margin:0 !important;
+}
+
+/* ¿Aun no tiene su cuenta? */
+p 
+{
+    margin-top:0!important;
+    margin-bottom:0!important;
 }
 
 #Submit

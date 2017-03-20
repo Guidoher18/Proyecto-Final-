@@ -21,11 +21,7 @@ label
     margin-right:0;
 }
 
-.QuitarVinculo
-{
-    padding: 2px 12px !important;
-    margin-left: 5.1563vw;
-}
+
 
 /* ESTILO DE POSICIÓN ESPECÍFICO*/
 #Div1 /* DATOS GENERALES */
@@ -57,9 +53,20 @@ h1
     margin-left: 5.1563vw;
 }
 
+.QuitarVinculo /*Clase utilizada con jQuery*/
+{
+    padding: 2px 12px !important;
+    margin-left: 5.1563vw;
+}
+
 #ObraSocial>div
 {
     padding:0 !important;
+}
+
+#Diagnostico, #Diagnostico>div
+{
+    padding: 0 !important;
 }
 
 #Div2 /* DATOS DE CONTACTO */
@@ -144,6 +151,7 @@ h1
     margin-left: 8.33vw;
     margin-right: 8.33vw;
 }
+
 
 
 

@@ -1,22 +1,8 @@
-#ContenedorPrincipal
+/* POSICIONAMIENTO EN ORDEN DE APARICIÓN */
+#Buscador
 {
-    margin-left:8.33vw !important;
-    margin-right:8.33vw !important;
-    margin-top: 0vh;
-    margin-bottom: 15.5068vh;
-    padding: 10px 0!important;
-}
-
-footer
-{
-    display:block;
-    position:absolute; 
-    top:77.9123vh;
-}
-
-footer p
-{
-    display:inline;
+    margin-left: 8.33vw;
+    margin-top: 9.6066vh;   
 }
 
 h1
@@ -28,22 +14,32 @@ h1
 
 }
 
-#Buscador
-{
-    margin-left: 8.33vw;
-    margin-top: 9.6066vh;   
-}
-
-
 #Buscador button:first-child
 {
     margin-left:80px;
     margin-bottom:12px;
 }
 
-#Buscador div:nth-child(3)
+#Buscador>div:nth-child(2)
 {
-    bottom:2px;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    width: 480px!important;
+}
+
+#ContenedorPrincipal
+{
+    margin-left:8.33vw !important;
+    margin-right:8.33vw !important;
+    margin-top: 0vh;
+    margin-bottom: 15.5068vh;
+    padding: 10px 0!important;
+}
+
+#Paginacion
+{
+    margin-left:29.155vw;
+    margin-right:29.155vw;
 }
 
 #Paginacion>a
@@ -58,20 +54,14 @@ h1
     padding-right: 0 !important;
 }
 
-#Paginacion
+footer
 {
-    margin-left:29.155vw;
-    margin-right:29.155vw;
+    display:block;
+    position:absolute; 
+    top:77.9123vh;
 }
 
-#Buscador div div
+footer p
 {
-    display:absolute;
-}
-
-#Buscador>div:nth-child(2)
-{
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-    width: 480px!important;
+    display:inline;
 }

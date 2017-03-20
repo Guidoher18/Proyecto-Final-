@@ -1,7 +1,9 @@
-/*body
+/*ESTILOS GENERALES*/
+body /*Para Apreciar el footer */
 {
     background-color: green;
-}*/
+}
+
 a
 {
     color: rgb(51,51,51) !important;
@@ -9,7 +11,19 @@ a
     background-color:transparent !important;
 }
 
-/* cambiar el color de fondo a la barra */
+/*ESTILOS ESPECÍFICOS EN ORDEN DE APARICIÓN */
+.container-fluid 
+{
+    border-radius:20px;
+}
+
+#DropdownRight
+{
+    text-align:center;
+    background-color: rgba(255,255,255,0.7);
+}
+
+/* Cambia el color de fondo a la barra */
 nav.navbar {
     background-color: rgba(255,255,255,0.7);
 }
@@ -19,15 +33,16 @@ nav.navbar {
     background-color: rgba(255,255,255,0.7) !important;
 }
 
-#DropdownRight
+#BusquedaNav
 {
     text-align:center;
-    background-color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
 }
 
-.container-fluid 
+#FotoNav
 {
-    border-radius:20px;
+    width:45px; 
+    height:45px;
 }
 
 footer
@@ -46,18 +61,6 @@ footer>a:hover
 {
     color: #fff !important;
     text-decoration: none !important;
-}
-
-#FotoNav
-{
-    width:45px; 
-    height:45px;
-}
-
-#BusquedaNav
-{
-    text-align:center;
-    text-transform: uppercase;
 }
 
 /*Medidas de col para sobreescribir width:100vw de .form-control. body = 1280vw*/
