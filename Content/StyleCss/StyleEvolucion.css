@@ -1,26 +1,66 @@
-/* ESTILO GENERAL DEL FORMULARIO */
-body
+/*ESTILOS GENERALES*/
+/*body /*Para Apreciar el footer */
+/*{
+    background-color: green;
+}*/
+
+a
 {
-    background-image: url("../Images/Layout/TramaLaterales.png");
-    background-size: 100%;
-    background-repeat: repeat-y;
-    background-position: center;
-    background-color: #0F1F63; 
-    width:1280px;
-    height:auto;
+    color: rgb(51,51,51) !important;
+    text-decoration: none !important;
+    background-color:transparent !important;
 }
 
-input /*Estilo de los input */
+/*ESTILOS ESPECÍFICOS EN ORDEN DE APARICIÓN */
+.container-fluid 
 {
-    border-radius: 10px;
+    border-radius:20px;
+}
+
+#DropdownRight
+{
+    text-align:center;
+    background-color: rgba(255,255,255,0.7);
+}
+
+/* Cambia el color de fondo a la barra */
+nav.navbar {
+    background-color: rgba(255,255,255,0.7);
+}
+
+.FondoTransparente
+{
+    background-color: rgba(255,255,255,0.7) !important;
+}
+
+#BusquedaNav
+{
     text-align:center;
     text-transform: uppercase;
 }
 
-.form-control /*Borde redondeado y texto centrado de los <p> */
+#FotoNav
 {
-    border-radius:10px;
-    text-align:center;
+    width:45px; 
+    height:45px;
+}
+
+footer
+{
+    color:#fff;
+    text-align: center;
+    width:100%;
+}
+
+footer>a
+{
+    color: #fff !important;
+}
+
+footer>a:hover
+{
+    color: #fff !important;
+    text-decoration: none !important;
 }
 
 /*Medidas de col para sobreescribir width:100vw de .form-control. body = 1280vw*/
@@ -84,40 +124,14 @@ input /*Estilo de los input */
     width: 100vw !important;
 }
 
-/* ESTILOS ESPECÍFICOS EN ORDEN DE APARICIÓN */
 
-#FotoNav
+.form-control /*Borde redondeado y texto centrado de los <p> */
 {
-    width:45px; 
-    height:45px;
-}
-
-body>h1
-{
-    font-weight:500;
-    font-size: 36px !important;            
-    color: #fff;
-}
-
-#NuevaEvolucion
-{
-    border-top: 1px double black;
-    border-bottom: 1px double black;
-    border-radius:20px;
-    background-color: #fff;
-}
-
-#FirmaEvolucion>img
-{
-    width:16.33vw;
-    height:auto;
-}
-
-#FirmaEvolucion>p
-{
+    border-radius:10px;
     text-align:center;
 }
 
-
-
-
+#Evolucion
+{
+    font-size:14px;
+}

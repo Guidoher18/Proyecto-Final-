@@ -1,14 +1,28 @@
-/* ESTILO DE POSICIÓN GENERAL*/
-
-input
+/*POSICIONAMIENTO EN ORDEN DE APARICIÓN */
+#BusquedaNav
 {
-    padding: 0 !important;
+    top:6.5px;
+    margin-left: 8.33vw;
 }
 
-label
+#FotoNav
 {
-    padding: 0 !important;
+    display:inline-block;
 }
+
+footer
+{
+    display:block;
+    position:absolute; 
+    top:77.9123vh;
+}
+
+footer p
+{
+    display:inline;
+}
+
+
 
 /* Corrige el margin left y right de -15px de la clase .row */
 .row
@@ -24,11 +38,9 @@ label
     padding-right: 0 !important;
 }
 
-/* ESTILO DE POSICIÓN ESPECÍFICO*/
-h1
+#InsertarEvolucion
 {
-    padding-left:15px;
-    display: inline;
+    margin-left: 5.1563vw;
 }
 
 #Evolucion
@@ -36,17 +48,3 @@ h1
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
-#FirmaEvolucion
-{
-    margin-left: 16.66vw;
-    margin-right: 16.66vw;
-}
-
-#InsertarEvolucion
-{
-    margin-left: 5.1563vw;
-}
-
-
-
