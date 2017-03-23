@@ -14,7 +14,7 @@ footer
 {
     display:block;
     position:absolute; 
-    top:77.9123vh;
+    top:99vh;
 }
 
 footer p
@@ -47,4 +47,20 @@ footer p
 {
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 23.3203vw !important;
+    padding:10px 0 !important;
+}
+
+#ContenedorPrincipal
+{
+    margin-left:8.33vw !important;
+    margin-right:8.33vw !important;
+    margin-top: 0vh;
+    padding: 10px 0!important;
+}
+
+
+h1
+{
+    margin-left:8.33vw !important;
 }

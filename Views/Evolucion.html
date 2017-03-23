@@ -34,7 +34,7 @@
           </ul> 
           <ul class="nav navbar-nav navbar-right">
             <div>
-              <img src="../../Content/Images/Other/FotoPerfil.png" id="FotoNav"/> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">35123123<span class="caret"></span></a>
+              <img src="../Content/Images/Other/FotoPerfil.png" id="FotoNav"/> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">35123123<span class="caret"></span></a>
               <ul class="dropdown-menu" id="DropdownRight">
                   <li><a href="#">Editar</a></li>                           
                   <li><a href="#">Salir</a></li>
@@ -50,7 +50,7 @@
 
     <!-- START VIEW -->
 
-    <h1 class="col-md-4"> Últimas Evoluciones </div>
+    <h1 class="col-md-4 SinPadding"> Últimas Evoluciones </h1>
     <div id="ContenedorPrincipal" class="col-md-10">       
         <ul>
             <a href="#"><li>A001 - Perez, Juan Carlos (Entrevista de Admisión. El paciente presenta ataques de pánico....)</li></a>
@@ -58,10 +58,16 @@
             <a href="#"><li></li></a>
             <a href="#"><li></li></a>
             <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
         </ul>
-    </div> 
+    </div>
+    <h1 class="col-md-6 SinPadding"> Nueva Evolución </h1> <br>
         <div id="Evolucion" class="col-md-6 SinPadding"> <!-- Evolución -->   
-                <div class="row SinPadding col-md-2">
+                <div class="SinPadding col-md-6">
                     <div class="col-md-1 SinPadding" id="Fecha"> <!-- Fecha -->
                         <Label class="col-md-1 SinPadding">Fecha</label>    
                         <input type="text" name="Fecha" class="form-control col-md-1">
@@ -69,6 +75,10 @@
                     <div class="col-md-1 SinPadding" id="Sesion"> <!-- Número de Sesión -->
                         <Label class="col-md-1 SinPadding">Sesión n°</label>    
                         <input type="number" name="Sesion" class="form-control col-md-1">
+                    </div>
+                    <div class="col-md-4 SinPadding" id="Paciente"> <!-- Paciente -->
+                        <Label class="col-md-1 SinPadding">Paciente</label>    
+                        <input type="text" name="Paciente" class="form-control col-md-4"placeholder="Apellido y Nombre / n° de Historia Clínica">
                     </div>
                 </div>            
                     <div class="col-md-6 SinPadding"id="TextoEvolucion"> <!-- Evolución propiamente dicha -->
