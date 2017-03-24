@@ -1,10 +1,6 @@
 /*ESTILOS GENERALES*/
-body /*Para Apreciar el footer */
-{
-    background-color: green;
-}
 
-a
+#NavbarGeneral a
 {
     color: rgb(51,51,51) !important;
     text-decoration: none !important;
