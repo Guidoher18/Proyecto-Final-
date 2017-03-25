@@ -1,16 +1,13 @@
-﻿<!DOCTYPE HTML>
-<html>
-<head>
-    <meta charset="UTF-8"/>
-    <link type="text/css" rel="Stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+﻿@{
+    ViewBag.Title = "Main";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+@section Styles{
     <link type="text/css" rel="Stylesheet" href="~/Content/StyleCss/StyleMain.css">
     <link type="text/css" rel="Stylesheet" href="~/Content/PositionCss/PositionMain.css">
-    <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
-</head>
-<body>
+}
 
-
-    <!-- START VIEW -->    
     <div id="ContenedorPrincipal" class="col-md-10">       
        <div id="MarcoLateral" class="col-md-5"> 
             <img src="../Content/Images/Other/FotoPerfil.png" class="img-rounded" id="Foto"/>
@@ -32,14 +29,9 @@
             </div>
         </div>
     </div>
-    <!-- END VIEW -->
 
     <!-- SCRIPTS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="~/Scripts/Main.js"></script>
-</body>
-<footer>
-    <p>PsicoLog® 2017&nbsp; &nbsp;</p><a href="/Home/Contacto"><p>Contacto</p></a>  
-</footer>
-</html>
+    @section Scripts{
+        <script src="~/Scripts/Main.js"></script>
+        }
+

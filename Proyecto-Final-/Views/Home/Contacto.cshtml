@@ -7,52 +7,14 @@
     <link type="text/css" rel="Stylesheet" href="~/Content/PositionCss/PositionContacto.css">
 </head>
 <body>
-    <!--NAVBAR-->
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">PsicoLog</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-              <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="glyphicon glyphicon-folder-open"></span>&nbsp; Historia Clinica<span class="caret"></span></a>
-                <ul class="dropdown-menu FondoTransparente">
-                    <li><a href="#"><span class="glyphicon glyphicon-folder-open">&nbsp;</span>Historia Clínica</a></li>                           
-                    <li><a href="#"><span class="glyphicon glyphicon-plus">&nbsp;</span>Nueva Historia Clínica</a></li>
-                </ul>                              
-              </li>
-              <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="glyphicon glyphicon-list-alt"></span>&nbsp; Evolución<span class="caret"></span></a>
-                <ul class="dropdown-menu FondoTransparente">
-                    <li><a href="#"><span class="glyphicon glyphicon-list-alt">&nbsp;</span>Evolución</a></li>                           
-                    <li><a href="#"><span class="glyphicon glyphicon-plus">&nbsp;</span>Nueva evolución</a></li>
-                </ul>
-              </li>
-              <li>
-                    <input type="text" name="TextBuscar" class="form-control col-md-4" placeholder="Búsqueda Rápida de HC" id="BusquedaNav">                
-              </li>
-          </ul> 
-          <ul class="nav navbar-nav navbar-right">
-            <div>
-              <img src="../Content/Images/Other/FotoPerfil.png" id="FotoNav"/> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">35123123<span class="caret"></span></a>
-              <ul class="dropdown-menu" id="DropdownRight">
-                  <li><a href="#">Editar</a></li>                           
-                  <li><a href="#">Salir</a></li>
-              </ul>                             
-            </div>
-          </ul>
-        </div> 
-      </div>
-    </nav>
-    <!--NAVBAR-->
+ 
     <!-- START VIEW -->
+        <h1><a href="@Url.Action("Index", "Home")">PsicoLOG</a></h1>         
         <div class="col-md-10" id="DivContacto">
-            <h1> ¡Contáctanos!, el equipo de PsicoLOG te respondera a la brevedad </h1>
+            <h1> ¡Contáctanos!, el equipo de PsicoLOG te responderá a la brevedad </h1>
             <h3> Por favor, envíanos un mail a <strong><span>soporte@psicolog.com</span></strong> </h3>
         </div>
-  
-    
-    
-    <!-- END VIEW -->
+     <!-- END VIEW -->
 
     <!-- SCRIPTS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -60,7 +22,7 @@
     <script src="~/Scripts/Contacto.js"></script>
 </body>
 <footer>
-    <p>PsicoLog© 2017&nbsp; &nbsp;</p><a href="#"><p>Contacto</p></a>  
+    <p>PsicoLog @DateTime.Now.Year &nbsp; - &nbsp;</p><p>Contacto</p>
 </footer>
 </html>
 

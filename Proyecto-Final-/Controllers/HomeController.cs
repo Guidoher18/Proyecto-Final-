@@ -27,5 +27,10 @@ namespace Proyecto_Final_.Controllers
         {
             return View();
         }
+
+        public ActionResult ContactoLogueado()
+        {
+            return View();
+        }
     }
 }

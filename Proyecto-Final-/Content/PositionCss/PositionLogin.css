@@ -96,4 +96,15 @@ p
     margin-bottom:10px;
 }
 
+footer
+{
+    display:block;
+    position:absolute; 
+    top:80vh;
+}
+
+footer>p
+{
+    display:inline;
+}
 

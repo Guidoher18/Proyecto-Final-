@@ -10,7 +10,7 @@
 <body>
     <!-- START VIEW -->    
     <div id="Encabezado">
-        <h3>PsicoLOG</h3>
+        <h3><a href="@Url.Action("Index", "Home")">PsicoLOG</a></h3>
         <h1>Crea tu cuenta profesional</h1>
     </div>
     <form action="#" method="POST">
@@ -104,5 +104,6 @@
     <script src="~/Scripts/Profesional.js"></script>
 </body>
 <footer>
+    <p>PsicoLog @DateTime.Now.Year &nbsp; - &nbsp;</p><p><a href="@Url.Action("Contacto", "Home")">Contacto</a></p>
 </footer>
 </html>

@@ -7,8 +7,9 @@
         <link type="text/css" rel="Stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link type="text/css" rel="Stylesheet" href="~/Content/StyleCss/StyleLayout.css">
         <link type="text/css" rel="Stylesheet" href="~/Content/PositionCss/PositionLayout.css">
+        @RenderSection("styles", required:false)         
         <title>PsicoLOG - @ViewBag.Title</title>
-        @RenderSection("styles", required:false)     
+        
 </head>
 <body>
     <!--NAVBAR-->
@@ -50,7 +51,7 @@
     <!--NAVBAR-->
     
     <!-- START VIEW -->
-    @RenderBody
+    @RenderBody()
     <br/>
     <!-- END VIEW -->
 
@@ -61,7 +62,7 @@
     @RenderSection("scripts", required:false) 
 </body>
 <footer>
-    <p>PsicoLog @DateTime.Now.Year &nbsp; &nbsp;</p><a href="#"><p>Contacto</p></a>  
+    <p>PsicoLog @DateTime.Now.Year &nbsp; - &nbsp;</p>@if (@ViewBag.Title == "Contacto") {<p>Contacto</p>} else{<p><a href="@Url.Action("ContactoLogueado","Home")">Contacto</a></p>}
 </footer>
 </html>
 

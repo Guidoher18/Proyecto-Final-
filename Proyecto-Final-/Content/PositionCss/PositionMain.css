@@ -1,4 +1,5 @@
 /* POSICIONAMIENTO EN ORDEN DE APARICIÓN */
+/*
 nav
 {
     margin: 0 !important;
@@ -9,22 +10,16 @@ ul[class~="navbar-right"]
     margin-left: 59.375vw;
 }
 
-
+*/
 #ContenedorPrincipal
 {
-    margin-left:8.33vw !important;
-    margin-right:8.33vw !important;
-    margin-top: 10.8926vh;
-    margin-bottom: 0;
+    margin: 10.8926vh 8.33vw 0 8.33vw !important;
     padding: 0 !important;
 }
 
 #MarcoLateral
 {
-    padding-left: 8.33vw !important;
-    padding-right: 8.33vw !important;
-    padding-top: 13.4583vh;
-    padding-bottom: 13.4583vh;
+    padding: 13.4583vh 8.33vw !important;
 }
 
 #Foto

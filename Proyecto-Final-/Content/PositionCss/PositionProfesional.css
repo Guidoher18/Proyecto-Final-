@@ -228,6 +228,17 @@ form>div
     z-index:-1;
 }
 
+footer
+{
+    display:block;
+    position:absolute; 
+    top:93vh;
+}
+
+footer>p
+{
+    display:inline;
+}
 
 
 

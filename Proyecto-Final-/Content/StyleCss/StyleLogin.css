@@ -22,7 +22,26 @@ input
 
 h1
 {
-    color: #fff;
+    color: #fff !important;
+}
+
+h1>a, footer>p>a
+{
+    color: #fff !important;
+}
+
+h1>a:hover, footer>p>a:hover
+{
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+footer
+{
+    color:#fff;
+    text-align: center !important;
+    font-size: 18px;
+    width: 83.33vw;
 }
 
 /* Marco Doble Linea Negra */

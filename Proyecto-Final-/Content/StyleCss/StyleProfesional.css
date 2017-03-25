@@ -211,4 +211,21 @@ select /* Corresponde al Título Obtenido Lic., Mg. o Dr. */
     width: 12vw;
 }
 
+footer
+{
+    color:#fff;
+    text-align: center;
+    font-size: 18px;
+    width:100%;
+}
 
+footer>p>a, #Encabezado>h3>a
+{
+    color: #fff !important;
+}
+
+footer>p>a:hover, #Encabezado>h3>a:hover
+{
+    color: #fff !important;
+    text-decoration: none !important;
+}

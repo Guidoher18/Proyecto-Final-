@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8"/>
     <link type="text/css" rel="Stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link type="text/css" rel="Stylesheet" href="~/Content/StyleCss/StyleLanding.css">
-    <link type="text/css" rel="Stylesheet" href="~/Content/PositionCss/PositionLanding.css">
+    <link type="text/css" rel="Stylesheet" href="~/Content/StyleCss/StyleIndex.css">
+    <link type="text/css" rel="Stylesheet" href="~/Content/PositionCss/PositionIndex.css">
 </head>
 <body>
     <div class="col-md-10">
         <div class="col-md-5"  id="TopLeft">
-            <h3>PsicoLOG</h3>
+            <h3><a href="@Url.Action("Index", "Home")">PsicoLOG</a></h3>
         </div>
         <div class="col-md-5 row" id="TopRight">
             <a href="/Home/CrearCuenta"><h4>Crear Cuenta</h4></a>
@@ -32,6 +32,6 @@
     <!-- SCRIPTS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="~/Scripts/Landing.js"></script>
+    <script src="~/Scripts/Index.js"></script>
 </body>
 </html>

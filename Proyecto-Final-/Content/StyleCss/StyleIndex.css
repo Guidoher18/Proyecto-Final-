@@ -84,6 +84,16 @@ p
 }
 
 /* ESTILOS ESPECÍFICOS EN ORDEN DE APARICIÓN */
+#TopLeft>h3>a
+{
+    color: #fff !important;
+}
+
+#TopLeft>h3>a:hover
+{
+    color: #fff !important;
+    text-decoration: none !important;
+}
 
 #TopRight
 {

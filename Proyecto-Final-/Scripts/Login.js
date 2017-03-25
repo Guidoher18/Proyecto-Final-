@@ -12,7 +12,7 @@ $(document).ready(function(){
         $('#Contraseña').fadeIn('slow');
         $('#Submit').toggle();
         $('p').remove();
-        $('a').html("<a href='&'> Recuperar Contraseña </a>");
+        $('#ACrearCuenta').html("<a href='&'> Recuperar Contraseña </a>");
         $('#Contraseña>label').html('Ingrese la Contraseña para: ' + $Usuario);        
     });
 });
