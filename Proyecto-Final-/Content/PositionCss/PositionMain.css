@@ -1,16 +1,4 @@
 /* POSICIONAMIENTO EN ORDEN DE APARICIÓN */
-/*
-nav
-{
-    margin: 0 !important;
-}
-
-ul[class~="navbar-right"]
-{
-    margin-left: 59.375vw;
-}
-
-*/
 #ContenedorPrincipal
 {
     margin: 10.8926vh 8.33vw 0 8.33vw !important;
@@ -51,6 +39,11 @@ ul[class~="navbar-right"]
 {
     /*padding-left: 8.33vw !important;*/
     padding-right: 7.5481vw !important;
+}
+
+footer
+{
+    top: 96vh !important;
 }
 
 footer p

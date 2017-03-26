@@ -26,19 +26,6 @@ a
 }
 
 /*ESTILOS ESPECÍFICOS EN ORDEN DE APARICIÓN*/
-
-/*NAVBAR*/
-.container-fluid 
-{
-    border-radius:20px;
-}
-
-#DropdownRight
-{
-    text-align:center;
-}
-
-/*------*/
 h1
 {
     font-weight:500;
@@ -48,9 +35,24 @@ h1
     width: 20.8250vw;
 }
 
+#Crear, #Buscar
+{
+    color: #fff !important;
+    background-color: #5bc0de !important;
+    border-color: #46b8da !important;
+}
+
+#Crear:hover, Buscar:hover
+{
+    background-color: #31B0D5 !important;
+    border-color: #1b6d85 !important;
+}
+
 #Buscador input
 {
     text-transform: uppercase;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 #OpcionesBusqueda>a
@@ -79,83 +81,4 @@ h1
 {
     font-size: 20px !important;
     text-align: center;
-}
-
-footer
-{
-    color:#fff;
-    text-align: center;
-    width:100%;
-}
-
-footer>a
-{
-    color: #fff !important;
-}
-
-footer>a:hover
-{
-    color: #fff !important;
-    text-decoration: none !important;
-}
-
-/*Medidas de col para sobreescribir width:100vw de .form-control. body = 1280vw*/
-*[class~="col-md-1"]
-{
-    width: 8.33vw !important;
-}
-
-*[class~="col-md-2"]
-{
-    width: 16.66vw !important;
-}
-
-*[class~="col-md-3"]
-{
-    width: 25vw !important;
-}
-
-*[class~="col-md-4"]
-{
-    width: 33.33vw !important;
-}
-
-*[class~="col-md-5"]
-{
-    width: 41.66vw !important;
-}
-
-*[class~="col-md-6"]
-{
-    width: 50vw !important;
-}
-
-*[class~="col-md-7"]
-{
-    width: 58.33vw !important;
-}
-
-*[class~="col-md-8"]
-{
-    width: 66.66vw !important;
-}
-
-*[class~="col-md-9"]
-{
-    width: 75vw !important;
-}
-
-*[class~="col-md-10"]
-{
-    width: 83.33vw !important;
-}
-
-*[class~="col-md-11"]
-{
-    width: 91.66vw !important;
-}
-
-*[class~="col-md-12"]
-{
-    width: 100vw !important;
 }

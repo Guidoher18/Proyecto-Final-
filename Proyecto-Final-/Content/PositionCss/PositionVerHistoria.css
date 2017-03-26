@@ -129,4 +129,7 @@ h1
     margin-right: 5.4688vw;
 }
 
-
+footer 
+{
+    top: 244vh !important;
+}

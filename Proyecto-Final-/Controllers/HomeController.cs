@@ -13,11 +13,6 @@ namespace Proyecto_Final_.Controllers
             return View();
         }
 
-        public ActionResult CrearCuenta()
-        {
-            return View("~/Views/Home/Profesional.cshtml");
-        }
-
         public ActionResult Login()
         {
             return View();

@@ -195,10 +195,11 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\EvolucionController.cs" />
+    <Compile Include="Controllers\HistoriaClinicaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MainController.cs" />
-    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\UsuarioManagerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -310,17 +311,17 @@
     <Content Include="Scripts\VerHistoria.js" />
     <Content Include="Scripts\_references.js" />
     <None Include="Views\Home\Contacto.cshtml" />
-    <Content Include="Views\CrearHistoria.html" />
-    <Content Include="Views\Evolucion.html" />
-    <Content Include="Views\Historia.html" />
+    <None Include="Views\HistoriaClinica\CrearHistoria.cshtml" />
+    <None Include="Views\Evolucion\Evolucion.cshtml" />
+    <None Include="Views\HistoriaClinica\Historia.cshtml" />
     <Content Include="Views\Home\ContactoLogueado.cshtml" />
     <None Include="Views\Home\Index.cshtml" />
     <None Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Home\View.cshtml" />
     <None Include="Views\Main\Main.cshtml" />
-    <None Include="Views\Home\Profesional.cshtml" />
+    <None Include="Views\UsuarioManager\Profesional.cshtml" />
     <None Include="Views\Shared\Layout.cshtml" />
-    <Content Include="Views\VerHistoria.html" />
+    <None Include="Views\HistoriaClinica\VerHistoria.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

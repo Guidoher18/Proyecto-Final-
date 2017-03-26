@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Historia Clinica";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+@section Styles{
+<link type="text/css" rel="Stylesheet" href="~/Content/StyleCss/StyleHistoria.css">
+<link type="text/css" rel="Stylesheet" href="~/Content/PositionCss/PositionHistoria.css">
+}
+
+    <div id="Buscador" >
+        <h1 class="col-md-3"> Historia Clínica </h1>
+        <a class="btn btn-info col-md-1" href="@Url.Action("CrearHistoria","HistoriaClinica")" id="Crear"><strong><span class="glyphicon glyphicon-plus"><strong>&nbsp;Crear</strong></span></strong></a> 
+        <input type="text" name="TextBuscar" class="form-control col-md-4"><a class="btn btn-info" id="Buscar"                                                                   ><span class="glyphicon glyphicon-search"></span></a> 
+        <div class=col-md-2 id="OpcionesBusqueda">
+            <a href="#">Ver Todo</a><br>
+            <a href="#">Avanzado</a>
+        </div>
+    </div>
+    <div id="ContenedorPrincipal" class="col-md-10">       
+        <ul>
+            <a href="#"><li>A001 - Perez, Juan Carlos</li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+        </ul>
+        <div id="Paginacion">
+            <a href="#" class="col-md-1"><<</a> <p class="col-md-1"> 1/1</p> <a href="#" class="col-md-1">>></a>
+        </div>
+    </div>
+    
+    <!-- SCRIPTS -->
+    @section Scripts{
+        <script src="~/Scripts/Historia.js"></script>
+        }
+

@@ -112,37 +112,31 @@ h1
 #CelularLabel
 {
     margin-left: 9.6875vw;
-    margin-right: 9.6875vw;
 }
 
 #TelefonoLabel
 {
     margin-left: 9.2980vw;
-    margin-right: 9.2980vw;
 }
 
 #EmailLabel
 {
-   margin-left: 10.1953vw; 
-   margin-right: 10.1953vw; 
+   margin-left: 10.1953vw;
 }
 
 #SkypeLabel
 {
     margin-left: 10vw;
-    margin-right: 10vw;
 }
 
 #DireccionLabel
 {
     margin-left: 9.0235vw;
-    margin-right: 9.0235vw;
 }
 
 #ReferenciaLabel
 {
     margin-left: 5.4688vw;
-    margin-right: 5.4688vw;
 }
 
 #Submit
@@ -152,6 +146,12 @@ h1
     margin-right: 8.33vw;
 }
 
+footer
+{
+    display:block;
+    position:absolute; 
+    top:171vh !important;
+}
 
 
 

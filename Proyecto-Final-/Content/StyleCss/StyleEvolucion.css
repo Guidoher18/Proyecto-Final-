@@ -12,118 +12,11 @@ a
 }
 
 /*ESTILOS ESPECÍFICOS EN ORDEN DE APARICIÓN */
-.container-fluid 
-{
-    border-radius:20px;
-}
-
-#DropdownRight
-{
-    text-align:center;
-    background-color: rgba(255,255,255,0.7);
-}
-
-/* Cambia el color de fondo a la barra */
-nav.navbar {
-    background-color: rgba(255,255,255,0.7);
-}
-
-.FondoTransparente
-{
-    background-color: rgba(255,255,255,0.7) !important;
-}
-
-#BusquedaNav, #Paciente>input
+#Paciente>input
 {
     text-align:center;
     text-transform: uppercase;
 }
-
-#FotoNav
-{
-    width:45px; 
-    height:45px;
-}
-
-footer
-{
-    color:#fff;
-    text-align: center;
-    width:100%;
-}
-
-footer>a
-{
-    color: #fff !important;
-}
-
-footer>a:hover
-{
-    color: #fff !important;
-    text-decoration: none !important;
-}
-
-/*Medidas de col para sobreescribir width:100vw de .form-control. body = 1280vw*/
-*[class~="col-md-1"]
-{
-    width: 8.33vw !important;
-}
-
-*[class~="col-md-2"]
-{
-    width: 16.66vw !important;
-}
-
-*[class~="col-md-3"]
-{
-    width: 25vw !important;
-}
-
-*[class~="col-md-4"]
-{
-    width: 33.33vw !important;
-}
-
-*[class~="col-md-5"]
-{
-    width: 41.66vw !important;
-}
-
-*[class~="col-md-6"]
-{
-    width: 50vw !important;
-}
-
-*[class~="col-md-7"]
-{
-    width: 58.33vw !important;
-}
-
-*[class~="col-md-8"]
-{
-    width: 66.66vw !important;
-}
-
-*[class~="col-md-9"]
-{
-    width: 75vw !important;
-}
-
-*[class~="col-md-10"]
-{
-    width: 83.33vw !important;
-}
-
-*[class~="col-md-11"]
-{
-    width: 91.66vw !important;
-}
-
-*[class~="col-md-12"]
-{
-    width: 100vw !important;
-}
-
 
 .form-control /*Borde redondeado y texto centrado de los <p> */
 {

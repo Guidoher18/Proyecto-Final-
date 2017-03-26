@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "Evolución";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+@section Styles{
+<link type="text/css" rel="Stylesheet" href="~/Content/StyleCss/StyleEvolucion.css">
+<link type="text/css" rel="Stylesheet" href="~/Content/PositionCss/PositionEvolucion.css">
+}
+
+    <h1 class="col-md-4 SinPadding"> Últimas Evoluciones </h1>
+    <div id="ContenedorPrincipal" class="col-md-10">       
+        <ul>
+            <a href="#"><li>A001 - Perez, Juan Carlos (Entrevista de Admisión. El paciente presenta ataques de pánico....)</li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+            <a href="#"><li></li></a>
+        </ul>
+    </div>
+    <h1 class="col-md-6 SinPadding"> Nueva Evolución </h1> <br>
+        <div id="Evolucion" class="col-md-6 SinPadding"> <!-- Evolución -->   
+                <div class="SinPadding col-md-6">
+                    <div class="col-md-1 SinPadding" id="Fecha"> <!-- Fecha -->
+                        <Label class="col-md-1 SinPadding">Fecha</label>    
+                        <input type="text" name="Fecha" class="form-control col-md-1">
+                    </div>                
+                    <div class="col-md-1 SinPadding" id="Sesion"> <!-- Número de Sesión -->
+                        <Label class="col-md-1 SinPadding">Sesión n°</label>    
+                        <input type="number" name="Sesion" class="form-control col-md-1">
+                    </div>
+                    <div class="col-md-4 SinPadding" id="Paciente"> <!-- Paciente -->
+                        <Label class="col-md-1 SinPadding">Paciente</label>    
+                        <input type="text" name="Paciente" class="form-control col-md-4"placeholder="Apellido y Nombre / n° de Historia Clínica">
+                    </div>
+                </div>            
+                    <div class="col-md-6 SinPadding"id="TextoEvolucion"> <!-- Evolución propiamente dicha -->
+                        <textarea name="TextoEvolución" class="form-control col-md-6" placeholder="Escriba su evolución aqui..."></textarea>
+                        <input type="file" name="Adjunto" class="col-md-5 SinPadding"/>
+                        <button id="InsertarEvolucion" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span></button>
+                    </div>
+        </div> 
+    
+    <!-- SCRIPTS -->
+    @section Scripts{
+        <script src="~/Scripts/Evolucion.js"></script>
+        }    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

@@ -1,49 +1,13 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <meta charset="UTF-8"/>
-    <link type="text/css" rel="Stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link type="text/css" rel="Stylesheet" href="../Content/StyleCss/StyleCrearHistoria.css">
-    <link type="text/css" rel="Stylesheet" href="../Content/PositionCss/PositionCrearHistoria.css">
-    <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
-</head>
-<body>
-    <!--NAVBAR-->
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">PsicoLog</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="glyphicon glyphicon-folder-open"></span>&nbsp; Historia Clinica<span class="caret"></span></a>
-              <ul class="dropdown-menu FondoTransparente">
-                  <li><a href="#"><span class="glyphicon glyphicon-folder-open">&nbsp;</span>Historia Clínica</a></li>                           
-                  <li><a href="#"><span class="glyphicon glyphicon-plus">&nbsp;</span>Nueva Historia Clínica</a></li>
-              </ul>                              
-            </li>
-            <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="glyphicon glyphicon-list-alt"></span>&nbsp; Evolución<span class="caret"></span></a>
-              <ul class="dropdown-menu FondoTransparente">
-                  <li><a href="#"><span class="glyphicon glyphicon-list-alt">&nbsp;</span>Evolución</a></li>                           
-                  <li><a href="#"><span class="glyphicon glyphicon-plus">&nbsp;</span>Nueva evolución</a></li>
-              </ul>                              
-            </li>
-          </ul> 
-          <ul class="nav navbar-nav navbar-right">
-            <div>
-              <img src="../Content/Images/Other/FotoPerfil.png" id="FotoNav"/> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">35123123<span class="caret"></span></a>
-              <ul class="dropdown-menu" id="DropdownRight">
-                  <li><a href="#">Editar</a></li>                           
-                  <li><a href="#">Salir</a></li>
-              </ul>                             
-            </div>
-          </ul>
-        </div> 
-      </div>
-    </nav>
-    <!--NAVBAR-->
+﻿@{
+    ViewBag.Title = "Nueva Historia Clínica";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
 
-    <!-- START VIEW -->    
+@section Styles{
+    <link type="text/css" rel="Stylesheet" href="~/Content/StyleCss/StyleCrearHistoria.css">
+    <link type="text/css" rel="Stylesheet" href="~/Content/PositionCss/PositionCrearHistoria.css">
+    }
+
     <div id="Encabezado">
         <h1>Nueva Historia Clínica</h1>
     </div>
@@ -152,7 +116,7 @@
                         <input type="text" name="DSM" class="form-control col-md-1">
                     </div>                
                     <div class="col-md-4"id="NombreDiagnostico"> <!-- Nombre del Diagnóstico -->
-                        <Label class="col-md-4">Nombre del Diagnóstico  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-search"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-plus"></span></label>    
+                        <Label class="col-md-4">Nombre del Diagnóstico  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-search"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-plus"></span></label>    
                         <input type="text" name="Nombre" class="form-control col-md-4">
                     </div>      
                 </div>
@@ -225,15 +189,9 @@
         </div>
     </form>    
     
-    <!-- END VIEW -->
 
     <!-- SCRIPTS -->
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="http://momentjs.com/downloads/moment.min.js"></script>
-    <script src="../Scripts/CrearHistoria.js"></script>
-</body>
-<footer>
-</footer>
-</html>
+    @section Scripts{
+        <script src="~/Scripts/CrearHistoria.js"></script>
+        <script src="http://momentjs.com/downloads/moment.min.js"></script>
+        }
