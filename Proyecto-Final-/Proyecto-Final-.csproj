@@ -321,7 +321,6 @@
     <None Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Home\View.cshtml" />
     <None Include="Views\Main\Main.cshtml" />
-    <None Include="Views\UsuarioManager\Profesional.cshtml" />
     <None Include="Views\Shared\Layout.cshtml" />
     <None Include="Views\HistoriaClinica\VerHistoria.cshtml" />
     <Content Include="Web.config" />
@@ -333,6 +332,7 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_Vi_ewStart.cshtml" />
+    <Content Include="Views\UsuarioProfesional\Profesional.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -340,6 +340,7 @@
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Views\Account\" />
     <Folder Include="Views\Manage\" />
+    <Folder Include="Views\UsuarioManager\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Models\fonts\glyphicons-halflings-regular.woff" />

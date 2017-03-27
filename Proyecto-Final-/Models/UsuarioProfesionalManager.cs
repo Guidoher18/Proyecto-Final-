@@ -17,7 +17,7 @@ namespace Proyecto_Final_.Models
         {
             //Conexion a PsicoLOG (BBDD)
             SqlConnection Conexion = new SqlConnection(ConfigurationManager.AppSettings["ConectarBBDD"]);
-            
+
             //Inicio la Conexión
             Conexion.Open();
             
@@ -25,7 +25,7 @@ namespace Proyecto_Final_.Models
             SqlCommand Sentencia = Conexion.CreateCommand();
             
             // Escribo la sentencia SQL
-            Sentencia.CommandText = "INSERT INTO UsuarioProfesional(Titulo, ApellidoyNombre, Especialidad, DNI, Contraseña, MN, MP, DireccionProfesional, Celular, Telefono, Email, Skype) VALUES(@Titulo, @ApellidoyNombre, @Especialidad, @DNI, @Contraseña, @MN, @MP, @DireccionProfesional, @Celular, @Telefono, @Email, @Skype)";
+            Sentencia.CommandText = "INSERT INTO UsuarioProfesional(Titulo, ApellidoyNombre, Especialidad, DNI, Contraseña, MN, MP, DireccionProfesional, Celular, Telefono, Email, Skype) VALUES(@Titulo, @ApellidoyNombre, @Especialidad, @DNI, @Contraseña, @MN, @MP, @DireccionProf, @Celular, @Telefono, @Email, @Skype)";
             
             //Vinculo las variables con los parametros
             Sentencia.Parameters.AddWithValue("@Titulo", Usuario.Titulo);

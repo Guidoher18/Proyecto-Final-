@@ -13,7 +13,7 @@ namespace Proyecto_Final_.Controllers
 
         public ActionResult CrearCuenta()
         {
-            return View("~/Views/UsuarioManager/Profesional.cshtml");
+            return View("~/Views/UsuarioProfesional/Profesional.cshtml");
         }
 
         /// <summary>
