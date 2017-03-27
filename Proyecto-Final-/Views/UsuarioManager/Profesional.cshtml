@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+﻿/<!DOCTYPE HTML>
 <html>
 <head>
     <meta charset="UTF-8"/>
@@ -13,7 +13,7 @@
         <h3><a href="@Url.Action("Index", "Home")">PsicoLOG</a></h3>
         <h1>Crea tu cuenta profesional</h1>
     </div>
-    <form action="#" method="POST">
+    <form action="@Url.Action("GuardarCuenta", "UsuarioProfesional")" method="POST">
         <div class="form-group">
             <div class="col-md-8" id="Profdiv1"> <!-- Datos Profesionales -->
                 <div> <!-- Apellido, Nombre y Título -->
@@ -28,7 +28,7 @@
                 <div id="InsertarEspecialidad"> <!-- Aparece sólo si se elige Mg. o Dr. -->
                     <br><div> 
                             <label>Especialista en: </label>
-                            <input type="text" name="Esp." class="form-control col-md-6"/> 
+                            <input type="text" name="Especialidad" class="form-control col-md-6"/> 
                     </div><br>
                 </div><br>
                 <div id="DNIContraseña">

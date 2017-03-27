@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_Final_.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -6,20 +7,39 @@ using System.Web.Mvc;
 
 namespace Proyecto_Final_.Controllers
 {
-    public class UsuarioManagerController : Controller
+    public class UsuarioProfesionalController : Controller
     {
-        // GET: UsuarioManager/Create
+        // GET: UsuarioManager
 
         public ActionResult CrearCuenta()
         {
             return View("~/Views/UsuarioManager/Profesional.cshtml");
         }
 
-
-
-        public ActionResult Index()
+        /// <summary>
+        /// Guarda un nuevo Usuario Profesional
+        /// </summary>
+        [HttpPost]
+        public ActionResult GuardarCuenta(string Titulo, string ApellidoyNombre, string Especialidad, string DNI, string Contraseña, string MN, string MP, string DireccionProf, int Celular, int Telefono, string Email, string Skype)
         {
-            return View();
+            UsuarioProfesional Usuario = new UsuarioProfesional();
+            Usuario.Titulo = Titulo;
+            Usuario.ApellidoyNombre = ApellidoyNombre;
+            Usuario.Especialidad = Especialidad;
+            Usuario.DNI = DNI;
+            Usuario.Contraseña = Contraseña;
+            Usuario.MN = MN;
+            Usuario.MP = MP;
+            Usuario.DireccionProf = DireccionProf;
+            Usuario.Celular = Celular;
+            Usuario.Telefono = Telefono;
+            Usuario.Email = Email;
+            Usuario.Skype = Skype;
+
+            UsuarioProfesionalManager Manager = new UsuarioProfesionalManager();
+            Manager.InsertarUsuarioProfesional(Usuario);
+
+            return RedirectToAction("Login", "Home");
         }
 
         // GET: UsuarioManager/Details/5
