@@ -30,29 +30,52 @@ namespace Proyecto_Final_.Controllers
         /// Guarda una nueva Historia Clinica = Paciente
         /// </summary>
         [HttpPost]
-        public ActionResult GuardarHistoria(string Titulo, string ApellidoyNombre, string Especialidad, string DNI, string Contraseña, string MN, string MP, string DireccionProf, int Celular, int Telefono, string Email, string Skype)
+        public ActionResult GuardarHistoria( )
         {
-            UsuarioProfesional Usuario = new UsuarioProfesional();
-            Usuario.Titulo = Titulo;
-            Usuario.ApellidoyNombre = ApellidoyNombre;
-            Usuario.Especialidad = Especialidad;
-            Usuario.DNI = DNI;
-            Usuario.Contraseña = Contraseña;
-            Usuario.MN = MN;
-            Usuario.MP = MP;
-            Usuario.DireccionProf = DireccionProf;
-            Usuario.Celular = Celular;
-            Usuario.Telefono = Telefono;
-            Usuario.Email = Email;
-            Usuario.Skype = Skype;
-
-            UsuarioProfesionalManager Manager = new UsuarioProfesionalManager();
+            HistoriaClinica Paciente = new HistoriaClinica();
+            Paciente.ApellidoyNombre = ApellidoyNombre;
+            Paciente.DNI = DNI;
+            Paciente.Nacionalidad = Nacionalidad;
+            Paciente.Genero = Genero;
+            Paciente.EstadoCivil = EstadoCivil;
+            Paciente.FechaNacimiento = FechaNacimiento;
+            Paciente.EstudiosAlcanzados = EstudiosAlcanzados;
+            Paciente.Carrera = Carrera;
+            Paciente.Ocupacion = Ocupacion;
+            Paciente.residencia = Residencia;
+            Paciente.VSVinculo = VSVinculo;
+            Paciente.VSApellidoyNombre = VSApellidoyNombre;
+            Paciente.VSFechaNacimiento = VSFechaNacimiento;
+            Paciente.VSOcupacion = VSOcupacion;
+            Paciente.VSConvive = VSConvive;
+            Paciente.ObraSocial = ObraSocial;
+            Paciente.Plan = Plan;
+            Paciente.Credencial = Credencial;
+            Paciente.Observaciones = Observaciones;
+            Paciente.Sintomas = Sintomas;
+            Paciente.DFecha = DFecha;
+            Paciente.DDSM = DDSM;
+            Paciente.DNombre = DNombre;
+            Paciente.MApellidoyNombre = MApellidoyNombre;
+            Paciente.Especialidad = Especialidad;
+            Paciente.Contacto = Contacto;
+            Paciente.Droga = Droga;
+            Paciente.Dosis = Dosis;
+            Paciente.Celular = Celular;
+            Paciente.Telefono = Telefono;
+            Paciente.Email = Email;
+            Paciente.Skype = Skype;
+            Paciente.Direccion = Direccion;
+            Paciente.NRNombreyVinculo = NRNombreyVinculo;
+            Paciente.NRNumero = NRNumero;
+            
+            HistoriaClinicaManager Manager = new HistoriaClinicaManager();
             Manager.InsertarUsuarioProfesional(Usuario);
 
             return RedirectToAction("Login", "Home");
         }
 
-
+    
 
 
         // GET: HistoriaClinica/Edit/5
