@@ -10,7 +10,7 @@ namespace Proyecto_Final_.Models
     public class UsuarioProfesionalManager
     {
         /// <summary>
-        /// Inserta un Nuevo Usuario profesional en la BBDD
+        /// Inserta un Nuevo Usuario Profesional en la BBDD
         /// </summary>
         /// <param name="Usuario"></param>
         public void InsertarUsuarioProfesional(UsuarioProfesional Usuario)

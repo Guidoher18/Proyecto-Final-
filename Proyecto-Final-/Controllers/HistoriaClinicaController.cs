@@ -26,20 +26,34 @@ namespace Proyecto_Final_.Controllers
         }
 
         // POST: HistoriaClinica/Create
+        /// <summary>
+        /// Guarda una nueva Historia Clinica = Paciente
+        /// </summary>
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult GuardarHistoria(string Titulo, string ApellidoyNombre, string Especialidad, string DNI, string Contraseña, string MN, string MP, string DireccionProf, int Celular, int Telefono, string Email, string Skype)
         {
-            try
-            {
-                // TODO: Add insert logic here
+            UsuarioProfesional Usuario = new UsuarioProfesional();
+            Usuario.Titulo = Titulo;
+            Usuario.ApellidoyNombre = ApellidoyNombre;
+            Usuario.Especialidad = Especialidad;
+            Usuario.DNI = DNI;
+            Usuario.Contraseña = Contraseña;
+            Usuario.MN = MN;
+            Usuario.MP = MP;
+            Usuario.DireccionProf = DireccionProf;
+            Usuario.Celular = Celular;
+            Usuario.Telefono = Telefono;
+            Usuario.Email = Email;
+            Usuario.Skype = Skype;
 
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            UsuarioProfesionalManager Manager = new UsuarioProfesionalManager();
+            Manager.InsertarUsuarioProfesional(Usuario);
+
+            return RedirectToAction("Login", "Home");
         }
+
+
+
 
         // GET: HistoriaClinica/Edit/5
         public ActionResult Edit(int id)
