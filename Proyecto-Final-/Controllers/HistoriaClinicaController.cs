@@ -70,9 +70,9 @@ namespace Proyecto_Final_.Controllers
             Paciente.NRNumero = NRNumero;
             
             HistoriaClinicaManager Manager = new HistoriaClinicaManager();
-            Manager.InsertarUsuarioProfesional(Usuario);
+            Manager.InsertarHistoriaClinica(Paciente);
 
-            return RedirectToAction("Login", "Home");
+            return View("@Url.Action("Main", "Main")");
         }
 
     
