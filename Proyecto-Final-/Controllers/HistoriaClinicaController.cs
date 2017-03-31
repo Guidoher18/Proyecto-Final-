@@ -30,7 +30,7 @@ namespace Proyecto_Final_.Controllers
         /// Guarda una nueva Historia Clinica = Paciente
         /// </summary>
         [HttpPost]
-        public ActionResult GuardarHistoria( )
+        public ActionResult GuardarHistoria(string ApellidoyNombre, string DNI, string Nacionalidad, string Genero, string EstadoCivil, string FechaNacimiento, string EstudiosAlcanzados, string Carrera, string Ocupacion, string Residencia, string VSVinculo, string VSApellidoyNombre, string VSFechaNacimiento, string VSOcupacion, string VSConvive, string ObraSocial, string Plan, string Credencial, string Observaciones, string Sintomas, string DFecha, string DDSM, string DNombre, string MApellidoyNombre, string Especialidad, string Contacto, string Droga, string Dosis, int Celular, int Telefono, string Email, string Skype, string Direccion, string NRNombreyVinculo, string NRNumero)
         {
             HistoriaClinica Paciente = new HistoriaClinica();
             Paciente.ApellidoyNombre = ApellidoyNombre;
