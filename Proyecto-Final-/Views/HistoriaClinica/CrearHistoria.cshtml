@@ -11,7 +11,7 @@
     <div id="Encabezado">
         <h1>Nueva Historia Clínica</h1>
     </div>
-    <form action="#" method="POST">
+    <form action="@Url.Action("GuardarHistoria","HistoriaClinica")" method="POST">
         <div class="form-group">
             <div class="col-md-6" id="Div1"> <!-- Datos Generales del Paciente-->
                 <div class="col-md-6"> <!-- Apellido y Nombre -->
@@ -75,7 +75,7 @@
                 <div id="VinculosSignificativos" class="col-md-6"> <!-- Vinculos Significativos -->           
                     <label class="col-md-3">Vínculos Significativos <span>(Pareja, hijos, G. de Convivencia)</span></label><label id="VSFechaNacimientoLabel" class="col-md-2 Años">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(?? Años)</label><button id="AgregarVinculo" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span></button><br> 
                         <input type="text" name="VSVinculo" class="form-control col-md-1" placeholder="VÍNCULO"/>
-                        <input type="text" name="VSApellidoNombre" class="form-control col-md-2" placeholder="APELLIDO Y NOMBRE"/>   
+                        <input type="text" name="VSApellidoyNombre" class="form-control col-md-2" placeholder="APELLIDO Y NOMBRE"/>   
                         <input type="date" name="VSFechaNacimiento" class="form-control col-md-1" id="VSFechaNacimiento"/>
                         <input type="text" name="VSOcupacion" class="form-control col-md-1" placeholder="OCUPACIÓN"/>
                         <select name="VSConvive" class="form-control col-md-1">

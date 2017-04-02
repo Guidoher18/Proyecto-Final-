@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_Final_.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -42,7 +43,7 @@ namespace Proyecto_Final_.Controllers
             Paciente.EstudiosAlcanzados = EstudiosAlcanzados;
             Paciente.Carrera = Carrera;
             Paciente.Ocupacion = Ocupacion;
-            Paciente.residencia = Residencia;
+            Paciente.Residencia = Residencia;
             Paciente.VSVinculo = VSVinculo;
             Paciente.VSApellidoyNombre = VSApellidoyNombre;
             Paciente.VSFechaNacimiento = VSFechaNacimiento;
@@ -72,7 +73,7 @@ namespace Proyecto_Final_.Controllers
             HistoriaClinicaManager Manager = new HistoriaClinicaManager();
             Manager.InsertarHistoriaClinica(Paciente);
 
-            return View("@Url.Action("Main", "Main")");
+            return View("~/Views/Main/Main.cshtml");
         }
 
     
