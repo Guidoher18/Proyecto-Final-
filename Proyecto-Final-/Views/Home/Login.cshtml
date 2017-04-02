@@ -8,13 +8,13 @@
 </head>
 <body>
     <h1><a href="@Url.Action("Index", "Home")">PsicoLOG</a></h1>
-    <form action="#" method="POST" class="col-md-10">
+    <form action="@Url.Action("GetUsuario", "UsuarioProfesional")" method="POST" class="col-md-10">
         <div class="col-md-10 form-group">
             <div class=col-md-6>
                 <h2>Iniciar Sesión</h2>
                 <div id="Usuario" class="col-md-6">
                     <label class="col-md-6">Usuario</label>
-                    <input type="text" name="Usuario" class="form-control" placeholder="DNI">
+                    <input type="text" name="DNI" class="form-control" placeholder="DNI">
                 </div>
                 <button id="Siguiente" class="col-md-6 btn btn-success">Siguiente</button>
                 <div id="Contraseña" class="col-md-6 oculto">

@@ -15,6 +15,14 @@ $(document).ready(function(){
         $('#ACrearCuenta').html("<a href='&'> Recuperar Contraseña </a>");
         $('#Contraseña>label').html('Ingrese la Contraseña para: ' + $Usuario);        
     });
+//Si presiona enter en el input de la Contraseña, hace clic en Submit
+       $('#Contraseña>input:first-child').keypress(function(e) {
+       if(e.which === 13) {
+          // Acciones a realizar, por ej: enviar formulario.
+           alert("Hola");
+           //$('#Submit').click();
+       }
+    });
 });
 
 

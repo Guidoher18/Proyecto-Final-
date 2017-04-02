@@ -9,7 +9,6 @@ namespace Proyecto_Final_.Controllers
 {
     public class UsuarioProfesionalController : Controller
     {
-        // GET: UsuarioManager
 
         public ActionResult CrearCuenta()
         {
@@ -42,29 +41,17 @@ namespace Proyecto_Final_.Controllers
             return RedirectToAction("Login", "Home");
         }
 
-        // GET: UsuarioManager/Details/5
-        public ActionResult Details(int id)
+        // GET Usuario Profesional
+        public ActionResult GetUsuario(string DNI, string Contraseña)
         {
-            return View();
+            UsuarioProfesionalManager Manager = new UsuarioProfesionalManager();
+            UsuarioProfesional usuario = Manager.ConsultarUsuario(DNI, Contraseña);
+
+            ViewBag.UsuarioProfesional = usuario;
+
+            return View("~/Views/Main/Main.cshtml");
         }
 
-
-
-        // POST: UsuarioManager/Create
-        [HttpPost]
-        public ActionResult Create(FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
 
         // GET: UsuarioManager/Edit/5
         public ActionResult Edit(int id)
@@ -88,26 +75,6 @@ namespace Proyecto_Final_.Controllers
             }
         }
 
-        // GET: UsuarioManager/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
 
-        // POST: UsuarioManager/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
 }
