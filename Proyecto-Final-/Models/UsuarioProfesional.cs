@@ -17,7 +17,9 @@ namespace Proyecto_Final_.Models
         public string Contraseña { get; set; }
         public string MN { get; set; }
         public string MP { get; set; }
+        public HttpPostedFileBase Firma { get; set; }
         public string DireccionProf { get; set; }
+        public HttpPostedFileBase FotoPerfil { get; set; }
         public int Celular { get; set; }
         public int Telefono { get; set; }
         public string Email { get; set; }

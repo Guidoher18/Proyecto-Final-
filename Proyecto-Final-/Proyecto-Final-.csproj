@@ -314,10 +314,11 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\VerHistoria.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Views\HistoriaClinica\Historia.cshtml" />
     <None Include="Views\Home\Contacto.cshtml" />
     <None Include="Views\HistoriaClinica\CrearHistoria.cshtml" />
     <None Include="Views\Evolucion\Evolucion.cshtml" />
-    <None Include="Views\HistoriaClinica\Historia.cshtml" />
+    <None Include="Views\HistoriaClinica\HistoriaBuscar.cshtml" />
     <Content Include="Views\Home\ContactoLogueado.cshtml" />
     <None Include="Views\Home\Index.cshtml" />
     <None Include="Views\Home\Login.cshtml" />
@@ -338,6 +339,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\FirmaProfesional\" />
+    <Folder Include="Content\FotoPerfilHistoria\" />
+    <Folder Include="Content\FotoPerfilProfesional\" />
     <Folder Include="Content\Images\Icons\" />
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Views\Account\" />

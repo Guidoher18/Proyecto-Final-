@@ -13,7 +13,7 @@ namespace Proyecto_Final_.Models
         /// Inserta una Nueva Historia Clinica = Nuevo Paciente en la BBDD
         /// </summary>
         /// <param name="HistoriaClinica"></param>
-        public void InsertarHistoriaClinica(HistoriaClinica Paciente)
+        public HistoriaClinica InsertarHistoriaClinica(HistoriaClinica Paciente)
         {
             //Conexion a PsicoLOG (BBDD)
             SqlConnection Conexion = new SqlConnection(ConfigurationManager.AppSettings["ConectarBBDD"]);
@@ -25,7 +25,7 @@ namespace Proyecto_Final_.Models
             SqlCommand Sentencia = Conexion.CreateCommand();
             
             // Escribo la sentencia SQL
-            Sentencia.CommandText = "INSERT INTO HistoriaClinica(ApellidoyNombre, DNI, Nacionalidad, Genero, EstadoCivil, FechaNacimiento, EstudiosAlcanzados, Carrera, Ocupacion, Residencia, VSVinculo, VSApellidoyNombre, VSFechaNacimiento, VSOcupacion, VSConvive, ObraSocial, OSPlan, Credencial, Observaciones, Sintomas, DFecha, DDSM, DNombre, MApellidoyNombre, Especialidad, Contacto, Droga, Dosis, Celular, Telefono, Email, Skype, Direccion, NRNombreyVinculo, NRNumero) VALUES(@ApellidoyNombre, @DNI, @Nacionalidad, @Genero, @EstadoCivil, @FechaNacimiento, @EstudiosAlcanzados, @Carrera, @Ocupacion, @Residencia, @VSVinculo, @VSApellidoyNombre, @VSFechaNacimiento, @VSOcupacion, @VSConvive, @ObraSocial, @OSPlan, @Credencial, @Observaciones, @Sintomas, @DFecha, @DDSM, @DNombre, @MApellidoyNombre, @Especialidad, @Contacto, @Droga, @Dosis, @Celular, @Telefono, @Email, @Skype, @Direccion, @NRNombreyVinculo, @NRNumero)";
+            Sentencia.CommandText = "INSERT INTO HistoriaClinica(ApellidoyNombre, DNI, Nacionalidad, Genero, EstadoCivil, FechaNacimiento, EstudiosAlcanzados, Carrera, Ocupacion, Residencia, VSVinculo, VSApellidoyNombre, VSFechaNacimiento, VSOcupacion, VSConvive, ObraSocial, OSPlan, Credencial, Observaciones, Sintomas, DFecha, DDSM, DNombre, MApellidoyNombre, Especialidad, Contacto, Droga, Dosis, Celular, Telefono, Email, Skype, Direccion, NRNombreyVinculo, NRNumero) OUTPUT INSERTED.ID VALUES(@ApellidoyNombre, @DNI, @Nacionalidad, @Genero, @EstadoCivil, @FechaNacimiento, @EstudiosAlcanzados, @Carrera, @Ocupacion, @Residencia, @VSVinculo, @VSApellidoyNombre, @VSFechaNacimiento, @VSOcupacion, @VSConvive, @ObraSocial, @OSPlan, @Credencial, @Observaciones, @Sintomas, @DFecha, @DDSM, @DNombre, @MApellidoyNombre, @Especialidad, @Contacto, @Droga, @Dosis, @Celular, @Telefono, @Email, @Skype, @Direccion, @NRNombreyVinculo, @NRNumero)";
 
             //Vinculo las variables con los parametros
             Sentencia.Parameters.AddWithValue("@ApellidoyNombre", Paciente.ApellidoyNombre);
@@ -65,10 +65,128 @@ namespace Proyecto_Final_.Models
             Sentencia.Parameters.AddWithValue("@NRNumero", Paciente.NRNumero);
                         
             // Ejecuto
-            Sentencia.ExecuteNonQuery();
+            Paciente.ID = Sentencia.ExecuteScalar().ToString(); 
+            //Cierro la Conexión
+            Conexion.Close();
+
+            return Paciente;
+        }
+
+
+        /// <summary>
+        /// Permite Consultar en BBDD una Historia Clinica
+        /// </summary>
+        /// <param name="ID"></param>
+        /// <returns></returns>
+        public HistoriaClinica ConsultarHistoria(string ID)
+        {
+            //Conexion a PsicoLOG (BBDD)
+            SqlConnection Conexion = new SqlConnection(ConfigurationManager.AppSettings["ConectarBBDD"]);
+
+            //Inicio la Conexión
+            Conexion.Open();
+
+            // Creo el objeto que permite ingresar la instancia
+            SqlCommand Sentencia = Conexion.CreateCommand();
+
+            // Escribo la sentencia SQL
+            Sentencia.CommandText = "SELECT * FROM HistoriaClinica WHERE ID = @ID";
+
+            //Vinculo las variables con los parametros
+            Sentencia.Parameters.AddWithValue("@ID", ID);
+            // Ejecuto
+            SqlDataReader Reader = Sentencia.ExecuteReader();
+            HistoriaClinica Paciente = new HistoriaClinica();
+            if (Reader.Read())
+            {
+                Paciente.ID = ID;
+                Paciente.ApellidoyNombre = (string)Reader["ApellidoyNombre"];
+                Paciente.DNI = (string)Reader["DNI"];
+                Paciente.Nacionalidad = (string)Reader["Nacionalidad"];
+                Paciente.Genero = (string)Reader["Genero"];
+                Paciente.EstadoCivil = (string)Reader["EstadoCivil"];
+                Paciente.FechaNacimiento = (string)Reader["FechaNacimiento"];
+                Paciente.EstudiosAlcanzados = (string)Reader["EstudiosAlcanzados"];
+                Paciente.Carrera = (string)Reader["Carrera"];
+                Paciente.Ocupacion = (string)Reader["Ocupacion"];
+                Paciente.Residencia = (string)Reader["Residencia"];
+                Paciente.VSVinculo = (string)Reader["VSVinculo"];
+                Paciente.VSApellidoyNombre = (string)Reader["VSApellidoyNombre"];
+                Paciente.VSFechaNacimiento = (string)Reader["VSFechaNacimiento"];
+                Paciente.VSOcupacion = (string)Reader["VSOcupacion"];
+                Paciente.VSConvive = (string)Reader["VSConvive"];
+                Paciente.ObraSocial = (string)Reader["ObraSocial"];
+                Paciente.Plan = (string)Reader["OSPlan"];
+                Paciente.Credencial = (string)Reader["Credencial"];
+                Paciente.Observaciones = (string)Reader["Observaciones"];
+                Paciente.Sintomas = (string)Reader["Sintomas"];
+                Paciente.DFecha = (string)Reader["DFecha"];
+                Paciente.DDSM = (string)Reader["DDSM"];
+                Paciente.DNombre = (string)Reader["DNombre"];
+                Paciente.MApellidoyNombre = (string)Reader["MApellidoyNombre"];
+                Paciente.Especialidad = (string)Reader["Especialidad"];
+                Paciente.Contacto = (string)Reader["Contacto"];
+                Paciente.Droga = (string)Reader["Droga"];
+                Paciente.Dosis = (string)Reader["Dosis"];
+                Paciente.Celular = (int)Reader["Celular"];
+                Paciente.Telefono = (int)Reader["Telefono"];
+                Paciente.Email = (string)Reader["Email"];
+                Paciente.Skype = (string)Reader["Skype"];
+                Paciente.Direccion = (string)Reader["Direccion"];
+                Paciente.NRNombreyVinculo = (string)Reader["NRNombreyVinculo"];
+                Paciente.NRNumero = (string)Reader["NRNumero"];
+
+                return Paciente;
+            }
+
+            //Cierro el Reader
+            Reader.Close();
 
             //Cierro la Conexión
             Conexion.Close();
+
+            return Paciente;
+        }
+
+
+        /// <summary>
+        /// Permite Consultar en BBDD el ID de una Historia Clinica
+        /// </summary>
+        /// <param name="ID"></param>
+        /// <returns></returns>
+        public HistoriaClinica ConsultarIDHistoria(string TextBuscar)
+        {
+            //Conexion a PsicoLOG (BBDD)
+            SqlConnection Conexion = new SqlConnection(ConfigurationManager.AppSettings["ConectarBBDD"]);
+
+            //Inicio la Conexión
+            Conexion.Open();
+
+            // Creo el objeto que permite ingresar la instancia
+            SqlCommand Sentencia = Conexion.CreateCommand();
+
+            // Escribo la sentencia SQL
+            Sentencia.CommandText = "SELECT * FROM HistoriaClinica WHERE 'ApellidoyNombre' LIKE '@TextBuscar'";
+
+            //Vinculo las variables con los parametros
+            Sentencia.Parameters.AddWithValue("@TextBuscar", TextBuscar);
+            // Ejecuto
+            SqlDataReader Reader = Sentencia.ExecuteReader();
+            HistoriaClinica Paciente = new HistoriaClinica();
+            while (Reader.Read())
+            {
+                Paciente.ID = (string)Reader["ID"];
+                Paciente.ApellidoyNombre = (string)Reader["ApellidoyNombre"];
+                return Paciente;
+            }
+
+            //Cierro el Reader
+            Reader.Close();
+
+            //Cierro la Conexión
+            Conexion.Close();
+
+            return Paciente;
         }
     }
 }

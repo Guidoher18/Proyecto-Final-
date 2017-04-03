@@ -31,7 +31,7 @@ namespace Proyecto_Final_.Controllers
         /// Guarda una nueva Historia Clinica = Paciente
         /// </summary>
         [HttpPost]
-        public ActionResult GuardarHistoria(string ApellidoyNombre, string DNI, string Nacionalidad, string Genero, string EstadoCivil, string FechaNacimiento, string EstudiosAlcanzados, string Carrera, string Ocupacion, string Residencia, string VSVinculo, string VSApellidoyNombre, string VSFechaNacimiento, string VSOcupacion, string VSConvive, string ObraSocial, string Plan, string Credencial, string Observaciones, string Sintomas, string DFecha, string DDSM, string DNombre, string MApellidoyNombre, string Especialidad, string Contacto, string Droga, string Dosis, int Celular, int Telefono, string Email, string Skype, string Direccion, string NRNombreyVinculo, string NRNumero)
+        public ActionResult GuardarHistoria(string ApellidoyNombre, string DNI, string Nacionalidad, string Genero, string EstadoCivil, string FechaNacimiento, string EstudiosAlcanzados, string Carrera, string Ocupacion, string Residencia, string VSVinculo, string VSApellidoyNombre, string VSFechaNacimiento, string VSOcupacion, string VSConvive, string ObraSocial, string Plan, string Credencial, string Observaciones, string Sintomas, string DFecha, string DDSM, string DNombre, string MApellidoyNombre, string Especialidad, string Contacto, string Droga, string Dosis, HttpPostedFileBase FotoPerfil, int Celular, int Telefono, string Email, string Skype, string Direccion, string NRNombreyVinculo, string NRNumero)
         {
             HistoriaClinica Paciente = new HistoriaClinica();
             Paciente.ApellidoyNombre = ApellidoyNombre;
@@ -61,6 +61,12 @@ namespace Proyecto_Final_.Controllers
             Paciente.Especialidad = Especialidad;
             Paciente.Contacto = Contacto;
             Paciente.Droga = Droga;
+
+            if (FotoPerfil != null)
+            {
+                FotoPerfil.SaveAs(Server.MapPath("~/Content/FotoPerfilHistoria/" + DNI + ".jpg"));
+            }
+
             Paciente.Dosis = Dosis;
             Paciente.Celular = Celular;
             Paciente.Telefono = Telefono;
@@ -73,16 +79,31 @@ namespace Proyecto_Final_.Controllers
             HistoriaClinicaManager Manager = new HistoriaClinicaManager();
             Manager.InsertarHistoriaClinica(Paciente);
 
-            return View("~/Views/Main/Main.cshtml");
+            return GetHistoria(Paciente.ID);
+            //RedirectToAction("GetHistoria", "HistoriaClinica");
         }
 
-    
 
-
-        // GET: HistoriaClinica/Edit/5
-        public ActionResult Edit(int id)
+        // GET Historia Clinica
+        public ActionResult GetHistoria(string ID)
         {
-            return View();
+            HistoriaClinicaManager Manager = new HistoriaClinicaManager();
+            HistoriaClinica Paciente = Manager.ConsultarHistoria(ID);
+
+            ViewBag.HistoriaClinica = Paciente;
+
+            return View("~/Views/HistoriaClinica/VerHistoria.cshtml");
+        }
+
+        // GET IDHistoria
+        public ActionResult GetIDHistoria(string TextBuscar)
+        {
+            HistoriaClinicaManager Manager = new HistoriaClinicaManager();
+            HistoriaClinica Paciente = Manager.ConsultarIDHistoria(TextBuscar);
+
+            ViewBag.HistoriaClinica = Paciente;
+
+            return View("~/Views/HistoriaClinica/HistoriaBuscar.cshtml");
         }
 
         // POST: HistoriaClinica/Edit/5

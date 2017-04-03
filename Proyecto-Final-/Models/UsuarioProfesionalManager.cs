@@ -83,7 +83,6 @@ namespace Proyecto_Final_.Models
                     Usuario.ApellidoyNombre = (string) Reader["ApellidoyNombre"];
                     Usuario.Especialidad = Reader["Especialidad"].ToString();
                     Usuario.DNI = (string) Reader["DNI"];
-                    Usuario.Contraseña = (string) Reader["Contraseña"];
                     Usuario.MN = (string) Reader["MN"];
                     Usuario.MP = (string) Reader["MP"];
                     Usuario.DireccionProf = (string) Reader["DireccionProfesional"];
@@ -96,12 +95,12 @@ namespace Proyecto_Final_.Models
                 }
                 else
                 {
-                   //Contraseña Incorrecta  
+                    //Contraseña Erronea
                 }
             } 
             else
             {
-                //Usuario Inexistente >>> Chequee sus Datos o Crear Cuenta                
+                //Usuario Erroneo
             }
 
             //Cierro el Reader

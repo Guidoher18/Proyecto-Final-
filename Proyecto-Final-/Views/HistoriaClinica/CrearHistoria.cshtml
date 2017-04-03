@@ -11,7 +11,7 @@
     <div id="Encabezado">
         <h1>Nueva Historia Clínica</h1>
     </div>
-    <form action="@Url.Action("GuardarHistoria","HistoriaClinica")" method="POST">
+    <form action="@Url.Action("GuardarHistoria","HistoriaClinica")" enctype="multipart/form-data" method="POST">
         <div class="form-group">
             <div class="col-md-6" id="Div1"> <!-- Datos Generales del Paciente-->
                 <div class="col-md-6"> <!-- Apellido y Nombre -->

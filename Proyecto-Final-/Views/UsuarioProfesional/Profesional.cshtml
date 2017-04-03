@@ -13,7 +13,7 @@
         <h3><a href="@Url.Action("Index", "Home")">PsicoLOG</a></h3>
         <h1>Crea tu cuenta profesional</h1>
     </div>
-    <form action="@Url.Action("GuardarCuenta", "UsuarioProfesional")" method="POST">
+    <form action="@Url.Action("GuardarCuenta", "UsuarioProfesional")" method="POST" enctype="multipart/form-data">
         <div class="form-group">
             <div class="col-md-8" id="Profdiv1"> <!-- Datos Profesionales -->
                 <div> <!-- Apellido, Nombre y Título -->

@@ -8,122 +8,122 @@
 <link type="text/css" rel="Stylesheet" href="~/Content/PositionCss/PositionVerHistoria.css">
 }
 
-    <h1 id="ApellidoyNombre">PEREZ, JUAN CARLOS</h1><h1 id="NumeroHistoria">|| 1</h1><br>
+    <h1 id="ApellidoyNombre">@ViewBag.HistoriaClinica.ApellidoyNombre</h1><h1 id="NumeroHistoria">|| @ViewBag.HistoriaClinica.ID</h1><br>
     <div id="Todo" class="container col-md-12 SinPadding">
         <div class="col-md-6 SinPadding" id="Div1"> <!-- Datos Generales del Paciente-->
             <div class="row">   
                 <div id="DNI" class="col-md-3 SinPadding"> <!-- DNI -->
                         <label class="col-md-2">DNI</label><br>
-                        <p class="col-md-3 form-control"> 30.000.000 </p>
+                        <p class="col-md-3 form-control"> @ViewBag.HistoriaClinica.DNI </p>
                 </div> 
                 <div id="Nacionalidad" class="col-md-3 SinPadding"> <!-- Nacionalidad -->
                         <label class="col-md-2">Nacionalidad</label> <br>
-                        <p class="col-md-3 form-control"> ARGENTINO </p>
+                        <p class="col-md-3 form-control"> @ViewBag.HistoriaClinica.Nacionalidad </p>
                 </div><br>
             </div>
             <div class="row">
                 <div class="col-md-2 SinPadding" id="Genero"> <!-- Género -->
                     <label class="col-md-2">Género</label> <br>
-                    <p class="col-md-2 form-control"> MASCULINO </p>
+                    <p class="col-md-2 form-control"> @ViewBag.HistoriaClinica.Genero </p>
                 </div>                
                 <div id="EstadoCivil" class="col-md-2 SinPadding"> <!-- Estado Civil -->
                     <label class="col-md-2">Estado Civil</label> <br>
-                    <p class="col-md-2 form-control"> SOLTERO </p>
+                    <p class="col-md-2 form-control"> @ViewBag.HistoriaClinica.EstadoCivil </p>
                 </div>
                 <div id="FechaNacimiento" class="col-md-2 SinPadding"> <!-- Fecha de Nacimiento -->
                     <label class="col-md-2 Años">Fecha de Nacimiento</label><br>
-                    <p class="col-md-2 form-control"> 20/03/1980 - 37 Años</p>
+                    <p class="col-md-2 form-control"> @ViewBag.HistoriaClinica.FechaNacimiento - Edad</p>
                 </div>
             </div>
             <div class="row">    
                 <div class="col-md-2 SinPadding" id="EstudiosAlcanzados"> <!-- Estudios Alcanzados -->
                     <label class="col-md-2">Estudios Alcanzados</label><br>
-                    <p class="col-md-2 form-control"> UNIVERSITARIO INCOMPLETO </p>
+                    <p class="col-md-2 form-control"> @ViewBag.HistoriaClinica.EstudiosAlcanzados </p>
                 </div>
                 <div class="col-md-4 SinPadding" id="Carrera"> <!-- Carrera -->
                     <label class="col-md-2">Carrera</label><br>
-                    <p class="col-md-4 form-control"> ABOGACIA </p>
+                    <p class="col-md-4 form-control"> @ViewBag.HistoriaClinica.Carrera </p>
                 </div>
             </div>
             <div class="row">
                 <div id="Ocupacion" class="col-md-4 SinPadding"> <!-- Ocupación -->
                         <label class="col-md-2">Ocupación</label><br>
-                        <p class="col-md-4 form-control"> VENDEDOR </p>
+                        <p class="col-md-4 form-control"> @ViewBag.HistoriaClinica.Ocupacion </p>
                 </div>
                 <div id="Residencia" class="col-md-2 SinPadding"> <!-- Residencia -->
                         <label class="col-md-2">Lugar de Residencia</label> <br>
-                        <p class="col-md-2 form-control"> CABA </p>
+                        <p class="col-md-2 form-control"> @ViewBag.HistoriaClinica.Residencia </p>
                 </div>
             </div>
             <div id="VinculosSignificativos" class="col-md-6 SinPadding"> <!-- Vinculos Significativos -->           
                 <label class="col-md-3">Vínculos Significativos <span>(Pareja, hijos, G. de Convivencia)</span></label><br> 
                 <ul>    
-                    <li class="col-md-6 form-control"> ESPOSA - RODRIGUEZ, PAULA - 04/04/1978 (38) - DOCENTE - CONVIVE </li>
-                    <li class="col-md-6 form-control"> HIJA - PEREZ, HELENA - 07/08/2000 (16) - ESTUDIANTE - CONVIVE </li>
-                    <li class="col-md-6 form-control"> HIJO - PEREZ,SANTINO - 20/01/2004 (13) - ESTUDIANTE - CONVIVE </li>
+                    <li class="col-md-6 form-control"> @ViewBag.HistoriaClinica.VSVinculo - @ViewBag.HistoriaClinica.VSApellidoyNombre - @ViewBag.HistoriaClinica.VSFechaNacimiento (Edad) - @ViewBag.HistoriaClinica.VSOcupacion - @ViewBag.HistoriaClinica.VSConvive </li>
+                    <li class="col-md-6 form-control"> Falta Configurar - PEREZ, HELENA - 07/08/2000 (16) - ESTUDIANTE - CONVIVE </li>
+                    <li class="col-md-6 form-control"> Falta Configurar - PEREZ,SANTINO - 20/01/2004 (13) - ESTUDIANTE - CONVIVE </li>
                 </ul>
             </div>
             <div id="ObraSocial" class="row SinPadding"> <!-- Obra Social: Nombre, Plan, N° de Credencial -->
                     <div class="col-md-3 SinPadding"> 
                         <label class="col-md-2">Obra Social</label><br>
-                        <p class="col-md-3 form-control"> GALENO </p>
+                        <p class="col-md-3 form-control"> @ViewBag.HistoriaClinica.ObraSocial </p>
                     </div>
                     <div class="col-md-3 SinPadding"> 
                         <label class="col-md-2">Plan</label><br>
-                        <p class="col-md-3 form-control"> PLATA </p>
+                        <p class="col-md-3 form-control"> @ViewBag.HistoriaClinica.Plan </p>
                     </div>
                 </div>
             <div class="col-md-6 SinPadding"> 
                 <label class="col-md-2">Credencial N°</label><br>
-                <p class="col-md-6 form-control"> 00123456789000 </p>
+                <p class="col-md-6 form-control"> @ViewBag.HistoriaClinica.Credencial </p>
             </div>
             <div id="Observaciones" class="col-md-6 SinPadding"> <!-- Observaciones -->
                 <label class="col-md-2">Observaciones</label><br>
-                <p class="col-md-6 form-control"> DERIVADO POR EL DR.GÓMEZ (PSIQUIATRA) </p>
+                <p class="col-md-6 form-control"> @ViewBag.HistoriaClinica.Observaciones </p>
             </div> 
             <div class="col-md-6 SinPadding"id="Sintomas"> <!-- Síntomas -->
                 <Label class="col-md-4">Síntomas</label>    
-                <p class="col-md-6 form-control"> ANGUSTIA, MIEDO A LOS ESPACIOS ABIERTOS Y PÚBLICOS </p>
+                <p class="col-md-6 form-control"> @ViewBag.HistoriaClinica.Sintomas </p>
             </div>      
             <div id="Diagnostico" class="col-md-6 row SinPadding"> <!-- Diagnóstico -->           
                     <Label class="col-md-3">Diagnóstico</label><br><br>    
                     <div class="col-md-1 SinPadding" id="Fecha"> <!-- Fecha -->
                         <Label class="col-md-1">Fecha</label>    
-                        <p class="col-md-1 form-control"> 20/03/2017 </p>
+                        <p class="col-md-1 form-control"> @ViewBag.HistoriaClinica.DFecha </p>
                     </div>                
                     <div class="col-md-1 SinPadding" id="DSM"> <!-- Código DSM -->
                         <Label class="col-md-1">DSM </label>    
-                        <p class="col-md-1 form-control"> 300.21 </p>
+                        <p class="col-md-1 form-control"> @ViewBag.HistoriaClinica.DDSM </p>
                     </div>                
                     <div class="col-md-4 SinPadding" id="NombreDiagnostico"> <!-- Nombre del Diagnóstico -->
                         <Label class="col-md-4">Nombre del Diagnóstico</label>    
-                        <p class="col-md-4 form-control"> TRASTORNO DE ANGUSTIA CON AGORAFOBIA </p>
+                        <p class="col-md-4 form-control"> @ViewBag.HistoriaClinica.DNombre </p>
                     </div>      
             </div>
             <div id="MedicoTratante" class="col-md-6 row SinPadding"> <!-- Médico Tratante -->           
                     <Label class="col-md-6">Médico Tratante</label><br><br>
                     <div class="col-md-2 SinPadding" id="MTApellidoyNombre"> <!-- Apellido y Nombre del Médico Trantante -->
                         <Label class="col-md-2">Apellido y Nombre</label>    
-                        <p class="col-md-2 form-control"> DR. GÓMEZ </p>
+                        <p class="col-md-2 form-control"> @ViewBag.HistoriaClinica.MApellidoyNombre </p>
                     </div>                
                     <div class="col-md-2 SinPadding" id="MTEspecialidad"> <!-- Especialidad -->
                         <Label class="col-md-2">Especialidad</label>    
-                        <p class="col-md-2 form-control"> PSIQUIATRÍA </p>
+                        <p class="col-md-2 form-control"> @ViewBag.HistoriaClinica.Especialidad </p>
                     </div>    
                     <div class="col-md-2 SinPadding" id="MTContacto"> <!-- Contacto -->
                         <Label class="col-md-2">Contacto / Horario</label>    
-                        <p class="col-md-2 form-control"> 45678900 (LU-MI 14 A 18 HS) </p>
+                        <p class="col-md-2 form-control"> @ViewBag.HistoriaClinica.Contacto </p>
                     </div>                
             </div>
             <div id="Medicacion" class="col-md-6 row SinPadding"> <!-- Medicación -->           
                 <Label class="col-md-6">Medicación</label><br><br>
                 <div class="col-md-3 SinPadding" id="Droga"> <!-- Nombre de la Droga -->
                     <Label class="col-md-3">Nombre Genérico</label>    
-                    <p class="col-md-3 form-control"> ALPRAZOLAM 1MG </p>
+                    <p class="col-md-3 form-control"> @ViewBag.HistoriaClinica.Droga </p>
                 </div>                
                 <div class="col-md-3 SinPadding" id="Dosis"> <!-- Dosis -->
                     <Label class="col-md-3">Dosis</label>    
-                    <p class="col-md-3 form-control"> 1/2 (0,5MG) C/ 12HS </p>
+                    <p class="col-md-3 form-control"> @ViewBag.HistoriaClinica.Dosis </p>
                 </div>    
             </div>
             <div id="Evolucion" class="col-md-6 SinPadding"> <!-- Evolución -->   
@@ -156,30 +156,31 @@
         </div>    
         <div class="col-md-4 SinPadding" id="Div2"> <!-- Datos de Contacto del Paciente -->   
                 <!-- Foto Perfil de ejemplo y div de Seleccionar o Arrastrar -->
-                <img src="http://fotos01.farodevigo.es/fotos/noticias/318x200/2011-01-13_IMG_2011-01-13_23:13:18_so3.jpg" class="img-rounded text-center" id="FotoPerfil"/> 
+                @{var ruta = ViewBag.HistoriaClinica.DNI + ".jpg";}
+                <img src="../Content/FotoPerfilHistoria/@ruta" class="img-rounded" id="FotoPerfil"/>
                 <div class="row SinPadding" id="Celular"> <!-- Celular -->
                     <label id="CelularLabel"><span class="glyphicon glyphicon-phone"></span>&nbsp; Celular</label> <br>
-                    <p class="col-md-3 form-control"> 15-1230-1230 </p>
+                    <p class="col-md-3 form-control"> @ViewBag.HistoriaClinica.Celular </p>
                 </div>
                 <div class="row SinPadding" id="Telefono"> <!-- Teléfono -->
                     <label id="TelefonoLabel"><span class="glyphicon glyphicon-earphone"></span>&nbsp; Teléfono</label> <br>
-                    <p class="col-md-3 form-control"> 11-4356-1234 </p>
+                    <p class="col-md-3 form-control"> @ViewBag.HistoriaClinica.Telefono </p>
                 </div>
                 <div class="row SinPadding" id="Email"> <!-- Email -->
                     <label id="EmailLabel"><span class="glyphicon glyphicon-envelope"></span>&nbsp; Email</label> <br>
-                    <p class="col-md-3 form-control"> perez.juan80@gmail.com </p>
+                    <p class="col-md-3 form-control"> @ViewBag.HistoriaClinica.Email </p>
                 </div>
                 <div class="row SinPadding" id="Skype"> <!-- Skype -->
                     <label id="SkypeLabel"><span class="glyphicon glyphicon-facetime-video"></span>&nbsp; Skype</label> <br>
-                    <p class="col-md-3 form-control"> perez.juan80@gmail.com </p>
+                    <p class="col-md-3 form-control"> @ViewBag.HistoriaClinica.Skype </p>
                 </div>
                 <div class="row SinPadding" id="Direccion"> <!-- Dirección -->
                     <label id="DireccionLabel"><span class="glyphicon glyphicon-screenshot"></span>&nbsp; Dirección</label> <br>
-                    <p class="col-md-3 form-control"> TRIUNVIRATO 2355, CABA</p>
+                    <p class="col-md-3 form-control"> @ViewBag.HistoriaClinica.Direccion</p>
                 </div>
                 <div class="row SinPadding" id="Referencia"> <!-- Número de Referencia -->
                     <label id="ReferenciaLabel"><span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp; Número de Referencia</label> <br>
-                    <p class="col-md-3 form-control"> PAULA (ESPOSA) - 1567809911</p>
+                    <p class="col-md-3 form-control"> @ViewBag.HistoriaClinica.NRNombreyVinculo - @ViewBag.HistoriaClinica.NRNumero</p>
                 </div><br>
         </div><br>
     </div>

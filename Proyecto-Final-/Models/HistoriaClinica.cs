@@ -10,7 +10,7 @@ namespace Proyecto_Final_.Models
     /// </summary>
     public class HistoriaClinica
     {
-        public long ID { get;}
+        public string ID { get; set; }
         public string ApellidoyNombre { get; set; }
         public string DNI { get; set; }
         public string Nacionalidad { get; set; }

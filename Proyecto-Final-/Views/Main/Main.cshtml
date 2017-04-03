@@ -9,16 +9,19 @@
 }
 
     <div id="ContenedorPrincipal" class="col-md-10">       
-       <div id="MarcoLateral" class="col-md-5"> 
-            <img src="../Content/Images/Other/FotoPerfil.png" class="img-rounded" id="Foto"/>
-            <label> @ViewBag.UsuarioProfesional.ApellidoyNombre </label><br>
+        <div id="MarcoLateral" class="col-md-5">
+        @{var ruta = ViewBag.UsuarioProfesional.DNI + ".jpg";}
+        <img src="../Content/FotoPerfilProfesional/@ruta" class="img-rounded" id="Foto" />
+            <label> @ViewBag.UsuarioProfesional.Titulo @ViewBag.UsuarioProfesional.ApellidoyNombre </label><br>
             <label>Psicólogo </label><br>
-            @if (ViewBag.UsuarioProfesional.Especialidad != " ")
+            @if (ViewBag.UsuarioProfesional.Especialidad != "")
             {
                 <p> <span>Especialista en:</span> <em> @ViewBag.UsuarioProfesional.Especialidad </em> </p>
             }
             <p class="col-md-1" id="MN"> <span>MN:</span> <em> @ViewBag.UsuarioProfesional.MN </em> </p> <p class="col-md-1" id="MP"> <span>MP:</span> <em>@ViewBag.UsuarioProfesional.MP</em> </p> <br><br>
             <p> <em> @ViewBag.UsuarioProfesional.DireccionProf </em> </p>
+            <p> <span>Cel:</span> <em>@ViewBag.UsuarioProfesional.Celular</em> - <span>Tel:</span> <em>@ViewBag.UsuarioProfesional.Telefono</em> </p> 
+            <p> <span>Email:</span> <em>@ViewBag.UsuarioProfesional.Email</em> - <span>Skype:</span> <em>@ViewBag.UsuarioProfesional.Skype</em> </p> 
         </div><br>
         <div id="Secciones"  class="col-md-5">
             <a href="@Url.Action("Historia","HistoriaClinica")"><p><span class="glyphicon glyphicon-folder-open">&nbsp;</span> Historia Clínica </p></a>

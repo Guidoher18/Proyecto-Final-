@@ -19,7 +19,7 @@ namespace Proyecto_Final_.Controllers
         /// Guarda un nuevo Usuario Profesional
         /// </summary>
         [HttpPost]
-        public ActionResult GuardarCuenta(string Titulo, string ApellidoyNombre, string Especialidad, string DNI, string Contraseña, string MN, string MP, string DireccionProf, int Celular, int Telefono, string Email, string Skype)
+        public ActionResult GuardarCuenta(string Titulo, string ApellidoyNombre, string Especialidad, string DNI, string Contraseña, string MN, string MP, HttpPostedFileBase Firma,string DireccionProf, HttpPostedFileBase FotoPerfil, int Celular, int Telefono, string Email, string Skype)
         {
             UsuarioProfesional Usuario = new UsuarioProfesional();
             Usuario.Titulo = Titulo;
@@ -29,7 +29,19 @@ namespace Proyecto_Final_.Controllers
             Usuario.Contraseña = Contraseña;
             Usuario.MN = MN;
             Usuario.MP = MP;
+
+            if (Firma != null)
+            {
+                Firma.SaveAs(Server.MapPath("~/Content/FirmaProfesional/" + DNI + ".png"));
+            }
+            
             Usuario.DireccionProf = DireccionProf;
+
+            if (FotoPerfil != null)
+            {
+                FotoPerfil.SaveAs(Server.MapPath("~/Content/FotoPerfilProfesional/" + DNI + ".jpg"));
+            }
+
             Usuario.Celular = Celular;
             Usuario.Telefono = Telefono;
             Usuario.Email = Email;
